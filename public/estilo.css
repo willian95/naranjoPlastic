@@ -1,0 +1,27 @@
+.modal-open{
+    overflow: scroll;
+}
+.GrisOscuro{
+    background-color: #8b8988;
+    color:white;
+ }
+
+ .Gris{
+     background-color: #b5b3b3;
+     color:white;
+  }
+
+.Aqua{
+    background-color: #17bac2;
+    color:white;
+ }
+
+.btn-GrisOscuro{
+    background-color: #8b8988;
+    color:white;
+}
+
+.btn-GrisOscuro:hover {
+    background-color: #17bac2;
+    color:white;
+}
