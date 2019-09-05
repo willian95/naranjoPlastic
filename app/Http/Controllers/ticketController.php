@@ -69,7 +69,7 @@ class ticketController extends Controller
     $venta=DB::table('venta')
         ->join('clientes', 'clientes.id', '=', 'venta.idCliente')
         ->join('tipocambio', 'tipocambio.id', '=', 'venta.idFormaPago')
-        ->select('venta.*', 'clientes.name','clientes.apePat','clientes.apeMat','tipocambio.cambio')
+        ->select('venta.*', 'clientes.name','clientes.apePat','tipocambio.cambio')
         ->where('venta.id','=',$id)
         ->get();
         $venta->toArray();
