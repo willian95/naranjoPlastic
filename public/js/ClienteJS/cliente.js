@@ -178,11 +178,23 @@ $('#servicioProhibido').change(function(){
     }
 })
 
+$("#mascotas_seccion2").change(function(){
+  if($('#mascotas_seccion2:checked').val()!=null){
+    $('#cuales_mascotas_seccion2').attr('readonly', false);
+  }else {
+    $('#cuales_mascotas_seccion2').attr('readonly', true);
+
+  }
+})
+
 $('#addCliente').click(function() {
 
     file_path='';
     limpiarCheckbox();
     $('#imagenFile').attr('src', '/img/avatar.png');
+
+    //$(".viewClient").attr('readonly', true)
+
     $('#modalCliente').modal({
       backdrop: 'static'
     });
@@ -330,13 +342,6 @@ $(function () {
 
   $('#seccion2Continuar').click(function (e) {
 
-    if ($('#expediente_numero_seccion2').val()=='') {
-      mio({ type: 'error',title: 'Ingrese el número de expediente'});
-      $('#expediente_numero_seccion2').focus();
-      return 0;
-    }
-
-    e.preventDefault();
     //código de pruebas
     /*
     console.log("nombre")
@@ -693,11 +698,14 @@ function limpiarCheckbox(){
     $('input[type=checkbox]').prop('checked',false);
     $('input').val('');
     $('select').val('');
+    $('textarea').val('');
 }
 
 function verCliente(id){
 
     file_path='';
+    $(".viewClient").attr('readonly', true)
+    $(".viewClient").attr('disabled', true)
   limpiarCheckbox();
 
   $('#imagenFile').attr('src', '/img/avatar.png');
@@ -715,7 +723,7 @@ function verCliente(id){
   },
       success: function(data,textStatus,jqXHR) {
 
-        console.log(data)
+        
 
         $('#nombreCliente').val(data.responseData.name)
         $('#apellido1Cliente').val(data.responseData.apePat)
@@ -799,8 +807,6 @@ function verCliente(id){
         data.responseData.drenajeSeccion2!=0 ? $('#drenaje_seccion2').prop('checked',true) : 0;
         data.responseData.mascotasSeccion2!=0 ? $('#mascotas_seccion2').prop('checked',true) : 0;
 
-
-        
         $("#cuales_mascotas_seccion2").val(data.responseData.cualesMascotasSeccion2)
         $("#disposicion_basura_seccion2").val(data.responseData.disposicionBasuraSeccion2)
         $("#alimentacion_seccion2").val(data.responseData.alimentacionSeccion2)
@@ -814,15 +820,25 @@ function verCliente(id){
         $("#ivsa_seccion2").val(data.responseData.ivsaSeccion2)
         $("#pf_seccion2").val(data.responseData.pfSeccion2)
         $("#expediente_numero_seccion2").val(data.responseData.expedienteNumeroSeccion2)
-        
+        $("#fur_seccion2").val(data.responseData.furSeccion2)
+        $("#sexo_seccion2").val(data.responseData.sexoSeccion2),
+        $("#religion_seccion2").val(data.responseData.religionSeccion2),
+        $("#direccion_seccion2").val(data.responseData.direccionSeccion2),
+        $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2),
+        $("#cirugias_anteriores_seccion2").val(data.responseData.cirugiasAnterioresSeccion2),
+        $("#medicamentos_seccion2").val(data.responseData.medicamentosSeccion2),
+        $("#ingiere_alcohol_seccion2").val(data.responseData.ingiereAlcoholSeccion2),
+        $("#hace_ejercicio_seccion2").val(data.responseData.haceEjercicioSeccion2),
+        $("#fuma_seccion2").val(data.responseData.fumaSeccion2),
+        $("#antecedentes_heredo_seccion2").val(data.responseData.antecedentesHeredoSeccion2),
+        $("#menarca_seccion2").val(data.responseData.menarcaSeccion2),
+        $("#inicio_actividad_seccion2").val(data.responseData.inicioActividadSeccion2),
+        $("#interrogatorio_por_aparatos_seccion2").val(data.responseData.interrogatorioPorAparatosSeccion2),
+        $("#motivo_consulta_seccion2").val(data.responseData.motivoConsultaSeccion2),
 
         //Seccion 3
 
         $('#padecimiento_seccion3').val(data.responseData.padecimientoSeccion3);
-        data.responseData.asteniaSeccion3!=0 ? $('#astenia_seccion3').prop('checked',true) : 0;
-        data.responseData.adinamiaSeccion3!=0 ? $('#adinamia_seccion3').prop('checked',true) : 0;
-        data.responseData.hiporexiaSeccion3!=0 ? $('#hiporexia_seccion3').prop('checked',true) : 0;
-        data.responseData.perdidaPesoSeccion3!=0 ? $('#perdida_peso_seccion3').prop('checked',true) : 0;
         data.responseData.problemaRespirarSeccion3!=0 ? $('#problema_respirar_seccion3').prop('checked',true) : 0;
         data.responseData.sonidosRespirarSeccion3!=0 ? $('#sonidos_respirar_seccion3').prop('checked',true) : 0;
         data.responseData.secrecionesSeccion3!=0 ? $('#secreciones_seccion3').prop('checked',true) : 0;
@@ -881,7 +897,13 @@ function verCliente(id){
         $('#tag_seccion3').val(data.responseData.tagSeccion3)
         data.responseData.respiracionRapidaSeccion3!=0 ? $('#respiracion_rapida_seccion3').prop('checked',true) : 0;
         data.responseData.respiracionLentaSeccion3!=0 ? $('#respiracion_lenta_seccion3').prop('checked',true) : 0;
-
+        $('#qs_seccion3').val(data.responseData.qsSeccion3)
+        $('#ego_seccion3').val(data.responseData.egoSeccion3)
+        $('#tp_seccion3').val(data.responseData.tpSeccion3)
+        $('#tpt_seccion3').val(data.responseData.tptSeccion3)
+        $('#hiv_seccion3').val(data.responseData.hivSeccion3)
+        $('#otros_seccion3').val(data.responseData.otrosSeccion3)
+        $('#sintomas_generales_seccion3').val(data.responseData.sintomasGeneralesSeccion3)
         
         //Seccion 4
         $("#ta_seccion4").val(data.responseData.taSeccion4)
@@ -976,6 +998,8 @@ function actualizaPaciente(id){
         id:id,
         //Seccion1
 
+    //Seccion1
+
     name:$('#nombreCliente').val().toUpperCase(),
     apePat:$('#apellido1Cliente').val().toUpperCase(),
     fechaNacimiento:$('#fechaNacimiento').val(),
@@ -989,7 +1013,7 @@ function actualizaPaciente(id){
     email:$('#emailCliente').val(),
     sexo:$('#sexo').val(),
     edoCivil:$('#edoCivil').val(),
-    pais:$('#pais').val(),
+    pais:$("#pais").val(),
     estado:$("#estados").val(),
     calle:$("#calle").val(),
     ciudad:$('#ciudad').val(),
@@ -1033,7 +1057,6 @@ function actualizaPaciente(id){
     tabaquismoSeccion2: (($('#tabaquismo:checked').val()) !=null ? 1 : 0),
     alcoholismoSeccion2: (($('#alcoholismo:checked').val()) !=null ? 1 : 0),
     drogasSeccion2: (($('#drogas:checked').val()) !=null ? 1 : 0),
-    traumaticasSeccion2: $("#traumaticas_seccion2").val(),
     numeroHabitacionesSeccion2: $("#numero_habitaciones_seccion2").val(),
     cuantasPersonasSeccion2: $("#cuantas_personas_seccion2").val(), 
     materialSeccion2: $("#material_seccion2").val(),
@@ -1053,16 +1076,24 @@ function actualizaPaciente(id){
     cesareasSeccion2: $("#cesareas_seccion2").val(),
     abortosSeccion2: $("#abortos_seccion2").val(),
     furSeccion2: $("#fur_seccion2").val(),
-    ivsaSeccion2: $("#ivsa_seccion2").val(),
-    pfSeccion2: $("#pf_seccion2").val(),
-    expedienteNumeroSeccion2: $("#expediente_numero_seccion2").val(),
+    sexoSeccion2: $("#sexo_seccion2").val(),
+    religionSeccion2: $("#religion_seccion2").val(),
+    direccionSeccion2: $("#direccion_seccion2").val(),
+    ocupacionSeccion2: $("#ocupacion_seccion2").val(),
+    cirugiasAnterioresSeccion2: $("#cirugias_anteriores_seccion2").val(),
+    medicamentosSeccion2: $("#medicamentos_seccion2").val(),
+    ingiereAlcoholSeccion2: $("#ingiere_alcohol_seccion2").val(),
+    haceEjercicioSeccion2: $("#hace_ejercicio_seccion2").val(),
+    fumaSeccion2: $("#fuma_seccion2").val(),
+    antecedentesHeredoSeccion2: $("#antecedentes_heredo_seccion2").val(),
+    menarcaSeccion2: $("#menarca_seccion2").val(),
+    inicioActividadSeccion2: $("#inicio_actividad_seccion2").val(),
+    interrogatorioPorAparatosSeccion2: $("#interrogatorio_por_aparatos_seccion2").val(),
+    motivoConsultaSeccion2: $("#motivo_consulta_seccion2").val(),
+
 
     //Seccion 3
     padecimientoSeccion3:$("#padecimiento_seccion3").val() ,
-    asteniaSeccion3:(($('#astenia_seccion3:checked').val()) !=null ? 1 : 0),
-    adinamiaSeccion3: (($('#adinamia_seccion3:checked').val()) !=null ? 1 : 0),
-    hiporexiaSeccion3: (($('#hiporexia_seccion3:checked').val()) !=null ? 1 : 0),
-    perdidaPesoSeccion3: (($('#perdida_peso_seccion3:checked').val()) !=null ? 1 : 0),
     problemaRespirarSeccion3: (($('#problema_respirar_seccion3:checked').val()) !=null ? 1 : 0),
     sonidosRespirarSeccion3: (($('#sonidos_respirar_seccion3:checked').val()) !=null ? 1 : 0),
     secrecionesSeccion3: (($('#secreciones_seccion3:checked').val()) !=null ? 1 : 0),
@@ -1120,7 +1151,13 @@ function actualizaPaciente(id){
     tagSeccion3: $('#tag_seccion3').val(),
     respiracionRapidaSeccion3:(($('#respiracion_rapida_seccion3:checked').val()) !=null ? 1 : 0),
     respiracionLentaSeccion3:(($('#respiracion_lenta_seccion3:checked').val()) !=null ? 1 : 0),
-
+    qsSeccion3: $('#qs_seccion3').val(),
+    egoSeccion3: $('#ego_seccion3').val(),
+    tpSeccion3: $('#tp_seccion3').val(),
+    tptSeccion3: $('#tpt_seccion3').val(),
+    hivSeccion3: $('#hiv_seccion3').val(),
+    otrosSeccion3: $('#otros_seccion3').val(),
+    sintomasGeneralesSeccion3: $("#sintomas_generales_seccion3").val(),
 
     //Seccion 4
     taSeccion4:$("#ta_seccion4").val(),
@@ -1214,6 +1251,8 @@ function editaCliente(id){
 
     file_path='';
   limpiarCheckbox();
+  $(".viewClient").attr('readonly', false)
+  $(".viewClient").attr('disabled', false)
   //$('.disableBtn').removeAttr('disabled');
   $('#tituloModal').html('Editar Paciente');
   $('#adicionalContinuar').removeAttr('onClick');
@@ -1312,8 +1351,6 @@ function editaCliente(id){
         data.responseData.drenajeSeccion2!=0 ? $('#drenaje_seccion2').prop('checked',true) : 0;
         data.responseData.mascotasSeccion2!=0 ? $('#mascotas_seccion2').prop('checked',true) : 0;
 
-
-        
         $("#cuales_mascotas_seccion2").val(data.responseData.cualesMascotasSeccion2)
         $("#disposicion_basura_seccion2").val(data.responseData.disposicionBasuraSeccion2)
         $("#alimentacion_seccion2").val(data.responseData.alimentacionSeccion2)
@@ -1327,15 +1364,25 @@ function editaCliente(id){
         $("#ivsa_seccion2").val(data.responseData.ivsaSeccion2)
         $("#pf_seccion2").val(data.responseData.pfSeccion2)
         $("#expediente_numero_seccion2").val(data.responseData.expedienteNumeroSeccion2)
-        
+        $("#fur_seccion2").val(data.responseData.furSeccion2)
+        $("#sexo_seccion2").val(data.responseData.sexoSeccion2),
+        $("#religion_seccion2").val(data.responseData.religionSeccion2),
+        $("#direccion_seccion2").val(data.responseData.direccionSeccion2),
+        $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2),
+        $("#cirugias_anteriores_seccion2").val(data.responseData.cirugiasAnterioresSeccion2),
+        $("#medicamentos_seccion2").val(data.responseData.medicamentosSeccion2),
+        $("#ingiere_alcohol_seccion2").val(data.responseData.ingiereAlcoholSeccion2),
+        $("#hace_ejercicio_seccion2").val(data.responseData.haceEjercicioSeccion2),
+        $("#fuma_seccion2").val(data.responseData.fumaSeccion2),
+        $("#antecedentes_heredo_seccion2").val(data.responseData.antecedentesHeredoSeccion2),
+        $("#menarca_seccion2").val(data.responseData.menarcaSeccion2),
+        $("#inicio_actividad_seccion2").val(data.responseData.inicioActividadSeccion2),
+        $("#interrogatorio_por_aparatos_seccion2").val(data.responseData.interrogatorioPorAparatosSeccion2),
+        $("#motivo_consulta_seccion2").val(data.responseData.motivoConsultaSeccion2),
 
         //Seccion 3
 
         $('#padecimiento_seccion3').val(data.responseData.padecimientoSeccion3);
-        data.responseData.asteniaSeccion3!=0 ? $('#astenia_seccion3').prop('checked',true) : 0;
-        data.responseData.adinamiaSeccion3!=0 ? $('#adinamia_seccion3').prop('checked',true) : 0;
-        data.responseData.hiporexiaSeccion3!=0 ? $('#hiporexia_seccion3').prop('checked',true) : 0;
-        data.responseData.perdidaPesoSeccion3!=0 ? $('#perdida_peso_seccion3').prop('checked',true) : 0;
         data.responseData.problemaRespirarSeccion3!=0 ? $('#problema_respirar_seccion3').prop('checked',true) : 0;
         data.responseData.sonidosRespirarSeccion3!=0 ? $('#sonidos_respirar_seccion3').prop('checked',true) : 0;
         data.responseData.secrecionesSeccion3!=0 ? $('#secreciones_seccion3').prop('checked',true) : 0;
@@ -1394,7 +1441,13 @@ function editaCliente(id){
         $('#tag_seccion3').val(data.responseData.tagSeccion3)
         data.responseData.respiracionRapidaSeccion3!=0 ? $('#respiracion_rapida_seccion3').prop('checked',true) : 0;
         data.responseData.respiracionLentaSeccion3!=0 ? $('#respiracion_lenta_seccion3').prop('checked',true) : 0;
-
+        $('#qs_seccion3').val(data.responseData.qsSeccion3)
+        $('#ego_seccion3').val(data.responseData.egoSeccion3)
+        $('#tp_seccion3').val(data.responseData.tpSeccion3)
+        $('#tpt_seccion3').val(data.responseData.tptSeccion3)
+        $('#hiv_seccion3').val(data.responseData.hivSeccion3)
+        $('#otros_seccion3').val(data.responseData.otrosSeccion3)
+        $('#sintomas_generales_seccion3').val(data.responseData.sintomasGeneralesSeccion3)
         
         //Seccion 4
         $("#ta_seccion4").val(data.responseData.taSeccion4)
@@ -1448,6 +1501,9 @@ function renderizarEstados(data){
 }
 
 function guardarCliente(){
+
+  $(".viewClient").attr('readonly', false)
+  $(".viewClient").attr('disabled', false)
 
   //codigo de prueba
   /*
@@ -1601,7 +1657,6 @@ function guardarCliente(){
     tabaquismoSeccion2: (($('#tabaquismo:checked').val()) !=null ? 1 : 0),
     alcoholismoSeccion2: (($('#alcoholismo:checked').val()) !=null ? 1 : 0),
     drogasSeccion2: (($('#drogas:checked').val()) !=null ? 1 : 0),
-    traumaticasSeccion2: $("#traumaticas_seccion2").val(),
     numeroHabitacionesSeccion2: $("#numero_habitaciones_seccion2").val(),
     cuantasPersonasSeccion2: $("#cuantas_personas_seccion2").val(), 
     materialSeccion2: $("#material_seccion2").val(),
@@ -1621,16 +1676,24 @@ function guardarCliente(){
     cesareasSeccion2: $("#cesareas_seccion2").val(),
     abortosSeccion2: $("#abortos_seccion2").val(),
     furSeccion2: $("#fur_seccion2").val(),
-    ivsaSeccion2: $("#ivsa_seccion2").val(),
-    pfSeccion2: $("#pf_seccion2").val(),
-    expedienteNumeroSeccion2: $("#expediente_numero_seccion2").val(),
+    sexoSeccion2: $("#sexo_seccion2").val(),
+    religionSeccion2: $("#religion_seccion2").val(),
+    direccionSeccion2: $("#direccion_seccion2").val(),
+    ocupacionSeccion2: $("#ocupacion_seccion2").val(),
+    cirugiasAnterioresSeccion2: $("#cirugias_anteriores_seccion2").val(),
+    medicamentosSeccion2: $("#medicamentos_seccion2").val(),
+    ingiereAlcoholSeccion2: $("#ingiere_alcohol_seccion2").val(),
+    haceEjercicioSeccion2: $("#hace_ejercicio_seccion2").val(),
+    fumaSeccion2: $("#fuma_seccion2").val(),
+    antecedentesHeredoSeccion2: $("#antecedentes_heredo_seccion2").val(),
+    menarcaSeccion2: $("#menarca_seccion2").val(),
+    inicioActividadSeccion2: $("#inicio_actividad_seccion2").val(),
+    interrogatorioPorAparatosSeccion2: $("#interrogatorio_por_aparatos_seccion2").val(),
+    motivoConsultaSeccion2: $("#motivo_consulta_seccion2").val(),
+
 
     //Seccion 3
     padecimientoSeccion3:$("#padecimiento_seccion3").val() ,
-    asteniaSeccion3:(($('#astenia_seccion3:checked').val()) !=null ? 1 : 0),
-    adinamiaSeccion3: (($('#adinamia_seccion3:checked').val()) !=null ? 1 : 0),
-    hiporexiaSeccion3: (($('#hiporexia_seccion3:checked').val()) !=null ? 1 : 0),
-    perdidaPesoSeccion3: (($('#perdida_peso_seccion3:checked').val()) !=null ? 1 : 0),
     problemaRespirarSeccion3: (($('#problema_respirar_seccion3:checked').val()) !=null ? 1 : 0),
     sonidosRespirarSeccion3: (($('#sonidos_respirar_seccion3:checked').val()) !=null ? 1 : 0),
     secrecionesSeccion3: (($('#secreciones_seccion3:checked').val()) !=null ? 1 : 0),
@@ -1688,6 +1751,13 @@ function guardarCliente(){
     tagSeccion3: $('#tag_seccion3').val(),
     respiracionRapidaSeccion3:(($('#respiracion_rapida_seccion3:checked').val()) !=null ? 1 : 0),
     respiracionLentaSeccion3:(($('#respiracion_lenta_seccion3:checked').val()) !=null ? 1 : 0),
+    qsSeccion3: $('#qs_seccion3').val(),
+    egoSeccion3: $('#ego_seccion3').val(),
+    tpSeccion3: $('#tp_seccion3').val(),
+    tptSeccion3: $('#tpt_seccion3').val(),
+    hivSeccion3: $('#hiv_seccion3').val(),
+    otrosSeccion3: $('#otros_seccion3').val(),
+    sintomasGeneralesSeccion3: $("#sintomas_generales_seccion3").val(),
 
     //Seccion 4
     taSeccion4:$("#ta_seccion4").val(),
