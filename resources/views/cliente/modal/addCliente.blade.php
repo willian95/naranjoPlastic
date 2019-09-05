@@ -524,7 +524,7 @@
                       <div class="col-md-6">
                       
                         <label for="example-text-input">Fecha Ultima Menstruación:</label>
-                        <input type="number" id="fur_seccion2" class="form-control viewClient">
+                        <input type="date" id="fur_seccion2" class="form-control viewClient">
                      
                       </div>
 
