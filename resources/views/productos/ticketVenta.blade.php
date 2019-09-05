@@ -15,7 +15,7 @@
       <br>Folio del ticket:{{$ticket->id}}
       <br>Fecha:{{$venta[0]->created_at}}
       <br>Cliente y/o Paciente:  {{$venta[0]->name}} 
-      <br>{{$venta[0]->apePat}} {{$venta[0]->apeMat}}
+      <br>{{$venta[0]->apePat}}
       <br>Forma de pago:
               @if($venta[0]->idTipoPago)
                 Credito
