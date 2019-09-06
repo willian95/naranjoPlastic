@@ -10,6 +10,7 @@ use App\User;
 use App\membresia;
 use App\DetalleMembresiaCliente;
 use App\Foto;
+use PDF;
 use DB;
 use DNS1D;
 
@@ -130,5 +131,12 @@ class ClienteController extends Controller
         $clienteMembresia=DetalleMembresiaCliente::create($request->all());
         $clienteMembresia->toArray();
         return response()->json(['responseData'=>$cliente]);
+      }
+
+      public function pdf(){
+        
+        $pdf = PDF::loadHtml('<h1>Test</h1>');
+        return $pdf->stream();
+
       }
 }
