@@ -83,13 +83,13 @@ class ClienteController extends Controller
                      '<a href="#" onClick="editaCliente('.$clientes->id.');" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>'.
                      '<a href="#" onClick="eliminaCliente('.$clientes->id.');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>'.
                      '<a href="#" onClick="agregaMembresia('.$clientes->id.');" class="btn btn-success btn-sm"><i class="fa fa-address-card" aria-hidden="true"></i></a>'.
-                     '<a href="#" target="_blank" class="btn btn-info btn-sm"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i></a>';
+                     '<a href="'.url("/clientePdf/".$clientes->id).'" target="_blank" class="btn btn-info btn-sm"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i></a>';
 
           }else{
            	 return '<a href="#" onClick="verCliente('.$clientes->id.');" class="btn btn-secondary btn-sm"><i class="fa fa-eye"></i></a>'.
                      '<a href="#" onClick="editaCliente('.$clientes->id.');" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>'.
                      '<a href="#" onClick="agregaMembresia('.$clientes->id.');" class="btn btn-success btn-sm"><i class="fa fa-address-card" aria-hidden="true"></i></i></a>'.
-                     '<a href="#" target="_blank" class="btn btn-info btn-sm"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i></a>';
+                     '<a href="'.url("/clientePdf/".$clientes->id).'" target="_blank" class="btn btn-info btn-sm"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i></a>';
            }
            })
 
@@ -133,9 +133,11 @@ class ClienteController extends Controller
         return response()->json(['responseData'=>$cliente]);
       }
 
-      public function pdf(){
-        
-        $pdf = PDF::loadHtml('<h1>Test</h1>');
+      public function pdf($id){
+
+        $clientes = Clientes::find($id);
+
+        $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes]);;
         return $pdf->stream();
 
       }

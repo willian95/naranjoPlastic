@@ -193,7 +193,8 @@ $('#addCliente').click(function() {
     limpiarCheckbox();
     $('#imagenFile').attr('src', '/img/avatar.png');
 
-    //$(".viewClient").attr('readonly', true)
+    $(".viewClient").attr('readonly', false)
+    $(".viewClient").attr('disabled', false)
 
     $('#modalCliente').modal({
       backdrop: 'static'

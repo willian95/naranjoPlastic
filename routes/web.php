@@ -44,7 +44,7 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('editarUser', 'ClienteController@editarUser');
     Route::get('buscarCliente', 'ClienteController@muestraCliente');
     Route::post('guardarCliente','ClienteController@agregaCliente');
-    Route::get('clientePdf', 'ClienteController@pdf');
+    Route::get('clientePdf/{id}', 'ClienteController@pdf');
 
     //Productos
     Route::get('CargaProductos','ProductosController@CargaProductos');
