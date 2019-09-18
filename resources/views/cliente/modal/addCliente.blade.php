@@ -41,12 +41,14 @@
                       </div>--}}
 
                 <div class="col-md-6">
-                  <label for="example-text-input">Nombres / first & Middle Name *</label>
+                  <label for="example-text-input">Nombre / first Name *</label>
                   <input class="form-control form-control-sm disableBtn viewClient" type="text" placeholder="Nombre" id="nombreCliente">
                   <label for="example-text-input" >Apellidos / Last Name *</label>
                   <input class="form-control form-control-sm disableBtn viewClient" type="text" placeholder="Apellido" id="apellido1Cliente">
                 </div>
                 <div class="col-md-6">
+                  <label for="example-text-input">Segundo Nombre / Middle Name *</label>
+                  <input class="form-control form-control-sm disableBtn viewClient" type="text" placeholder="Segundo nombre" id="segundoNombreCliente">
                   <label for="example-text-input">Fecha de Nacimiento / Date of Birth *</label>
                     <input class="form-control form-control-sm disableBtn viewClient" type="date" id="fechaNacimiento">
                 </div>
@@ -69,6 +71,19 @@
                 </div>
 
                 <div class="col-md-6">
+                    <label for="example-text-input">Tipo de Sangre / Blood Type</label>
+                      <select class="form-control form-control-sm disableBtn viewClient" id="tipoSangre">
+                        <option value="O positivo">O positivo</option>
+                        <option value="A negativo">A negativo</option>
+                        <option value="A positivo">A positivo</option>
+                        <option value="B negativo">B negativo</option>
+                        <option value="B positivo">B positivo</option>
+                        <option value="AB negativo">AB negativo</option>
+                        <option value="AB positivo">AB positivo</option>
+                      </select>
+                  </div>
+
+                <div class="col-md-6">
                   <label for="example-text-input form-control-sm">Estado Civil / Marital Status*</label>
                     <select class="form-control disableBtn viewClient" id="edoCivil">
                       <option></option>
@@ -76,6 +91,7 @@
                       <option value="2">Casado (a)</option>
                       <option value="3">Viudo (a)</option>
                       <option value="4">Divorciado (a)</option>
+                      <option value="5">Unión libre</option>
                     </select>
                 </div>
 
@@ -148,9 +164,27 @@
                   <input type="text" id="codigo-postal" class="form-control viewClient">
                 </div>
                 <div class="col-md-6">
-                  <label for="example-text-input">¿Cómo se enteró de nosotros? / How did you know about us?</label>
-                  <input type="text" id="entero-nosotros" class="form-control viewClient">
+                    <label for="example-text-input">Pase Médico / Medical Pass Placas / Plate Number:</label>
+                    <input type="text" id="paseMedico" class="form-control viewClient">
                 </div>
+                <div class="col-md-12">
+                  <label for="example-text-input">¿Cómo se enteró de nosotros? / How did you know about us?</label>
+                  <select class="form-control form-control-sm disableBtn viewClient" id="entero-nosotros">
+                      <option></option>
+                      <option value="Amigo / Friend">Amigo / Friend</option>
+                      <option value="Internet">Internet</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="example-text-input">Especifique / Specify</label>
+                  <textarea class="form-control viewClient" id="especifiqueEnteroNosotros" rows="5"></textarea>
+                  
+                </div>
+                <div class="col-md-12">
+                    <label for="example-text-input">Aseguradora / Financial AID</label>
+                    <input class="form-control viewClient" id="aseguradora">
+      
+                  </div>
                 <div class="col-md-6">
                   <label for="example-text-input">¿Cirugías plásticas previas? / Previous Plastic Surgeries</label>
                   <input type="text" id="cirugias-previas" class="form-control viewClient">
@@ -205,6 +239,29 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header Aqua">Consulta de primera vez</div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="example-text-input">Diagnóstico pre-operatorio</label>
+                          <textarea class="form-control form-control-sm disableBtn viewClient" id="diagnosticoPreOperatorio" rows="5"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="example-text-input">Procedimiento quirurgico</label>
+                          <textarea class="form-control form-control-sm disableBtn viewClient" id="procedimientoQuirurgico" rows="5"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="example-text-input">Cuidados y plan terapeutico pre-quirurgico</label>
+                          <textarea class="form-control form-control-sm disableBtn viewClient" id="cuidadoTerapeutico" rows="5"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
       </div class="modal-footer">
         <button class="btn btn-GrisOscuro float-right" id="generalContinuar">Continuar</button>
       </div>
@@ -223,26 +280,87 @@
                         <input type="text" id="nombre_seccion2" class="form-control viewClient">
                       </div>
                       <div class="col-md-6">
-                        <label for="example-text-input">Lugar nacimiento</label>
-                        <input type="text" id="lugar_nacimiento_seccion2" class="form-control viewClient">
+                        <label for="example-text-input">Teléfono</label>
+                        <input type="text" id="telefono_seccion2" class="form-control viewClient">
                       </div>
                       <div class="col-md-6">
                         <label for="example-text-input">Edad</label>
                         <input type="text" id="edad_seccion2" class="form-control viewClient">
                       </div>
+
                       <div class="col-md-6">
-                        <label for="example-text-input">Teléfono</label>
-                        <input type="text" id="telefono_seccion2" class="form-control viewClient">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="example-text-input">Sexo</label>
-                          <select class="form-control form-control-sm disableBtn viewClient" id="sexo_seccion2">
+                          <label for="example-text-input form-control-sm">Estado Civil / Marital Status*</label>
+                          <select class="form-control disableBtn viewClient" id="edoCivil_seccion2">
                             <option></option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
+                            <option value="1">Soltero (a)</option>
+                            <option value="2">Casado (a)</option>
+                            <option value="3">Viudo (a)</option>
+                            <option value="4">Divorciado (a)</option>
+                            <option value="5">Unión libre</option>
                           </select>
                       </div>
                       <div class="col-md-6">
+                        <label for="example-text-input">Ocupación</label>
+                        <input type="text" id="ocupacion_seccion2" class="form-control viewClient">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="example-text-input">Religión</label>
+                        <input type="text" id="religion_seccion2" class="form-control viewClient">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="example-text-input">Originaria</label>
+                        <input type="text" id="originariaSeccion2" class="form-control viewClient">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="example-text-input">Reside</label>
+                        <input type="text" id="direccion_seccion2" class="form-control viewClient">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">AHF</label>
+                        <input type="text" id="ahfSeccion2" class="form-control viewClient">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">APNP</label>
+                        <textarea class="form-control viewClient" id="apnpSeccion2" rows="5"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">APP</label>
+                        <textarea class="form-control viewClient" id="appSeccion2" rows="5"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">AGO</label>
+                        <textarea class="form-control viewClient" id="agoSeccion2" rows="5"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">Padecimiento actual:</label>
+                        <textarea name="" id="padecimiento_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">Exploración Física:</label>
+                        <textarea name="" id="exploracionFisicaSeccion2" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">Laboratorio:</label>
+                        <textarea name="" id="laboratorioSeccion2" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">Idx:</label>
+                        <textarea name="" id="idxSeccion2" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="example-text-input">Plan:</label>
+                        <textarea name="" id="planSeccion2" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+
+                      
+                      {{--<div class="col-md-6">
+                        <label for="example-text-input">Lugar nacimiento</label>
+                        <input type="text" id="lugar_nacimiento_seccion2" class="form-control viewClient">
+                      </div>--}}
+                      
+                      
+                      
+                      {{--<div class="col-md-6">
                         <label for="example-text-input">Fecha de elaboración de la historia</label>
                         <input type="date" id="fecha_historia_seccion2" class="form-control viewClient">
                       </div>
@@ -250,18 +368,9 @@
                         <label for="example-text-input">Fecha de Nacimiento</label>
                           <input class="form-control form-control-sm disableBtn viewClient" type="date" id="fecha_nacimiento_seccion2">
                       </div>
-                      <div class="col-md-6">
-                        <label for="example-text-input">Religión</label>
-                        <input type="text" id="religion_seccion2" class="form-control viewClient">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="example-text-input">Dirección</label>
-                        <input type="text" id="direccion_seccion2" class="form-control viewClient">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="example-text-input">Ocupación</label>
-                        <input type="text" id="ocupacion_seccion2" class="form-control viewClient">
-                      </div>
+                      
+                      
+                      
 
                     </div>
 
@@ -540,7 +649,7 @@
                         <label for="example-text-input">Motivo consulta:</label>
                         <textarea class="form-control viewClient" id="motivo_consulta_seccion2" rows="5"></textarea>
                      
-                      </div>
+                      </div>--}}
                       
 
                     </div>
@@ -558,18 +667,177 @@
             <div class="form-row">
               <div class="col-md-12">
                 <div class="card">
-                  <div class="card-header Aqua">Sección 3</div>
+                  <div class="card-header Aqua">Valoración Pre-anestesica</div>
                   <div class="card-body">
                     
                     <div class="row">
-                      <div class="col-md-12">
-                        <label for="example-text-input">Padecimiento actual:</label>
-                        <textarea name="" id="padecimiento_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      <div class="col-md-4">
+                        <label for="example-text-input">Peso:</label>
+                        <input name="" id="peso_seccion3"  class="form-control viewClient" />
                       </div>
-                      <div class="col-md-12">
-                        <label for="example-text-input">Sintomas Generales:</label>
-                        <textarea name="" id="sintomas_generales_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      <div class="col-md-4">
+                        <label for="example-text-input">Talla:</label>
+                        <input name="" id="talla_seccion3" class="form-control viewClient" />
                       </div>
+                      <div class="col-md-4">
+                        <label for="example-text-input">T/A:</label>
+                        <input name="" id="ta_seccion3" class="form-control viewClient" />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="example-text-input">F.C:</label>
+                        <input name="" id="fc_seccion3"  class="form-control viewClient" />
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <label for="example-text-input">F.R:</label>
+                        <input name="" id="fr_seccion3"  class="form-control viewClient" />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="example-text-input">Temp:</label>
+                        <input name="" id="temp_seccion3" class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-6">
+                          <label for="example-text-input form-control-sm">Actividad física</label>
+                          <select class="form-control disableBtn viewClient" id="actividad_fisica_seccion3">
+                            <option></option>
+                            <option value="Poca">Poca</option>
+                            <option value="Moderada">Moderada</option>
+                            <option value="Activa">Activa</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-6">
+                          <label for="example-text-input form-control-sm">Puede subir escaleras</label>
+                          <select class="form-control disableBtn viewClient" id="subir_escaleras_seccion3">
+                            <option></option>
+                            <option value="Si">Sí</option>
+                            <option value="No">No</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-6">
+                          <label for="example-text-input form-control-sm">¿Cuántos pisos?</label>
+                          <select class="form-control disableBtn viewClient" id="cuantos_pisos_seccion3">
+                            <option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="mas">Más</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-12">
+                        <h3 class="text-center">Historia Familiar</h3>
+                      </div>
+
+                      <div class="col-md-12">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sangrar_excesivamente_seccion3">
+                            <label class="form-check-label" for="sangrar_excesivamente_seccion3">Alguien en su familia tiene tendencia a sangrar excesivamente</label>
+                          </div>
+
+                      </div>
+
+                      <div class="col-md-12">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="reacciones_anormales_seccion3">
+                            <label class="form-check-label" for="reacciones_anormales_seccion3">Alguien en su familia ha experimentado reacciones anormales con anestesia</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="fiebre_anestesia_seccion3">
+                            <label class="form-check-label" for="fiebre_anestesia_seccion3">Alguien de su familia a experimentado fiebre durante la anestesia</label>
+                          </div>
+
+                      </div>
+
+                      <div class="col-md-12">
+                        <h3 class="text-center">Historia Médica</h3>
+                      </div>
+
+                      <div class="col-md-12">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="alergico_medicamentos_seccion3">
+                            <label class="form-check-label" for="alergico_medicamentos_seccion3">Es alérgico a ciertos medicamentos</label>
+                          </div>
+
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="">Describa las reacciones</label>
+                        <textarea id="reacciones_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="alergico_cinta_adhesiva_seccion3">
+                            <label class="form-check-label" for="alergico_cinta_adhesiva_seccion3">Es alergico a cintas adhesivas</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="alergico_oido_seccion3">
+                            <label class="form-check-label" for="alergico_oido_seccion3">Es alergico al oído</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="bebidas_alcoholicas_seccion3">
+                            <label class="form-check-label" for="bebidas_alcoholicas_seccion3">Toma más de 2 o 3 bebidas alcohólicas por semana</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sufre_delirios_seccion3">
+                            <label class="form-check-label" for="sufre_delirios_seccion3">Sufre delirios</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="fuma_seccion3">
+                            <label class="form-check-label" for="fuma_seccion3">Fuma</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="transfusion_sanguinea_seccion3">
+                            <label class="form-check-label" for="transfusion_sanguinea_seccion3">Ha recibido transfusión sanguínea alguna vez</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="reaccion_transfusion_sanguinea_seccion3">
+                            <label class="form-check-label" for="reaccion_transfusion_sanguinea_seccion3">Ha presentado reacción durante la transfusión</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="">Describa la reacción:</label>
+                        <textarea id="reaccion_transfusion_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+
+                      
+                      
                       {{--<div class="col-md-12">
                         <h5>Interrogatorio por aparatos y sistemas</h5>
                       </div>
