@@ -19,9 +19,6 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#seccion3" role="tab">Sección 3</a>
           <li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#seccion4" role="tab">Sección 4</a>
-          <li>
         </ul>
 
         <div class="tab-content mt-2">
@@ -113,6 +110,11 @@
                       <option value="7">Post-Grado</option>
                     </select>
                 </div>
+
+                <div class="col-md-6">
+                  <label for="example-text-input">Ocupación / Occupation</label>
+                  <input class="form-control form-control-sm disableBtn viewClient" type="text" id="ocupacion_seccion2">
+                </div>
                  
                 <div class="col-md-6">
                   <label for="example-text-input">Teléfono celular / Cellphone number</label>
@@ -197,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          {{--<div class="col-md-12">
             <div class="card">
               <div class="card-header Aqua">Ocupación / Occupation</div>
               <div class="card-body">
@@ -217,7 +219,7 @@
               </div>
               </div>
             </div>
-          </div>
+          </div>--}}
           <div class="col-md-12">
             <div class="card">
               <div class="card-header Aqua">En Caso de Emergencia</div>
@@ -254,6 +256,10 @@
                           <textarea class="form-control form-control-sm disableBtn viewClient" id="procedimientoQuirurgico" rows="5"></textarea>
                         </div>
                         <div class="col-md-12">
+                          <label for="example-text-input">Plan Quirurgico</label>
+                          <textarea class="form-control form-control-sm disableBtn viewClient" id="planQuirurgico" rows="5"></textarea>
+                        </div>
+                        <div class="col-md-12">
                           <label for="example-text-input">Cuidados y plan terapeutico pre-quirurgico</label>
                           <textarea class="form-control form-control-sm disableBtn viewClient" id="cuidadoTerapeutico" rows="5"></textarea>
                         </div>
@@ -275,7 +281,7 @@
                       <div class="col-md-12">
                           <h3>Ficha de Identificación</h3>
                       </div>
-                      <div class="col-md-6">
+                      {{--<div class="col-md-6">
                         <label for="example-text-input">Nombre</label>
                         <input type="text" id="nombre_seccion2" class="form-control viewClient">
                       </div>
@@ -298,15 +304,15 @@
                             <option value="4">Divorciado (a)</option>
                             <option value="5">Unión libre</option>
                           </select>
-                      </div>
-                      <div class="col-md-6">
+                      </div>--}}
+                      {{--<div class="col-md-6">
                         <label for="example-text-input">Ocupación</label>
                         <input type="text" id="ocupacion_seccion2" class="form-control viewClient">
-                      </div>
-                      <div class="col-md-6">
+                      </div>--}}
+                      {{--<div class="col-md-6">
                         <label for="example-text-input">Religión</label>
                         <input type="text" id="religion_seccion2" class="form-control viewClient">
-                      </div>
+                      </div>--}}
                       <div class="col-md-6">
                         <label for="example-text-input">Originaria</label>
                         <input type="text" id="originariaSeccion2" class="form-control viewClient">
@@ -333,7 +339,7 @@
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Padecimiento actual:</label>
-                        <textarea name="" id="padecimiento_seccion3" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="padecimiento_seccion2" rows="5" class="form-control viewClient"></textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Exploración Física:</label>
@@ -752,7 +758,7 @@
 
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="fiebre_anestesia_seccion3">
-                            <label class="form-check-label" for="fiebre_anestesia_seccion3">Alguien de su familia a experimentado fiebre durante la anestesia</label>
+                            <label class="form-check-label" for="fiebre_anestesia_seccion3">Alguien de su familia ha experimentado fiebre durante la anestesia</label>
                           </div>
 
                       </div>
@@ -771,9 +777,16 @@
                       </div>
 
                       <div class="col-md-12">
+                        <label for="">¿Cuales?</label>
+                        <textarea id="cuales_medicamentos_seccion3" rows="5" class="form-control viewClient"></textarea>
+                      </div>
+
+                      <div class="col-md-12">
                         <label for="">Describa las reacciones</label>
                         <textarea id="reacciones_seccion3" rows="5" class="form-control viewClient"></textarea>
                       </div>
+
+                      
 
                       <div class="col-md-12">
                           <label for=""></label>
@@ -1037,8 +1050,8 @@
 
                       <div class="col-md-6">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="enfermedad_riñones_seccion3">
-                          <label class="form-check-label" for="enfermedad_riñones_seccion3">Enfermedad de los riñones</label>
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedad_rinones_seccion3">
+                          <label class="form-check-label" for="enfermedad_rinones_seccion3">Enfermedad de los riñones</label>
                         </div>
                       </div>
 
@@ -1281,10 +1294,10 @@
                       </div>
 
                       <div class="col-md-6">
-                        <div class="col-md-4">
+                        
                           <label for="example-text-input">¿Cuál?</label>
                           <input name="" id="cual_otro_medicamento_seccion3" class="form-control viewClient" />
-                        </div>
+                        
                       </div>
 
                       <div class="col-md-6">
@@ -1295,10 +1308,10 @@
                       </div>
 
                       <div class="col-md-6">
-                        <div class="col-md-4">
+                        
                           <label for="example-text-input">Dosis?</label>
                           <input name="" id="dosis_seccion3" class="form-control viewClient" />
-                        </div>
+                      
                       </div>
                       
                       {{--<div class="col-md-12">
@@ -1754,7 +1767,9 @@
 
                     </div>--}}
 
-                    <button style="margin-top: 10px;" class="btn btn-GrisOscuro float-right" id="seccion3Continuar">Continuar</button>
+                    {{--<button style="margin-top: 10px;" class="btn btn-GrisOscuro float-right" id="seccion3Continuar">Continuar</button>--}}
+                    <button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
                   </div>
                 </div>
@@ -1763,7 +1778,7 @@
           </div>
 
 
-          <div class="tab-pane fade" id="seccion4" role="tabpanel">
+          {{--<div class="tab-pane fade" id="seccion4" role="tabpanel">
               <div class="form-row">
                 <div class="col-md-12">
                   <div class="card">
@@ -1855,7 +1870,7 @@
               </div>
                 <button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            </div>
+            </div>--}}
 
 
         </div>
