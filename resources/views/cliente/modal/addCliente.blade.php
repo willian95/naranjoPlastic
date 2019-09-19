@@ -836,7 +836,470 @@
                         <textarea id="reaccion_transfusion_seccion3" rows="5" class="form-control viewClient"></textarea>
                       </div>
 
+                      <div class="col-md-12">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="embarazada_seccion3">
+                            <label class="form-check-label" for="embarazada_seccion3">Está embarazada</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="example-text-input">Fecha última menstruación:</label>
+                        <input type="date" name="" id="menstruacion_seccion3" class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-12">
+                        <h3>Padecimientos</h3>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="corazon_seccion3">
+                          <label class="form-check-label" for="corazon_seccion3">Enfermedad del corazón</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="angina_seccion3">
+                          <label class="form-check-label" for="angina_seccion3">Angina, dolor de pecho</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="adiccion_drogas_seccion3">
+                          <label class="form-check-label" for="adiccion_drogas_seccion3">Adicción a drogas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dolores_cabeza_seccion3">
+                          <label class="form-check-label" for="dolores_cabeza_seccion3">Frecuentes dolores de cabeza</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedades_mentales_seccion3">
+                          <label class="form-check-label" for="enfermedades_mentales_seccion3">Enfermedades Mentales</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="embolia_pulmonar_seccion3">
+                          <label class="form-check-label" for="embolia_pulmonar_seccion3">Embolia Pulmonar</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedades_articulares_seccion3">
+                          <label class="form-check-label" for="enfermedades_articulares_seccion3">Enfermedades Articulares</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="fracturas_seccion3">
+                          <label class="form-check-label" for="fracturas_seccion3">Fracturas Óseas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="problemas_columna_seccion3">
+                          <label class="form-check-label" for="problemas_columna_seccion3">Problemas de Columna</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="desmayos_seccion3">
+                          <label class="form-check-label" for="desmayos_seccion3">Desmayos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedades_pulmones_seccion3">
+                          <label class="form-check-label" for="enfermedades_pulmones_seccion3">Enfermedades de pulmones</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="asma_seccion3">
+                          <label class="form-check-label" for="asma_seccion3">Asma o dificultad respitatoria</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="tiroides_seccion3">
+                          <label class="form-check-label" for="tiroides_seccion3">Enfermedades de la tiroides</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="tuberculosis_seccion3">
+                          <label class="form-check-label" for="tuberculosis_seccion3">Tuberculosis</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedades_musculares_seccion3">
+                          <label class="form-check-label" for="enfermedades_musculares_seccion3">Enfermedades musculares</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="bronquitis_seccion3">
+                          <label class="form-check-label" for="bronquitis_seccion3">Bronquitis</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfisema_seccion3">
+                          <label class="form-check-label" for="enfisema_seccion3">Enfisema</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="embolia_cerebral_seccion3">
+                          <label class="form-check-label" for="embolia_cerebral_seccion3">Embolia Cerebral</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="varices_seccion3">
+                          <label class="form-check-label" for="varices_seccion3">Varices</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="estrabismo_seccion3">
+                          <label class="form-check-label" for="estrabismo_seccion3">Estrabismo</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="glaucoma_seccion3">
+                          <label class="form-check-label" for="glaucoma_seccion3">Glaucoma</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="hepatitis_seccion3">
+                          <label class="form-check-label" for="hepatitis_seccion3">Hepatitis</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="hepatitis_seccion3">
+                          <label class="form-check-label" for="presion_alta_seccion3">Presión Alta</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="diabetes_seccion3">
+                          <label class="form-check-label" for="diabetes_seccion3">Diabetes</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flebitis_seccion3">
+                          <label class="form-check-label" for="flebitis_seccion3">Flebitis</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="abstinencia_drogas_seccion3">
+                          <label class="form-check-label" for="abstinencia_drogas_seccion3">Abstinencia a drogas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="enfermedad_riñones_seccion3">
+                          <label class="form-check-label" for="enfermedad_riñones_seccion3">Enfermedad de los riñones</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="moretones_seccion3">
+                          <label class="form-check-label" for="moretones_seccion3">Tendencia a los moretones</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label for="example-text-input">¿Padece alergia a algún material, cinta micropore, latex, etc?</label>
+                        <input name="" id="fc_seccion3" type="text"  class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="example-text-input">¿En que fecha se hizo su último examen médico?</label>
+                        <input type="date" name="" id="fecha_ultimo_examen_seccion3" type="text"  class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="example-text-input">¿En qué fecha se realizó las ultimas radiografías de torax?</label>
+                        <input type="date" name="" id="fecha_ultima_radiografia_seccion3" type="text"  class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="example-text-input">¿En qué fecha se realizó las ultimas radiografías de torax?</label>
+                        <input type="date" name="" id="fecha_ultimo_electrocardiograma_seccion3" type="text"  class="form-control viewClient" />
+                      </div>
+
+                      <div class="col-md-12">
+                        <h3>Clase de anestesia que ha recibido</h3>
+                        <select class="form-control disableBtn viewClient" id="clase_anestesia_seccion3">
+                          <option></option>
+                          <option value="Raquia">Raquia</option>
+                          <option value="Local">Local</option>
+                          <option value="General">General</option>
+                          <option value="Bloqueo Epidural">Bloqueo Epidural</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="reacciones_anormales_seccion3">
+                          <label class="form-check-label" for="reacciones_anormales_seccion3">Experimenta reacciones anormales</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="fiebre_operaciones_previas_seccion3">
+                          <label class="form-check-label" for="fiebre_operaciones_previas_seccion3">Ha sufrido fiebre en operaciones previas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dientes_postizos_seccion3">
+                          <label class="form-check-label" for="dientes_postizos_seccion3">Usa dientes postizos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="faltan_dientes_seccion3">
+                          <label class="form-check-label" for="faltan_dientes_seccion3">Le faltan algunos dientes</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dientes_porcelana_seccion3">
+                          <label class="form-check-label" for="dientes_porcelana_seccion3">Están tapados sus dientes con porcelana permanente</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dientes_sueltos_seccion3">
+                          <label class="form-check-label" for="dientes_sueltos_seccion3">Tiene dientes sueltos o rotos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dificulta_mover_boca_seccion3">
+                          <label class="form-check-label" for="dificulta_mover_boca_seccion3">Se le dificulta mover la boca o abrirla</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="lentes_contacto_seccion3">
+                          <label class="form-check-label" for="lentes_contacto_seccion3">Usa lentes de contacto</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="pestanas_seccion3">
+                          <label class="form-check-label" for="pestanas_seccion3">Usa pestañas postizas que estén adheridas a sus parpados</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ojo_artificial_seccion3">
+                          <label class="form-check-label" for="ojo_artificial_seccion3">Usa un ojo artificial</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defectos_mayores_seccion3">
+                          <label class="form-check-label" for="defectos_mayores_seccion3">Tiene defectos mayores o congénitos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <h3>Medicamentos que emplea usted actualmente</h3>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="aspirina_seccion3">
+                          <label class="form-check-label" for="aspirina_seccion3">Aspirina</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="oxigeno_seccion3">
+                          <label class="form-check-label" for="oxigeno_seccion3">Oxígeno</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="digitales_seccion3">
+                          <label class="form-check-label" for="digitales_seccion3">Digitales (para la palpitación)</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="lsd_seccion3">
+                          <label class="form-check-label" for="lsd_seccion3">LSD</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="quinidinas_seccion3">
+                          <label class="form-check-label" for="quinidinas_seccion3">Quinidinas</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="glaucoma_seccion3">
+                          <label class="form-check-label" for="glaucoma_seccion3">Gotas para galucoma</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="nitroglicerina_seccion3">
+                          <label class="form-check-label" for="nitroglicerina_seccion3">Nitroglicerina</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="pastillas_dormir_seccion3">
+                          <label class="form-check-label" for="pastillas_dormir_seccion3">Pastillas para dormir</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="medicamentos_presion_seccion3">
+                          <label class="form-check-label" for="medicamentos_presion_seccion3">Medicamentos para presión</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="narcoticos_seccion3">
+                          <label class="form-check-label" for="narcoticos_seccion3">Narcoticos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="diureticos_seccion3">
+                          <label class="form-check-label" for="diureticos_seccion3">Diureticos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="lasix_seccion3">
+                          <label class="form-check-label" for="lasix_seccion3">Lasix</label>
+                        </div>
+                      </div>
                       
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="anticoagulantes_seccion3">
+                          <label class="form-check-label" for="anticoagulantes_seccion3">Anticoagulantes</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="heparina_seccion3">
+                          <label class="form-check-label" for="heparina_seccion3">Heparina</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="medicamentos_diabetes_seccion3">
+                          <label class="form-check-label" for="medicamentos_diabetes_seccion3">Medicamentos para diabetes</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="otro_medicamento_seccion3">
+                          <label class="form-check-label" for="otro_medicamento_seccion3">Algún otro medicamento</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="tranquilizantes_seccion3">
+                          <label class="form-check-label" for="tranquilizantes_seccion3">Tranquilizantes</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="col-md-4">
+                          <label for="example-text-input">¿Cuál?</label>
+                          <input name="" id="cual_otro_medicamento_seccion3" class="form-control viewClient" />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="antidepresivos_seccion3">
+                          <label class="form-check-label" for="antidepresivos_seccion3">Antidepresivos</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="col-md-4">
+                          <label for="example-text-input">Dosis?</label>
+                          <input name="" id="dosis_seccion3" class="form-control viewClient" />
+                        </div>
+                      </div>
                       
                       {{--<div class="col-md-12">
                         <h5>Interrogatorio por aparatos y sistemas</h5>
@@ -865,7 +1328,7 @@
                           <label class="form-check-label" for="perdida_peso_seccion3">Perdida de peso</label>
                         </div>
                       </div>--}}
-                      <div class="col-md-12">
+                      {{--<div class="col-md-12">
                         <h3>Interrogatorio por aparatos y sistemas</h3>
                         <h5>Respiratorio</h5>
                       </div>
@@ -1289,7 +1752,7 @@
                         <input class="form-control viewClient" type="text" value="" id="otros_seccion3">
                       </div>
 
-                    </div>
+                    </div>--}}
 
                     <button style="margin-top: 10px;" class="btn btn-GrisOscuro float-right" id="seccion3Continuar">Continuar</button>
 
