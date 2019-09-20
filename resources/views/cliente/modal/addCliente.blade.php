@@ -1022,7 +1022,7 @@
 
                       <div class="col-md-6">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="hepatitis_seccion3">
+                          <input class="form-check-input" type="checkbox" value="" id="presion_alta_seccion3">
                           <label class="form-check-label" for="presion_alta_seccion3">Presión Alta</label>
                         </div>
                       </div>
@@ -1062,12 +1062,12 @@
                         </div>
                       </div>
 
-                      <div class="col-md-4">
+                      <div class="col-md-12">
                         <label for="example-text-input">¿Padece alergia a algún material, cinta micropore, latex, etc?</label>
                         <input name="" id="fc_seccion3" type="text"  class="form-control viewClient" />
                       </div>
 
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         <label for="example-text-input">¿En que fecha se hizo su último examen médico?</label>
                         <input type="date" name="" id="fecha_ultimo_examen_seccion3" type="text"  class="form-control viewClient" />
                       </div>
@@ -1095,8 +1095,8 @@
 
                       <div class="col-md-6">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="reacciones_anormales_seccion3">
-                          <label class="form-check-label" for="reacciones_anormales_seccion3">Experimenta reacciones anormales</label>
+                          <input class="form-check-input" type="checkbox" value="" id="reacciones_anormales_anestesia_seccion3">
+                          <label class="form-check-label" for="reacciones_anormales_anestesia_seccion3">Experimenta reacciones anormales</label>
                         </div>
                       </div>
 
@@ -1211,8 +1211,8 @@
 
                       <div class="col-md-6">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="glaucoma_seccion3">
-                          <label class="form-check-label" for="glaucoma_seccion3">Gotas para galucoma</label>
+                          <input class="form-check-input" type="checkbox" value="" id="gotas_glaucoma_seccion3">
+                          <label class="form-check-label" for="gotas_glaucoma_seccion3">Gotas para galucoma</label>
                         </div>
                       </div>
 
