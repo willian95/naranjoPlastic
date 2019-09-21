@@ -815,6 +815,14 @@
                       <div class="col-md-12">
                           <label for=""></label>
                           <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="abstenido_bebidas_alcoholicas_seccion3">
+                            <label class="form-check-label" for="abstenido_bebidas_alcoholicas_seccion3">Se ha abstenido de tomar bebidas alcohólicas</label>
+                          </div>
+                      </div>
+
+                      <div class="col-md-12">
+                          <label for=""></label>
+                          <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="sufre_delirios_seccion3">
                             <label class="form-check-label" for="sufre_delirios_seccion3">Sufre delirios</label>
                           </div>
@@ -1064,7 +1072,7 @@
 
                       <div class="col-md-12">
                         <label for="example-text-input">¿Padece alergia a algún material, cinta micropore, latex, etc?</label>
-                        <input name="" id="fc_seccion3" type="text"  class="form-control viewClient" />
+                        <input name="" id="padece_alergia_material_seccion3" type="text"  class="form-control viewClient" />
                       </div>
 
                       <div class="col-md-12">

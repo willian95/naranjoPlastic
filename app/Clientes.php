@@ -77,6 +77,7 @@ class Clientes extends Model
     'alergico_cinta_adhesiva_seccion3',
     'alergico_oido_seccion3',
     'bebidas_alcoholicas_seccion3',
+    'abstenido_bebidas_alcoholicas_seccion3',
     'sufre_delirios_seccion3',
     'fuma_seccion3',
     'transfusion_sanguinea_seccion3',
@@ -147,7 +148,8 @@ class Clientes extends Model
     'cual_otro_medicamento_seccion3',
     'antidepresivos_seccion3',
     'dosis_seccion3',
-    'gotas_glaucoma_seccion3'
+    'gotas_glaucoma_seccion3',
+    'padece_alergia_material_seccion3'
     
 
     ];

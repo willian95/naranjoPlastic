@@ -402,6 +402,7 @@ function verCliente(id){
     data.responseData.alergico_cinta_adhesiva_seccion3!=0 ? $('#alergico_cinta_adhesiva_seccion3').prop('checked',true) : 0;
     data.responseData.alergico_oido_seccion3!=0 ? $('#alergico_oido_seccion3').prop('checked',true) : 0;
     data.responseData.bebidas_alcoholicas_seccion3!=0 ? $('#bebidas_alcoholicas_seccion3').prop('checked',true) : 0;
+    data.responseData.abstenido_bebidas_alcoholicas_seccion3!=0 ? $('#abstenido_bebidas_alcoholicas_seccion3').prop('checked',true) : 0;
     data.responseData.sufre_delirios_seccion3!=0 ? $('#sufre_delirios_seccion3').prop('checked',true) : 0;
     data.responseData.fuma_seccion3!=0 ? $('#fuma_seccion3').prop('checked',true) : 0;
     data.responseData.transfusion_sanguinea_seccion3!=0 ? $('#transfusion_sanguinea_seccion3').prop('checked',true) : 0;
@@ -412,6 +413,8 @@ function verCliente(id){
     data.responseData.embarazada_seccion3!=0 ? $('#embarazada_seccion3').prop('checked',true) : 0;
     
     $('#menstruacion_seccion3').val(data.responseData.menstruacion_seccion3),
+
+    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3),
 
     data.responseData.corazon_seccion3!=0 ? $('#corazon_seccion3').prop('checked',true) : 0;
     data.responseData.angina_seccion3!=0 ? $('#angina_seccion3').prop('checked',true) : 0;
@@ -931,6 +934,7 @@ function editaCliente(id){
     data.responseData.alergico_cinta_adhesiva_seccion3!=0 ? $('#alergico_cinta_adhesiva_seccion3').prop('checked',true) : 0;
     data.responseData.alergico_oido_seccion3!=0 ? $('#alergico_oido_seccion3').prop('checked',true) : 0;
     data.responseData.bebidas_alcoholicas_seccion3!=0 ? $('#bebidas_alcoholicas_seccion3').prop('checked',true) : 0;
+    data.responseData.abstenido_bebidas_alcoholicas_seccion3!=0 ? $('#abstenido_bebidas_alcoholicas_seccion3').prop('checked',true) : 0;
     data.responseData.sufre_delirios_seccion3!=0 ? $('#sufre_delirios_seccion3').prop('checked',true) : 0;
     data.responseData.fuma_seccion3!=0 ? $('#fuma_seccion3').prop('checked',true) : 0;
     data.responseData.transfusion_sanguinea_seccion3!=0 ? $('#transfusion_sanguinea_seccion3').prop('checked',true) : 0;
@@ -1216,6 +1220,7 @@ function guardarCliente(){
     alergico_cinta_adhesiva_seccion3: (($('#alergico_cinta_adhesiva_seccion3:checked').val()) !=null ? 1 : 0),
     alergico_oido_seccion3: (($('#alergico_oido_seccion3:checked').val()) !=null ? 1 : 0),
     bebidas_alcoholicas_seccion3: (($('#bebidas_alcoholicas_seccion3:checked').val()) !=null ? 1 : 0),
+    abstenido_bebidas_alcoholicas_seccion3: (($('#abstenido_bebidas_alcoholicas_seccion3:checked').val()) !=null ? 1 : 0),
     sufre_delirios_seccion3: (($('#sufre_delirios_seccion3:checked').val()) !=null ? 1 : 0),
     fuma_seccion3: (($('#fuma_seccion3:checked').val()) !=null ? 1 : 0),
     transfusion_sanguinea_seccion3: (($('#transfusion_sanguinea_seccion3:checked').val()) !=null ? 1 : 0),
@@ -1287,8 +1292,8 @@ function guardarCliente(){
     antidepresivos_seccion3: (($('#antidepresivos_seccion3:checked').val()) !=null ? 1 : 0),
     dosis_seccion3:$("#dosis_seccion3").val(),
     gotas_glaucoma_seccion3: (($('#gotas_glaucoma_seccion3:checked').val()) !=null ? 1 : 0),
-    
-
+    padece_alergia_material_seccion3: $("#padece_alergia_material_seccion3").val(),
+  
 
     /*problemaRespirarSeccion3: (($('#problema_respirar_seccion3:checked').val()) !=null ? 1 : 0),
     sonidosRespirarSeccion3: (($('#sonidos_respirar_seccion3:checked').val()) !=null ? 1 : 0),
