@@ -583,11 +583,7 @@
             </tr>
             <tr>
                 <td colspan="12">
-                    @if($clientes->cuales_medicamentos_seccion3 == '1')
-                        Sí
-                    @else
-                        No
-                    @endif
+                    {{ $clientes->cuales_medicamentos_seccion3 }}
                 </td>
             </tr>
 
