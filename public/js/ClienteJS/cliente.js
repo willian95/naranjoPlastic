@@ -603,6 +603,7 @@ function actualizaPaciente(id){
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),
     planQuirurgico:$("#planQuirurgico").val(),
     cuidadoTerapeutico:$("#cuidadoTerapeutico").val(),
+    paseMedico:$('#paseMedico').val(),
 
     //Seccion 2
 
