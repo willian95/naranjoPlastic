@@ -11,13 +11,13 @@
       <div class="modal-body">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#seccion1" role="tab">Sección 1</a>
+            <a class="nav-link active" data-toggle="tab" href="#seccion1" role="tab">Ficha Clínica</a>
           <li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#seccion2" role="tab">Sección 2</a>
+            <a class="nav-link" data-toggle="tab" href="#seccion2" role="tab">Historia Clínica</a>
           <li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#seccion3" role="tab">Sección 3</a>
+            <a class="nav-link" data-toggle="tab" href="#seccion3" role="tab">Valoración Pre-Anestesica</a>
           <li>
         </ul>
 
@@ -27,7 +27,7 @@
 
           <div class="col-md-12">
           <div class="card">
-            <div class="card-header Aqua">Información General</div>
+            <div class="card-header Aqua">Ficha Clínica</div>
               <div class="card-body">
                 <div class="row">
                   {{--<div class="col-sm-6">
@@ -220,7 +220,7 @@
               </div>
             </div>
           </div>--}}
-          <div class="col-md-12">
+          {{--<div class="col-md-12">
             <div class="card">
               <div class="card-header Aqua">En Caso de Emergencia</div>
                 <div class="card-body">
@@ -240,7 +240,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>--}}
 
             <div class="col-md-12">
                 <div class="card">
@@ -275,7 +275,7 @@
             <div class="form-row">
               <div class="col-md-12">
                 <div class="card">
-                  <div class="card-header Aqua">Sección 2</div>
+                  <div class="card-header Aqua">Historia Clínica</div>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-12">
@@ -323,7 +323,7 @@
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">AHF</label>
-                        <input type="text" id="ahfSeccion2" class="form-control viewClient">
+                        <input type="text" id="ahfSeccion2" class="form-control">
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">APNP</label>
@@ -331,31 +331,43 @@
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">APP</label>
-                        <textarea class="form-control viewClient" id="appSeccion2" rows="5"></textarea>
+                        <textarea class="form-control viewClient" id="appSeccion2" rows="5">Diabetes Mellitus Gestacional de 1 mes de diagnóstico, niega alergias, cirugías niega Qx, niega Transfusiones, niega traumatismos, niega infectocontagiosos.</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">AGO</label>
-                        <textarea class="form-control viewClient" id="agoSeccion2" rows="5"></textarea>
+                        <textarea class="form-control viewClient" id="agoSeccion2" rows="5">Menarca 13 años, Ciclos menstruales regulares 30 x 4, IVSA 17 años, Compañeros sexuales 2, Gesta 5, Para 3, P1 con peso de 4200gr en 2003, P2 con peso de 2500gr en 2009, P3 4600gr en 2010. Aborto 1, Cesárea 0. Método de planificación familiar: Hormonal oral. FUM 8 agosto 2015, FPP: 15 de mayo 2015.</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Padecimiento actual:</label>
-                        <textarea name="" id="padecimiento_seccion2" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="padecimiento_seccion2" rows="5" class="form-control viewClient">Paciente femenino de 41 años de edad, cursando su cuarto embarazo de 32 SDG, enviada de la consulta de Ginecología y obstétrica por ser portadora de DMG</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Exploración Física:</label>
-                        <textarea name="" id="exploracionFisicaSeccion2" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="exploracionFisicaSeccion2" rows="5" class="form-control viewClient">TA: 100/60 mmHg, FC 84 1pm, FR: 20 rpm. Talla: 1.49 mts, Peso: 53 kgs.
+                          Consciente, alerta, orientada en 3 esferas. Adecuada coloración de piel y tegumentos, mucosas normohidratadas. Cuello cilíndrico, con presencia de acantosis nigricans leve, sin adenomegalias. Área pulmonar con murmullo vesicular presente, sin sibilancias ni estertores. Ruidos Cardiacos rítmicos de buen tono e intensidad, sin otros fenómenos agregados. Abdomen globoso a expensas de útero gestante, sin dolor a la palpación. Extremidades integras, no edema, reflejos osteotendinosos normales.</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Laboratorio:</label>
-                        <textarea name="" id="laboratorioSeccion2" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="laboratorioSeccion2" rows="5" class="form-control viewClient">02-03-16
+                          glucosa 93mgs. Tamiz glucosa a los 60min. 216 mgs/dl
+                          Ego: proteínas negativo, leucos 7-8x c., celulas epiteliales +++, hifas ++.
+                          17-03-16
+                          Glucosa 81mgs. Glucosa posprandial a los 120min. 132 mgs.</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Idx:</label>
-                        <textarea name="" id="idxSeccion2" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="idxSeccion2" rows="5" class="form-control viewClient">Femenino de 41 años de edad. Multigesta, con dos procutos macrosomicos en embarazos anteriores, no atendida en este lugar, sin dx. De Diabetes en ese momento. Ahora lo encontramos positiva con TAMIZ y se inició tratamiento con dieta y metformina 1x2. Embarazo de 32 SDG</textarea>
                       </div>
                       <div class="col-md-12">
                         <label for="example-text-input">Plan:</label>
-                        <textarea name="" id="planSeccion2" rows="5" class="form-control viewClient"></textarea>
+                        <textarea name="" id="planSeccion2" rows="5" class="form-control viewClient">    • Dieta para Diabético de 1800 kcal con tres colaciones
+                          • Laboratorio glucosa ayuno y posprandial, Hb glucosilada, ego. Hormonas tiroideas.
+                          • Aumtomonitoreo capilar de acuerdo a metas terapéuticas ideales.
+                          • Medicamentos: 
+                      Laboratorio: Glucosa en ayuno, Glucosa posprandial 60 min, Hemoglobina Glucosilada, EGO. BHC.
+                      Cita en 2 semanas
+                      Cita abierta a urgencias, se dan datos de alarma.
+                      Pronostico: Reservado para el binomio</textarea>
                       </div>
 
                       
