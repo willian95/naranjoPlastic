@@ -83,6 +83,8 @@
                         Viudo
                     @elseif($clientes->edoCivil == 4)
                         Divorciado
+                    @elseif($clientes->edoCivil == 5)
+                        Unión libre
                     @endif
                 </td>
                 <td colspan="4">
@@ -147,7 +149,7 @@
                     {{ $clientes->telCasa }}
                 </td>
                 <td colspan="6">
-                    {{ $clientes->celCliente }}
+                    {{ $clientes->celular }}
                 </td>
             </tr>
             <tr>
@@ -266,7 +268,17 @@
                     {{ $clientes->edad }}
                 </td>
                 <td colspan="6">
-                    {{ $clientes->edoCivil }}
+                    @if($clientes->edoCivil == 1)
+                        Soltero
+                    @elseif($clientes->edoCivil == 2)
+                        Casado
+                    @elseif($clientes->edoCivil == 3)
+                        Viudo
+                    @elseif($clientes->edoCivil == 4)
+                        Divorciado
+                    @elseif($clientes->edoCivil == 5)
+                        Unión libre
+                    @endif
                 </td>
             </tr>
 
@@ -299,7 +311,7 @@
 
             <tr>
                 <td colspan="6">
-                    {{ $clientes->originariaSecion2 }}
+                    {{ $clientes->originariaSeccion2 }}
                 </td>
                 <td colspan="6">
                     {{ $clientes->resideSeccion2 }}
@@ -742,7 +754,7 @@
                     Enfermedad del Corazón:
                 </td>
                 <td colspan="2">
-                    @if($clientes->menstruacion_seccion3 == '1')
+                    @if($clientes->corazon_seccion3 == '1')
                         Sí
                     @else
                         No
@@ -926,7 +938,7 @@
                         Fracturas óseas
                 </td>
                 <td colspan="2">
-                    @if($clientes->fracturas_oseas_seccion3 == '1')
+                    @if($clientes->fracturas_seccion3 == '1')
                         Sí
                     @else
                         No
@@ -949,7 +961,7 @@
                         Problemas de columna
                 </td>
                 <td colspan="2">
-                    @if($clientes->problema_columna_seccion3 == '1')
+                    @if($clientes->problemas_columna_seccion3 == '1')
                         Sí
                     @else
                         No

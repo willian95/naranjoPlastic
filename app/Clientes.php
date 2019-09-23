@@ -42,6 +42,7 @@ class Clientes extends Model
     'procedimientoQuirurgico',
     'planQuirurgico',
     'cuidadoTerapeutico',
+    'paseMedico',
 
     //Seccion 2
 
