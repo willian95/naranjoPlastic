@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td colspan="12">
-                    <h2 class="text-center">Información General</h2>
+                    <h3 class="text-center">Información General</h3>
                 </td>
             </tr>
             <tr>
@@ -264,14 +264,14 @@
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
                         
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro:</p>
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro:</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="12">
-                    <h2 class="text-center">Historia Clínica</h2>
+                    <h3 class="text-center">Historia Clínica</h3>
                 </td>
             </tr>
 
@@ -443,7 +443,7 @@
 
         <div style="page-break-before:always">&nbsp;</div>
 
-        <table>
+        <table class="table">
             <tbody>
                 <tr>
                     <td colspan="4">
@@ -456,13 +456,13 @@
                         <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
                         <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
                             
-                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro:</p>
-                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro:</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
                     </td>
                 </tr>
             <tr>
                 <td colspan="12">
-                    <h2 class="text-center">Valoración Pre-Anestesica</h2>
+                    <h3 class="text-center">Valoración Pre-Anestesica</h3>
                 </td>
             </tr>
 
@@ -558,7 +558,7 @@
 
             <tr>
                 <td colspan="12" style="border: 1px solid; padding: 0px;">
-                    <h3 class="text-center">Historia Familiar</h3>
+                    <h4 class="text-center">Historia Familiar</h4>
                 </td>
             </tr>
 
@@ -601,7 +601,7 @@
 
             <tr>
                 <td colspan="12" style="border: 1px solid; padding: 0px;">
-                    <h3 class="text-center">Historia Médica</h3>
+                    <h4 class="text-center">Historia Médica</h4>
                 </td>
             </tr>
 
@@ -770,10 +770,31 @@
                     {{ $clientes->menstruacion_seccion3 }} 
                 </td>
             </tr>
+            </tbody>
+        </table>
 
+        <div style="page-break-before:always">&nbsp;</div>
+
+        <table class="table">
+            <tbody>
+                    <tr>
+                            <td colspan="4">
+                                <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                            </td>
+                            <td colspan="8">
+                                <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                                    
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px; margin-bottom: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                            </td>
+                        </tr>
             <tr>
                 <td colspan="12" >
-                    <h3 class="text-center">Padecimientos</h3>
+                    <h4 class="text-center">Padecimientos</h4>
                 </td>
             </tr>
 
@@ -1149,7 +1170,7 @@
 
             <tr>
                 <td colspan="12" style="border: 1px solid; padding: 0px;">
-                    <h3 class="text-center">Clase de Anestesia que ha recibido</h3>
+                    <h4 class="text-center">Clase de Anestesia que ha recibido</h4>
                 </td>
             </tr>
 
@@ -1312,10 +1333,33 @@
                     @endif
                 </td>
             </tr>
+        
+            </tbody>
+        </table>
+
+        <div style="page-break-before:always">&nbsp;</div>
+
+        <table class="table">
+            <tbody>
+                    <tr>
+                            <td colspan="4">
+                                <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                            </td>
+                            <td colspan="8">
+                                <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                                    
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                            </td>
+                        </tr>
 
             <tr>
                 <td colspan="12" style="border: 1px solid; padding: 0px;">
-                    <h3 class="text-center">Medicamentos que emplea usted actualmente</h3>
+                    <h4 class="text-center">Medicamentos que emplea usted actualmente</h4>
                 </td>
             </tr>
 
