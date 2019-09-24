@@ -11,9 +11,6 @@
 </head>
 <body>
 
-
-    
-
     <table class="table">
         <tbody>
             <tr>

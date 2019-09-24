@@ -4,6 +4,17 @@
    Catálogo de Clientes - Naranjo Plastic | CPTV
 @endsection
 @section('css')
+
+<style>
+    @media (min-width: 992px){
+        .modal-lg {
+            max-width: 1200px;
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 <!-- Fine Uploader CSS -->
 <link href="js/fine-uploader/fine-uploader.css" rel="stylesheet">
 
@@ -88,6 +99,7 @@
 </script>
 
 @endsection
+
 @section('content')
 <div class="card">
  <div class="card-header"><h4>Catálogo de Clientes</h4> </div>
@@ -146,4 +158,11 @@
 <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script src="js/ClienteJS/cliente.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( ".datepicker" ).datepicker();
+    } );
+</script>
 @endsection

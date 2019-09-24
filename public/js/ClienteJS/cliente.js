@@ -363,9 +363,9 @@ function verCliente(id){
         $('#puestoCliente').val(data.responseData.puesto)
         $('#companiaCliente').val(data.responseData.compania)
         $('#telCompania').val(data.responseData.telCompania)
-        $('#nombreEmergencia').val(data.responseData.emerNombre)
+        /*$('#nombreEmergencia').val(data.responseData.emerNombre)
         $('#relacionEmergencia').val(data.responseData.emerRelacion)
-        $('#telEmegencia').val(data.responseData.emerTel)
+        $('#telEmegencia').val(data.responseData.emerTel)*/
         $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2)
         $("#diagnosticoPreOperatorio").val(data.responseData.diagnosticoPreOperatorio)
         $("#procedimientoQuirurgico").val(data.responseData.procedimientoQuirurgico)
@@ -614,9 +614,9 @@ function actualizaPaciente(id){
     tipoSangre:$("#tipoSangre").val(),
     cirugiasPrevias:$('#cirugias-previas').val(),
     otrasCirugias:$('#otras-cirugias').val(),
-    emerNombre:$('#nombreEmergencia').val().toUpperCase(),
+    /*emerNombre:$('#nombreEmergencia').val().toUpperCase(),
     emerRelacion:$('#relacionEmergencia').val().toUpperCase(),
-    emerTel:$('#telEmegencia').val(),
+    emerTel:$('#telEmegencia').val(),*/
     ocupacionSeccion2: $("#ocupacion_seccion2").val(),
     diagnosticoPreOperatorio:$("#diagnosticoPreOperatorio").val(),
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),
@@ -868,9 +868,9 @@ function editaCliente(id){
         $('#puestoCliente').val(data.responseData.puesto)
         $('#companiaCliente').val(data.responseData.compania)
         $('#telCompania').val(data.responseData.telCompania)
-        $('#nombreEmergencia').val(data.responseData.emerNombre)
+        /*$('#nombreEmergencia').val(data.responseData.emerNombre)
         $('#relacionEmergencia').val(data.responseData.emerRelacion)
-        $('#telEmegencia').val(data.responseData.emerTel)
+        $('#telEmegencia').val(data.responseData.emerTel)*/
         $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2)
         $("#diagnosticoPreOperatorio").val(data.responseData.diagnosticoPreOperatorio)
         $("#procedimientoQuirurgico").val(data.responseData.procedimientoQuirurgico)
@@ -1170,9 +1170,9 @@ function guardarCliente(){
     tipoSangre:$("#tipoSangre").val(),
     cirugiasPrevias:$('#cirugias-previas').val(),
     otrasCirugias:$('#otras-cirugias').val(),
-    emerNombre:$('#nombreEmergencia').val().toUpperCase(),
+    /*emerNombre:$('#nombreEmergencia').val().toUpperCase(),
     emerRelacion:$('#relacionEmergencia').val().toUpperCase(),
-    emerTel:$('#telEmegencia').val(),
+    emerTel:$('#telEmegencia').val(),*/
     ocupacionSeccion2: $("#ocupacion_seccion2").val(),
     diagnosticoPreOperatorio:$("#diagnosticoPreOperatorio").val(),
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),

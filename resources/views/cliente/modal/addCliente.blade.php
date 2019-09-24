@@ -47,7 +47,8 @@
                   <label for="example-text-input">Segundo Nombre / Middle Name *</label>
                   <input class="form-control form-control-sm disableBtn viewClient" type="text" placeholder="Segundo nombre" id="segundoNombreCliente">
                   <label for="example-text-input">Fecha de Nacimiento / Date of Birth *</label>
-                    <input class="form-control form-control-sm disableBtn viewClient" type="date" id="fechaNacimiento">
+                    {{--<input class="form-control form-control-sm disableBtn viewClient" type="date" id="fechaNacimiento">--}}
+                    <input type='text' class="datepicker viewClient" id="fechaNacimiento"/>
                 </div>
                 <div class="col-md-6">
                   <label for="example-text-input" >Lugar de Nacimiento / Hometown</label>
@@ -879,7 +880,8 @@
 
                       <div class="col-md-12">
                         <label for="example-text-input">Fecha última menstruación:</label>
-                        <input type="date" name="" id="menstruacion_seccion3" class="form-control viewClient" />
+                        <!--<input type="date" name="" id="" class="form-control viewClient" />-->
+                        <input type='text' class="datepicker viewClient" id="menstruacion_seccion3"/>
                       </div>
 
                       <div class="col-md-12">
@@ -1089,17 +1091,17 @@
 
                       <div class="col-md-12">
                         <label for="example-text-input">¿En que fecha se hizo su último examen médico?</label>
-                        <input type="date" name="" id="fecha_ultimo_examen_seccion3" type="text"  class="form-control viewClient" />
+                        <input type="text" name="" id="fecha_ultimo_examen_seccion3" type="text"  class="form-control viewClient datepicker" />
                       </div>
 
                       <div class="col-md-6">
                         <label for="example-text-input">¿En qué fecha se realizó las ultimas radiografías de torax?</label>
-                        <input type="date" name="" id="fecha_ultima_radiografia_seccion3" type="text"  class="form-control viewClient" />
+                        <input type="text" name="" id="fecha_ultima_radiografia_seccion3" type="text"  class="form-control viewClient datepicker" />
                       </div>
 
                       <div class="col-md-6">
-                        <label for="example-text-input">¿En qué fecha se realizó las ultimas radiografías de torax?</label>
-                        <input type="date" name="" id="fecha_ultimo_electrocardiograma_seccion3" type="text"  class="form-control viewClient" />
+                        <label for="example-text-input">¿En qué fecha se realizó el último electrocardiograma?</label>
+                        <input type="text" name="" id="fecha_ultimo_electrocardiograma_seccion3" type="text"  class="form-control viewClient datepicker" />
                       </div>
 
                       <div class="col-md-12">
