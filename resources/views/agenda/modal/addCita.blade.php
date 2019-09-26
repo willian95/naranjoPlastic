@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4">
               <label for="example-text-input">Fecha de Nacimiento *</label>
-                <input class="form-control form-control-sm disableBtn" type="date" id="fechaNacimiento">
+                <input class="form-control form-control-sm disableBtn" type="text" id="fechaNacimiento">
             </div>
             <div class="col-md-4">
               <label for="example-text-input form-control-sm">Estado Civil *</label>

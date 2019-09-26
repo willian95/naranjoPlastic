@@ -278,6 +278,24 @@ function limpiarCheckbox(){
     $('input').val('');
     $('select').val('');
     $('textarea').val('');
+
+    $("#ahfSeccion2").val("Interrogados y negados"),
+    $("#apnpSeccion2").val("Niega toxicomanías, verduras 7/7, frutas 7/7, carne roja 2/7, carnes blancas 437, lácteos 3/7, tortillas de maíz 3x2/7. Consumo de agua 1 litros. Habita en la Colonia 10 de mayo, calle Durango 460, Tijuana, habitan 2 personas, cuenta con 2 habitaciones, cocina fuera de los dormitorios, cuenta con todos los servicios, flora y fauna fuera de la casa. Inmunizaciones completas. Baño y cambio de ropa diario. Cepillado dental 2 veces al día. Caminata diarios durante 15 minutos."),
+    $("#appSeccion2").val("Diabetes Mellitus Gestacional de 1 mes de diagnóstico, niega alergias, cirugías niega Qx, niega Transfusiones, niega traumatismos, niega infectocontagiosos."),
+    $("#agoSeccion2").val("Menarca 13 años, Ciclos menstruales regulares 30 x 4, IVSA 17 años, Compañeros sexuales 2, Gesta 5, Para 3, P1 con peso de 4200gr en 2003, P2 con peso de 2500gr en 2009, P3 4600gr en 2010. Aborto 1, Cesárea 0. Método de planificación familiar: Hormonal oral. FUM 8 agosto 2015, FPP: 15 de mayo 2015."),
+    $("#padecimiento_seccion2").val("Paciente femenino de 41 años de edad, cursando su cuarto embarazo de 32 SDG, enviada de la consulta de Ginecología y obstétrica por ser portadora de DMG"),
+    $("#exploracionFisicaSeccion2").val("TA: 100/60 mmHg, FC 84 1pm, FR: 20 rpm. Talla: 1.49 mts, Peso: 53 kgs. Consciente, alerta, orientada en 3 esferas. Adecuada coloración de piel y tegumentos, mucosas normohidratadas. Cuello cilíndrico, con presencia de acantosis nigricans leve, sin adenomegalias. Área pulmonar con murmullo vesicular presente, sin sibilancias ni estertores. Ruidos Cardiacos rítmicos de buen tono e intensidad, sin otros fenómenos agregados. Abdomen globoso a expensas de útero gestante, sin dolor a la palpación. Extremidades integras, no edema, reflejos osteotendinosos normales."),
+    $("#laboratorioSeccion2").val("02-03-16 glucosa 93mgs. Tamiz glucosa a los 60min. 216 mgs/dl Ego: proteínas negativo, leucos 7-8x c., celulas epiteliales +++, hifas ++. 17-03-16 Glucosa 81mgs. Glucosa posprandial a los 120min. 132 mgs."),
+    $("#idxSeccion2").val("Femenino de 41 años de edad. Multigesta, con dos procutos macrosomicos en embarazos anteriores, no atendida en este lugar, sin dx. De Diabetes en ese momento. Ahora lo encontramos positiva con TAMIZ y se inició tratamiento con dieta y metformina 1x2. Embarazo de 32 SDG"),
+    $("#planSeccion2").val("Dieta para Diabético de 1800 kcal con tres colaciones\n"+
+"Laboratorio glucosa ayuno y posprandial, Hb glucosilada, ego. Hormonas tiroideas.\n"+
+"Aumtomonitoreo capilar de acuerdo a metas terapéuticas ideales.\n"+
+"Medicamentos:\n"+
+"Laboratorio: Glucosa en ayuno, Glucosa posprandial 60 min, Hemoglobina Glucosilada, EGO. BHC:\n"+
+"Cita en 2 semanas\n"+
+"Cita abierta a urgencias, se dan datos de alarma.\n"+
+"Pronostico: Reservado para el binomio")
+
 }
 
 function verCliente(id){
@@ -345,9 +363,9 @@ function verCliente(id){
         $('#puestoCliente').val(data.responseData.puesto)
         $('#companiaCliente').val(data.responseData.compania)
         $('#telCompania').val(data.responseData.telCompania)
-        $('#nombreEmergencia').val(data.responseData.emerNombre)
+        /*$('#nombreEmergencia').val(data.responseData.emerNombre)
         $('#relacionEmergencia').val(data.responseData.emerRelacion)
-        $('#telEmegencia').val(data.responseData.emerTel)
+        $('#telEmegencia').val(data.responseData.emerTel)*/
         $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2)
         $("#diagnosticoPreOperatorio").val(data.responseData.diagnosticoPreOperatorio)
         $("#procedimientoQuirurgico").val(data.responseData.procedimientoQuirurgico)
@@ -489,6 +507,7 @@ function verCliente(id){
     $("#dosis_seccion3").val(data.responseData.dosis_seccion3),
 
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
+    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3),
 
         $('#modalCliente').modal('show');
         /*console.log(data);
@@ -595,9 +614,9 @@ function actualizaPaciente(id){
     tipoSangre:$("#tipoSangre").val(),
     cirugiasPrevias:$('#cirugias-previas').val(),
     otrasCirugias:$('#otras-cirugias').val(),
-    emerNombre:$('#nombreEmergencia').val().toUpperCase(),
+    /*emerNombre:$('#nombreEmergencia').val().toUpperCase(),
     emerRelacion:$('#relacionEmergencia').val().toUpperCase(),
-    emerTel:$('#telEmegencia').val(),
+    emerTel:$('#telEmegencia').val(),*/
     ocupacionSeccion2: $("#ocupacion_seccion2").val(),
     diagnosticoPreOperatorio:$("#diagnosticoPreOperatorio").val(),
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),
@@ -849,9 +868,9 @@ function editaCliente(id){
         $('#puestoCliente').val(data.responseData.puesto)
         $('#companiaCliente').val(data.responseData.compania)
         $('#telCompania').val(data.responseData.telCompania)
-        $('#nombreEmergencia').val(data.responseData.emerNombre)
+        /*$('#nombreEmergencia').val(data.responseData.emerNombre)
         $('#relacionEmergencia').val(data.responseData.emerRelacion)
-        $('#telEmegencia').val(data.responseData.emerTel)
+        $('#telEmegencia').val(data.responseData.emerTel)*/
         $("#ocupacion_seccion2").val(data.responseData.ocupacionSeccion2)
         $("#diagnosticoPreOperatorio").val(data.responseData.diagnosticoPreOperatorio)
         $("#procedimientoQuirurgico").val(data.responseData.procedimientoQuirurgico)
@@ -991,6 +1010,7 @@ function editaCliente(id){
     $("#dosis_seccion3").val(data.responseData.dosis_seccion3),
 
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
+    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3),
 
         
 
@@ -1150,9 +1170,9 @@ function guardarCliente(){
     tipoSangre:$("#tipoSangre").val(),
     cirugiasPrevias:$('#cirugias-previas').val(),
     otrasCirugias:$('#otras-cirugias').val(),
-    emerNombre:$('#nombreEmergencia').val().toUpperCase(),
+    /*emerNombre:$('#nombreEmergencia').val().toUpperCase(),
     emerRelacion:$('#relacionEmergencia').val().toUpperCase(),
-    emerTel:$('#telEmegencia').val(),
+    emerTel:$('#telEmegencia').val(),*/
     ocupacionSeccion2: $("#ocupacion_seccion2").val(),
     diagnosticoPreOperatorio:$("#diagnosticoPreOperatorio").val(),
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),

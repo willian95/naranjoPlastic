@@ -55,7 +55,7 @@ class mailController extends Controller
 	<p  style=\"color:#ff7900;\"> <strong>Atención citas</strong><br>
 	Nuevas citas, cambio de citas, solamente por Teléfono <br>
 	Comunicarse directamente a Naranjo Plastic Surgery: <br>
-	Tel: (664) 634 63 08 o 634 63 09<br>
+	Tel. (664) 391 13 24 USA (619) 354 37 01<br>
 	<br><br>
 	
 	<strong style=\"color:#ff7900;\">Nuestra página y redes sociales:</strong> <br>
@@ -129,7 +129,7 @@ class mailController extends Controller
 	<p  style=\"color:#ff7900;\"> <strong>Atención citas</strong><br>
 	Nuevas citas, cambio de citas, solamente por Teléfono <br>
 	Comunicarse directamente a Naranjo Plastic Surgery: <br>
-	Tel: (664) 634 63 08 o 634 63 09<br>
+	Tel. (664) 391 13 24 USA (619) 354 37 01<br>
 	<br><br>
 	
 	<strong style=\"color:#ff7900;\">Nuestra página y redes sociales:</strong> <br>
