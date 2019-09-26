@@ -338,6 +338,8 @@ function verCliente(id){
         $('#edoCivil').val(data.responseData.edoCivil)
         $("#pais").val(data.responseData.pais)
 
+        
+
         $.ajax({
         url: 'estados/'+data.responseData.pais,
         async: false,

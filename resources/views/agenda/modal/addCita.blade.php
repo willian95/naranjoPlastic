@@ -51,11 +51,11 @@
               <label for="example-text-input">Celular</label>
               <input class="form-control form-control-sm disableBtn" type="number" placeholder="(664)000-0000" id="celCliente">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <label for="example-text-input" >Correo Electrónico</label>
               <input class="form-control form-control-sm disableBtn" type="email" placeholder="Ejemplo@ejemplo.com" id="emailCliente">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <label for="example-text-input">Sexo *</label>
                 <select class="form-control form-control-sm disableBtn" id="sexo">
                   <option></option>
@@ -76,42 +76,19 @@
                 </select>
             </div>
             <div class="col-md-4">
-              <label for="example-text-input">Estado *</label>
-                <select class="form-control form-control-sm disableBtn" id="ciudad">
+              <label for="example-text-input">Pais *</label>
+                <select class="form-control form-control-sm disableBtn" id="pais">
                   <option></option>
-                  <option value="no">Seleccione uno...</option>
-                   <option value="1">Aguascalientes</option>
-                   <option value="2">Baja California</option>
-                   <option value="3">Baja California Sur</option>
-                   <option value="4">Campeche</option>
-                   <option value="5">Chiapas</option>
-                   <option value="6">Chihuahua</option>
-                   <option value="7">Coahuila</option>
-                   <option value="8">Colima</option>
-                   <option value="9">Distrito Federal</option>
-                   <option value="10">Durango</option>
-                   <option value="11">Estado de México</option>
-                   <option value="12">Guanajuato</option>
-                   <option value="13">Guerrero</option>
-                   <option value="14">Hidalgo</option>
-                   <option value="15">Jalisco</option>
-                   <option value="16">Michoacán</option>
-                   <option value="17">Morelos</option>
-                   <option value="18">Nayarit</option>
-                   <option value="19">Nuevo León</option>
-                   <option value="20">Oaxaca</option>
-                   <option value="21">Puebla</option>
-                   <option value="22">Querétaro</option>
-                   <option value="23">Quintana Roo</option>
-                   <option value="24">San Luis Potosí</option>
-                   <option value="25">Sinaloa</option>
-                   <option value="26">Sonora</option>
-                   <option value="27">Tabasco</option>
-                   <option value="28">Tamaulipas</option>
-                   <option value="29">Tlaxcala</option>
-                   <option value="30">Veracruz</option>
-                   <option value="31">Yucatán</option>
-                   <option value="32">Zacatecas</option>
+                  @foreach(App\Pais::all() as $pais)
+                    <option value="{{ $pais->id }}">{{ $pais->nombre }}</option>
+                  @endforeach
+                </select>
+            </div>
+            <div class="col-md-4">
+              <label for="example-text-input">Estado *</label>
+                <select class="form-control form-control-sm disableBtn" id="estados">
+                  <option></option>
+                   
                 </select>
             </div>
           </div>
@@ -139,7 +116,7 @@
               </div>
               <div class="col-sm-3">
                 <label for="">Fecha</label>
-                <input type="date" id="fechaCita"  class="form-control form-control-sm disableBtn1">
+                <input type="text" id="fechaCita"  class="form-control form-control-sm disableBtn1 datepicker">
               </div>
               <div class="col-sm-6">
                 <label for="">Terapeuta</label>
@@ -151,7 +128,7 @@
                    <div class="form-group">
                      <label>Hora Inicio:</label>
                      <div class="input-group">
-                       <input type="time" id="horaInicio" class="form-control form-control-sm disableBtn1 ">
+                       <input type="time" id="horaInicio" class="form-control form-control-sm disableBtn1 timepicker">
                       </div>
                    </div>
                  </div>
@@ -161,7 +138,7 @@
                    <div class="form-group">
                      <label>Hora Final:</label>
                      <div class="input-group">
-                       <input type="time" id="horaFinal" class="form-control form-control-sm disableBtn1 ">
+                       <input type="time" id="horaFinal" class="form-control form-control-sm disableBtn1 timepicker">
                       </div>
                    </div>
                  </div>

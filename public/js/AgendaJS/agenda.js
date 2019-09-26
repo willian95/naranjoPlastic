@@ -251,11 +251,11 @@ function actualizaPaciente(id){
   })
 }
 
-$(function () {
+/*$(function () {
   $('.timepicker').timepicker({
     showInputs: false
   })
-})
+})*/
 
 
 $('#selectCliente').select2(
@@ -857,7 +857,21 @@ function verCliente(id){
         $('#edoCivil').val(data.responseData.edoCivil);
         $('#ciudad').val(data.responseData.idCiudad);
         $('#sexo').val(data.responseData.sexo);
+        $("#pais").val(data.responseData.pais)
         $('#fechaNacimiento').val(data.responseData.fechaNacimiento);
+
+        
+        $.ajax({
+          url: 'estados/'+data.responseData.pais,
+          async: false,
+          type:'GET',
+  
+            success: function(data) {
+            //  $('#Name').val(data.responseData.name);
+                renderizarEstados(data)
+            }
+          });
+
 
         $('.disableBtn').attr('disabled','disabled');
         if (data.responseData1[0].foto!='null') {
@@ -865,6 +879,17 @@ function verCliente(id){
         }
       }
     });
+}
+
+function renderizarEstados(data){
+
+  $("#estados").empty()
+  for(i = 0; i < data.estados.length; i++){
+    
+    $("#estados").append("<option value='"+data.estados[i].id+"'>"+data.estados[i].nombre+"</option>")
+
+  }
+
 }
 
 function tablaSearch(fecha,consultorio) {
