@@ -10,11 +10,21 @@
 
 <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
 <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
-<link type="text/javascript" src="{{ asset('plugins/timepicker/bootstrap-timepicker.min.css') }}">
+
 <!-- Fine Uploader CSS -->
 <link href="js/fine-uploader/fine-uploader.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wickedpicker@0.4.3/dist/wickedpicker.min.css">
+
+<style>
+
+  .wickedpicker{
+    z-index: 999999 !important;
+  }
+
+</style>
 
 <!-- Fine Uploader JS -->
 <link href="js/fine-uploader/fine-uploader-gallery.min.css" rel="stylesheet">
@@ -208,21 +218,16 @@
 <script src="js/AgendaJS/agenda.js"></script>
 <script src='plugins/fullcalendar/lang/es.js'></script>
 {!! $calendar->script() !!}
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{ asset('plugins/timepicker/bootstrap-timepicker.min.js') }}"></script>
+<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script src="{{ asset('/plugins/wickedpicker/wickedpicker.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+
 <script>
     $( function() {
-        $( ".datepicker" ).datepicker();
+      $( ".datepicker" ).datepicker();
 
-        $('.timepicker').timepicker({
-                minuteStep: 1,
-                secondStep: 5,
-                showInputs: false,
-                template: 'modal',
-                modalBackdrop: true,
-                showSeconds: true,
-                showMeridian: false
-            });
+      $('#horaInicio').wickedpicker({ twentyFour: true, timeSeparator: ':'});
+      $('#horaFinal').wickedpicker({ twentyFour: true, timeSeparator: ':'});
 
     } );
 </script>

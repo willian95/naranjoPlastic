@@ -595,6 +595,20 @@ function actualizarCita(id) {
 
 
 function registrarCita(id){
+
+  var date = $('#fechaCita').val();
+  var month = date.substring(0, 2)
+  var day = date.substring(3, 5)
+  var year = date.substring(6, 10)
+
+  /*console.log("date")
+  console.log(year+"-"+month+"-"+day)
+  console.log("day: "+day)
+  console.log("month: "+month)
+  console.log("year: "+year)*/
+
+  var choosenDate = year+"-"+month+"-"+day
+
   $.ajax({
       url: 'agregarCita',
       type:'post',
@@ -603,7 +617,7 @@ function registrarCita(id){
       },data:{
         horaInicio:$('#horaInicio').val(),
         horaFinal:$('#horaFinal').val(),
-        fechaCita:$('#fechaCita').val(),
+        fechaCita: choosenDate,
         idTerapeuta:$('#selectTera').val(),
         idConsultorio:$('#selectConsul').val(),
         idServicio:$('#selectServicio').val(),
@@ -664,7 +678,33 @@ $('#borrarConsult').click(function() {
 
 });
 
+function cargarEstados(){
 
+  var pais = $("#pais").val()
+
+  $.ajax({
+    url: 'estados/'+pais,
+    async: false,
+    type:'GET',
+
+      success: function(data) {
+      //  $('#Name').val(data.responseData.name);
+          renderizarEstados(data)
+      }
+    });
+
+}
+
+function renderizarEstados(data){
+
+  $("#estados").empty()
+  for(i = 0; i < data.estados.length; i++){
+    
+    $("#estados").append("<option value='"+data.estados[i].id+"'>"+data.estados[i].nombre+"</option>")
+
+  }
+
+}
 
 function buscarHora(id,actializar) {
 
@@ -684,6 +724,18 @@ function buscarHora(id,actializar) {
     return 0;
   }
 
+  var date = $('#fechaCita').val();
+  var month = date.substring(0, 2)
+  var day = date.substring(3, 5)
+  var year = date.substring(6, 10)
+
+  /*console.log("date")
+  console.log(year+"-"+month+"-"+day)
+  console.log("day: "+day)
+  console.log("month: "+month)
+  console.log("year: "+year)*/
+
+  var choosenDate = year+"-"+month+"-"+day
 
   $.ajax({
       url: 'BuscarEspacio',
@@ -693,7 +745,7 @@ function buscarHora(id,actializar) {
       },data:{
         horaInicio:$('#horaInicio').val(),
         horaFinal:$('#horaFinal').val(),
-        fechaCita:$('#fechaCita').val(),
+        fechaCita:choosenDate,
         idTerapeuta:$('#selectTera').val(),
         idConsultorio:$('#selectConsul').val(),
       },

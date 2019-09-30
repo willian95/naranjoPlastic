@@ -211,7 +211,7 @@ $('#addCliente').click(function() {
 
 $(function () {
     $('#generalContinuar').click(function (e) {
-      if ($('#nombreCliente').val()=='') {
+      /*if ($('#nombreCliente').val()=='') {
         mio({ type: 'error',title: 'Ingrese Nombre'});
         $('#nombreCliente').focus();
         return 0;
@@ -250,7 +250,7 @@ $(function () {
         return 0;
       }
 
-    e.preventDefault();
+    e.preventDefault();*/
 
 
     $('#myTab a[href="#seccion2"]').tab('show');
@@ -522,7 +522,7 @@ function verCliente(id){
 
 function actualizaPaciente(id){
   
-  if ($('#expediente_numero_seccion2').val()=='') {
+  /*if ($('#expediente_numero_seccion2').val()=='') {
     mio({ type: 'error',title: 'Ingrese el número de expediente'});
     $('#expediente_numero_seccion2').focus();
     return 0;
@@ -565,7 +565,7 @@ function actualizaPaciente(id){
     mio({ type: 'error',title: 'Seleccione Estado'});
     $('#estados').focus();
     return 0;
-  }
+  }*/
 
   swal({
   title: 'Estás seguro?',
@@ -1098,7 +1098,7 @@ function guardarCliente(){
   console.log($("#tratamiento_seccion4").val())
   */
   
-  if ($('#nombreCliente').val()=='') {
+  /*if ($('#nombreCliente').val()=='') {
     mio({ type: 'error',title: 'Ingrese Nombre'});
     $('#nombreCliente').focus();
     return 0;
@@ -1135,7 +1135,7 @@ function guardarCliente(){
     mio({ type: 'error',title: 'Seleccione Estado'});
     $('#estados').focus();
     return 0;
-  }
+  }*/
 
   $.ajax({
     url: 'guardarCliente',

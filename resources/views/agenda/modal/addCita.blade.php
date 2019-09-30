@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4">
               <label for="example-text-input">Fecha de Nacimiento *</label>
-                <input class="form-control form-control-sm disableBtn" type="text" id="fechaNacimiento">
+                <input class="form-control form-control-sm disableBtn datepicker" type="text" id="fechaNacimiento">
             </div>
             <div class="col-md-4">
               <label for="example-text-input form-control-sm">Estado Civil *</label>
@@ -77,7 +77,7 @@
             </div>
             <div class="col-md-4">
               <label for="example-text-input">Pais *</label>
-                <select class="form-control form-control-sm disableBtn" id="pais">
+                <select class="form-control form-control-sm disableBtn" id="pais" onchange="cargarEstados()">
                   <option></option>
                   @foreach(App\Pais::all() as $pais)
                     <option value="{{ $pais->id }}">{{ $pais->nombre }}</option>
@@ -128,17 +128,18 @@
                    <div class="form-group">
                      <label>Hora Inicio:</label>
                      <div class="input-group">
-                       <input type="time" id="horaInicio" class="form-control form-control-sm disableBtn1 timepicker">
+                       <input type="text" id="horaInicio" class="form-control form-control-sm disableBtn1">
                       </div>
                    </div>
                  </div>
               </div>
+              
               <div class="col-sm-3">
                 <div class="bootstrap-timepicker">
                    <div class="form-group">
                      <label>Hora Final:</label>
                      <div class="input-group">
-                       <input type="time" id="horaFinal" class="form-control form-control-sm disableBtn1 timepicker">
+                       <input type="text" id="horaFinal" class="form-control form-control-sm disableBtn1">
                       </div>
                    </div>
                  </div>
