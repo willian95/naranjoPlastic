@@ -24,6 +24,10 @@
     z-index: 999999 !important;
   }
 
+  .datpicker{
+    z-index: 9999999 !important;
+  }
+
 </style>
 
 <!-- Fine Uploader JS -->
