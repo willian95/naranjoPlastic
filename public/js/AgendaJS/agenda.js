@@ -494,7 +494,7 @@ function editaCliente(id){
 }
 
 function guardarCliente(actualizar,id){
-  if ($('#nombreCliente').val()=='') {
+  /*if ($('#nombreCliente').val()=='') {
     mio({ type: 'error',title: 'Ingrese Nombre'});
     $('#nombreCliente').focus();
     return 0;
@@ -524,7 +524,7 @@ function guardarCliente(actualizar,id){
     mio({ type: 'error',title: 'Seleccione Ciudad'});
     $('#ciudad').focus();
     return 0;
-  }
+  }*/
 
   $.ajax({
     url: 'guardarCliente',
@@ -596,10 +596,20 @@ function actualizarCita(id) {
 
 function registrarCita(id){
 
-  var date = $('#fechaCita').val();
-  var month = date.substring(0, 2)
-  var day = date.substring(3, 5)
-  var year = date.substring(6, 10)
+  var choosenDate = ""
+
+  if($('#fechaCita').val() != ""){
+
+    var date = $('#fechaCita').val();
+    var month = date.substring(0, 2)
+    var day = date.substring(3, 5)
+    var year = date.substring(6, 10)
+
+    var choosenDate = year+"-"+month+"-"+day
+
+  }
+
+  
 
   /*console.log("date")
   console.log(year+"-"+month+"-"+day)
@@ -607,7 +617,7 @@ function registrarCita(id){
   console.log("month: "+month)
   console.log("year: "+year)*/
 
-  var choosenDate = year+"-"+month+"-"+day
+  
 
   $.ajax({
       url: 'agregarCita',
@@ -708,7 +718,7 @@ function renderizarEstados(data){
 
 function buscarHora(id,actializar) {
 
-  if ($('#fechaCita').val()=='') {
+  /*if ($('#fechaCita').val()=='') {
     mio({ type: 'error',title: 'Elija una fecha para cita'});
     $('#fechaCita').focus();
     return 0;
@@ -722,20 +732,25 @@ function buscarHora(id,actializar) {
     mio({ type: 'error',title: 'Ingrese hora de termino se sesion'});
     $('#horaFinal').focus();
     return 0;
-  }
+  }*/
 
-  var date = $('#fechaCita').val();
-  var month = date.substring(0, 2)
-  var day = date.substring(3, 5)
-  var year = date.substring(6, 10)
+  var choosenDate = "";
+
+  if($('#fechaCita').val() != ''){
+    var date = $('#fechaCita').val();
+    var month = date.substring(0, 2)
+    var day = date.substring(3, 5)
+    var year = date.substring(6, 10)
+
+    var choosenDate = year+"-"+month+"-"+day
+
+  }
 
   /*console.log("date")
   console.log(year+"-"+month+"-"+day)
   console.log("day: "+day)
   console.log("month: "+month)
   console.log("year: "+year)*/
-
-  var choosenDate = year+"-"+month+"-"+day
 
   $.ajax({
       url: 'BuscarEspacio',

@@ -124,7 +124,10 @@ public function actualizarCita(Request $request)
 
   public function BuscarEspacio(Request $request)
   {
-    $citaEspacio=DB::table('cita')
+    $citaEspacio = [];
+    if($request->horaFinal != null && $request->horaInicio != null)
+    {
+      $citaEspacio=DB::table('cita')
             ->select( 'cita.*' )
             ->whereDate('cita.fechaCita','=',$request->fechaCita)
             ->where('cita.idConsultorio','=',$request->idConsultorio)
@@ -133,7 +136,9 @@ public function actualizarCita(Request $request)
             ->get();
 
             $citaEspacio->toArray();
-            return response()->json(['responseData' => $citaEspacio]);
+            
+    }
+    return response()->json(['responseData' => $citaEspacio]);
   }
 
   public function buscarAgendaFecha(Request $request)

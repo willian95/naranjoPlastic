@@ -16,6 +16,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::get('autoCorreo','mailController@autoCorreo');
 Route::get('estados/{pais_id}', 'EstadosController@obtenerId');
 
