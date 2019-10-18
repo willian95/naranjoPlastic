@@ -320,8 +320,6 @@ function verCliente(id){
   },
       success: function(data,textStatus,jqXHR) {
 
-        
-
         $('#nombreCliente').val(data.responseData.name)
         $('#segundoNombreCliente').val(data.responseData.segundoNombre),
         $('#apellido1Cliente').val(data.responseData.apePat)
@@ -509,7 +507,63 @@ function verCliente(id){
     $("#dosis_seccion3").val(data.responseData.dosis_seccion3),
 
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
-    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3),
+    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3)
+
+    //seccion4
+    if(data.postOperatorio){
+      $("#notapostoperatoria_id").val(data.postOperatorio[0].id)
+      $('#habitacion_seccion4').val(data.postOperatorio[0].habitacion_seccion4)
+      $('#diagnostico_pre_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_pre_operatorio_seccion4)
+      $('#operacion_planeada_seccion4').val(data.postOperatorio[0].operacion_planeada_seccion4)
+      $('#diagnostico_post_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_post_operatorio_seccion4)
+      $('#operacion_realizada_seccion4').val(data.postOperatorio[0].operacion_realizada_seccion4)
+      $('#descripcion_tecnica_quirurgica_seccion4').val(data.postOperatorio[0].descripcion_tecnica_quirurgica_seccion4)
+      $('#hallazgos_transoperatorios_seccion4').val(data.postOperatorio[0].hallazgos_transoperatorios_seccion4)
+      $('#reporte_gasas_compresas_seccion4').val(data.postOperatorio[0].reporte_gasas_compresas_seccion4)
+      $('#incidentes_accidentes_seccion4').val(data.postOperatorio[0].incidentes_accidentes_seccion4)
+      $('#sangrado_seccion4').val(data.postOperatorio[0].sangrado_seccion4)
+      $('#estudios_servicios_auxiliares_seccion4').val(data.postOperatorio[0].estudios_servicios_auxiliares_seccion4)
+      $("#nombre_anestesiologo_seccion4").val(data.postOperatorio[0].nombre_anestesiologo_seccion4)
+      $('#nombre_ayudante1_seccion4').val(data.postOperatorio[0].nombre_ayudante1_seccion4)
+      $('#nombre_ayudante2_seccion4').val(data.postOperatorio[0].nombre_ayudante2_seccion4)
+      $('#nombre_instrumentista_seccion4').val(data.postOperatorio[0].nombre_instrumentista_seccion4)
+      $('#nombre_enfermera_circulante_seccion4').val(data.postOperatorio[0].nombre_enfermera_circulante_seccion4)
+      $('#estado_postquirurgico_inmediato_seccion4').val(data.postOperatorio[0].estado_postquirurgico_inmediato_seccion4)
+      $('#pronostico_seccion4').val(data.postOperatorio[0].pronostico_seccion4)
+      $("#envio_piezas_seccion4").val(data.postOperatorio[0].envio_piezas_seccion4)
+      $('#otros_hallazgos_seccion4').val(data.postOperatorio[0].otros_hallazgos_seccion4)
+      $('#nombre_cirujano_seccion4').val(data.postOperatorio[0].nombre_cirujano_seccion4)
+    }
+
+    if(data.indicaciones){
+      //seccion5
+      $("#indicaciones_id").val(data.indicaciones[0].id)
+      $("#indicaciones_seccion5").val(data.indicaciones[0].indicaciones_seccion5)
+    }
+
+    if(data.notaMedica){
+      //seccion6
+      $("#nota_medica_seccion6").val(data.notaMedica[0].nota_medica_seccion6)
+      $("#nota_medica_id_seccion6").val(data.notaMedica[0].id)
+    }
+
+    if(data.notaEgreso){
+      //seccion7
+      $("#fechaIngreso_seccion7").val(data.notaEgreso[0].fechaIngreso_seccion7),
+      $("#fechaEgreso_seccion7").val(data.notaEgreso[0].fechaEgreso_seccion7),
+      $("#motivoEgreso_seccion7").val(data.notaEgreso[0].motivoEgreso_seccion7),
+      $("#diagnosticoFinal_seccion7").val(data.notaEgreso[0].diagnosticoFinal_seccion7),
+      $("#resumenClinico_seccion7").val(data.notaEgreso[0].resumenClinico_seccion7),
+      $("#problemasClinicos_seccion7").val(data.notaEgreso[0].problemasClinicos_seccion7),
+      $("#plan_seccion7").val(data.notaEgreso[0].plan_seccion7),
+      $("#recomendacionesVigilancia_seccion7").val(data.notaEgreso[0].recomendacionesVigilancia_seccion7)
+    }
+
+    if(data.seguimientoQuirurgico){
+      //seccion8
+      $("#resumen_seccion8").val(data.seguimientoQuirurgico[0].resumen_seccion8)
+
+    }
 
         $('#modalCliente').modal('show');
         /*console.log(data);
@@ -735,6 +789,55 @@ function actualizaPaciente(id){
     gotas_glaucoma_seccion3: (($('#gotas_glaucoma_seccion3:checked').val()) !=null ? 1 : 0),
     padece_alergia_material_seccion3: $("#padece_alergia_material_seccion3").val(),
 
+    //seccion4
+    notapostoperatoria_id: $("#notapostoperatoria_id").val(),
+    habitacion_seccion4: $('#habitacion_seccion4').val(),
+    diagnostico_pre_operatorio_seccion4: $('#diagnostico_pre_operatorio_seccion4').val(),
+    operacion_planeada_seccion4: $('#operacion_planeada_seccion4').val(),
+    diagnostico_post_operatorio_seccion4: $('#diagnostico_post_operatorio_seccion4').val(),
+    operacion_realizada_seccion4: $('#operacion_realizada_seccion4').val(),
+    descripcion_tecnica_quirurgica_seccion4: $('#descripcion_tecnica_quirurgica_seccion4').val(),
+    hallazgos_transoperatorios_seccion4: $('#hallazgos_transoperatorios_seccion4').val(),
+    reporte_gasas_compresas_seccion4: $('#reporte_gasas_compresas_seccion4').val(),
+    incidentes_accidentes_seccion4: $('#incidentes_accidentes_seccion4').val(),
+    sangrado_seccion4: $('#sangrado_seccion4').val(),
+    estudios_servicios_auxiliares_seccion4:$('#estudios_servicios_auxiliares_seccion4').val(),
+    nombre_anestesiologo_seccion4:$("#nombre_anestesiologo_seccion4").val(),
+    nombre_ayudante1_seccion4:$('#nombre_ayudante1_seccion4').val(),
+    nombre_ayudante2_seccion4:$('#nombre_ayudante2_seccion4').val(),
+    nombre_instrumentista_seccion4:$('#nombre_instrumentista_seccion4').val(),
+    nombre_enfermera_circulante_seccion4:$('#nombre_enfermera_circulante_seccion4').val(),
+    estado_postquirurgico_inmediato_seccion4:$('#estado_postquirurgico_inmediato_seccion4').val(),
+    pronostico_seccion4:$('#pronostico_seccion4').val(),
+    envio_piezas_seccion4:$("#envio_piezas_seccion4").val(),
+    otros_hallazgos_seccion4:$('#otros_hallazgos_seccion4').val(),
+    nombre_cirujano_seccion4:$('#nombre_cirujano_seccion4').val(),
+
+    //seccion5
+    indicaciones_id: $("#indicaciones_id").val(),
+    indicaciones_seccion5: $("#indicaciones_seccion5").val(),
+
+    //seccion6
+    nota_medica_id: $("#nota_medica_id_seccion6").val(),
+    nota_medica_seccion6: $("#nota_medica_seccion6").val(),
+
+    //seccion7
+    nota_egreso_id: $("#notaEgreso_id_seccion7").val(),
+    fechaIngreso_seccion7: $("#fechaIngreso_seccion7").val(),
+    fechaEgreso_seccion7: $("#fechaEgreso_seccion7").val(),
+    motivoEgreso_seccion7: $("#motivoEgreso_seccion7").val(),
+    diagnosticoFinal_seccion7: $("#diagnosticoFinal_seccion7").val(),
+    resumenClinico_seccion7: $("#resumenClinico_seccion7").val(),
+    problemasClinicos_seccion7:$("#problemasClinicos_seccion7").val(),
+    plan_seccion7: $("#plan_seccion7").val(),
+    recomendacionesVigilancia_seccion7: $("#recomendacionesVigilancia_seccion7").val(),
+
+    //seccion8
+    resumen_id_seccion8: $("#resumen_id_seccion8").val(), 
+    resumen_seccion8: $("#resumen_seccion8").val()
+
+    
+
       },
           success: function(data,textStatus,jqXHR) {
           //  $('#Name').val(data.responseData.name);
@@ -818,14 +921,13 @@ function editaCliente(id){
   $('#adicionalContinuar').removeAttr('onClick');
   $('#adicionalContinuar').attr('onClick','actualizaPaciente('+id+');').html('Actualizar').show();
 
-
   $.ajax({
     url: 'editarCliente',
     type:'GET',
     headers: {
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
   },data:{
-    id:id,
+    id:id
   },
       success: function(data,textStatus,jqXHR) {
 
@@ -1012,9 +1114,64 @@ function editaCliente(id){
     $("#dosis_seccion3").val(data.responseData.dosis_seccion3),
 
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
-    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3),
+    $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3)
+    
+    if(data.responseData.postOperatorio){
+      $("#notapostoperatoria_id").val(data.postOperatorio[0].id)
+      $('#habitacion_seccion4').val(data.postOperatorio[0].habitacion_seccion4),
+      $('#diagnostico_pre_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_pre_operatorio_seccion4),
+      $('#operacion_planeada_seccion4').val(data.postOperatorio[0].operacion_planeada_seccion4),
+      $('#diagnostico_post_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_post_operatorio_seccion4),
+      $('#operacion_realizada_seccion4').val(data.postOperatorio[0].operacion_realizada_seccion4),
+      $('#descripcion_tecnica_quirurgica_seccion4').val(data.postOperatorio[0].descripcion_tecnica_quirurgica_seccion4),
+      $('#hallazgos_transoperatorios_seccion4').val(data.postOperatorio[0].hallazgos_transoperatorios_seccion4),
+      $('#reporte_gasas_compresas_seccion4').val(data.postOperatorio[0].reporte_gasas_compresas_seccion4),
+      $('#incidentes_accidentes_seccion4').val(data.postOperatorio[0].incidentes_accidentes_seccion4),
+      $('#sangrado_seccion4').val(data.postOperatorio[0].sangrado_seccion4),
+      $('#estudios_servicios_auxiliares_seccion4').val(data.postOperatorio[0].estudios_servicios_auxiliares_seccion4),
+      $("#nombre_anestesiologo_seccion4").val(data.postOperatorio[0].nombre_anestesiologo_seccion4),
+      $('#nombre_ayudante1_seccion4').val(data.postOperatorio[0].nombre_ayudante1_seccion4),
+      $('#nombre_ayudante2_seccion4').val(data.postOperatorio[0].nombre_ayudante2_seccion4),
+      $('#nombre_instrumentista_seccion4').val(data.postOperatorio[0].nombre_instrumentista_seccion4),
+      $('#nombre_enfermera_circulante_seccion4').val(data.postOperatorio[0].nombre_enfermera_circulante_seccion4),
+      $('#estado_postquirurgico_inmediato_seccion4').val(data.postOperatorio[0].estado_postquirurgico_inmediato_seccion4),
+      $('#pronostico_seccion4').val(data.postOperatorio[0].pronostico_seccion4),
+      $("#envio_piezas_seccion4").val(data.postOperatorio[0].envio_piezas_seccion4)
+      $('#otros_hallazgos_seccion4').val(data.postOperatorio[0].otros_hallazgos_seccion4)
+      $('#nombre_cirujano_seccion4').val(data.postOperatorio[0].nombre_cirujano_seccion4)
+    }
 
-        
+    if(data.indicaciones){
+      //seccion5
+      $("#indicaciones_id").val(data.indicaciones[0].id),
+      $("#indicaciones_seccion5").val(data.indicaciones[0].indicaciones_seccion5)
+    }
+    
+
+    if(data.notaMedica){
+      //seccion6
+      $("#nota_medica_seccion6").val(data.notaMedica[0].nota_medica_seccion6)
+      $("#nota_medica_id_seccion6").val(data.notaMedica[0].id)
+    }
+
+    if(data.notaEgreso){
+      //seccion7
+      $("#fechaIngreso_seccion7").val(data.notaEgreso[0].fechaIngreso_seccion7),
+      $("#fechaEgreso_seccion7").val(data.notaEgreso[0].fechaEgreso_seccion7),
+      $("#motivoEgreso_seccion7").val(data.notaEgreso[0].motivoEgreso_seccion7),
+      $("#diagnosticoFinal_seccion7").val(data.notaEgreso[0].diagnosticoFinal_seccion7),
+      $("#resumenClinico_seccion7").val(data.notaEgreso[0].resumenClinico_seccion7),
+      $("#problemasClinicos_seccion7").val(data.notaEgreso[0].problemasClinicos_seccion7),
+      $("#plan_seccion7").val(data.notaEgreso[0].plan_seccion7),
+      $("#recomendacionesVigilancia_seccion7").val(data.notaEgreso[0].recomendacionesVigilancia_seccion7)
+      $("#notaEgreso_id_seccion7").val(data.notaEgreso[0].id)
+    }
+
+    if(data.seguimientoQuirurgico){
+      //seccion8
+      $("#resumen_seccion8").val(data.seguimientoQuirurgico[0].resumen_seccion8)
+      $("#resumen_id_seccion8").val(data.seguimientoQuirurgico[0].id)
+    }
 
         $('#modalCliente').modal('show');
         /*if (data.responseData1[0].foto != null) {
@@ -1056,87 +1213,6 @@ function guardarCliente(){
   $(".viewClient").attr('readonly', false)
   $(".viewClient").attr('disabled', false)
 
-  //codigo de prueba
-  /*
-  console.log("ta")
-  console.log($("#ta_seccion4").val())
-
-  console.log("fc")
-  console.log($("#fc_seccion4").val())
-
-  console.log("temp")
-  console.log($("#temp_seccion4").val())
-
-  console.log("peso")
-  console.log($("#peso_seccion4").val())
-
-  console.log("estatura")
-  console.log($("#estatura_seccion4").val())
-
-  console.log("cabeza")
-  console.log($("#cabeza_seccion4").val())
-
-  console.log("cuello")
-  console.log($("#cuello_seccion4").val())
-
-  console.log("torax_seccion4")
-  console.log($("#torax_seccion4").val())
-
-  console.log("abdomen_seccion4")
-  console.log($("#abdomen_seccion4").val())
-
-  console.log("extremidades_seccion4")
-  console.log($("#extremidades_seccion4").val())
-
-  console.log("genitales_seccion4")
-  console.log($("#genitales_seccion4").val())
-
-  console.log("diagnostico_seccion4")
-  console.log($("#diagnostico_seccion4").val())
-
-  console.log("tratamiento_seccion4")
-  console.log($("#tratamiento_seccion4").val())
-  */
-  
-  /*if ($('#nombreCliente').val()=='') {
-    mio({ type: 'error',title: 'Ingrese Nombre'});
-    $('#nombreCliente').focus();
-    return 0;
-  }
-
-  if ($('#apellido1Cliente').val()=='') {
-    mio({ type: 'error',title: 'Ingrese Apellido Paterno'});
-    $('#apellido1Cliente').focus();
-    return 0;
-  }
-  if ($('#sexo').val()=='' || $('#sexo').val()==null) {
-    mio({ type: 'error',title: 'Seleccione el Sexo'});
-    $('#sexo').focus();
-    return 0;
-  }
-  if ($('#fechaNacimiento').val()=='') {
-    mio({ type: 'error',title: 'Ingrese Fecha de Nacimiento'});
-    $('#fechaNacimiento').focus();
-    return 0;
-  }
-  if ($('#edoCivil').val()=='') {
-    mio({ type: 'error',title: 'Seleccione Estado Civil'});
-    $('#edoCivil').focus();
-    return 0;
-  }
-  
-  if ($('#pais').val()=='') {
-    mio({ type: 'error',title: 'Seleccione País'});
-    $('#pais').focus();
-    return 0;
-  }
-
-  if ($('#estados').val()=='') {
-    mio({ type: 'error',title: 'Seleccione Estado'});
-    $('#estados').focus();
-    return 0;
-  }*/
-
   $.ajax({
     url: 'guardarCliente',
     type:'POST',
@@ -1172,9 +1248,6 @@ function guardarCliente(){
     tipoSangre:$("#tipoSangre").val(),
     cirugiasPrevias:$('#cirugias-previas').val(),
     otrasCirugias:$('#otras-cirugias').val(),
-    /*emerNombre:$('#nombreEmergencia').val().toUpperCase(),
-    emerRelacion:$('#relacionEmergencia').val().toUpperCase(),
-    emerTel:$('#telEmegencia').val(),*/
     ocupacionSeccion2: $("#ocupacion_seccion2").val(),
     diagnosticoPreOperatorio:$("#diagnosticoPreOperatorio").val(),
     procedimientoQuirurgico:$("#procedimientoQuirurgico").val(),
@@ -1290,87 +1363,50 @@ function guardarCliente(){
     gotas_glaucoma_seccion3: (($('#gotas_glaucoma_seccion3:checked').val()) !=null ? 1 : 0),
     padece_alergia_material_seccion3: $("#padece_alergia_material_seccion3").val(),
   
+    //seccion4
+    habitacion_seccion4: $('#habitacion_seccion4').val(),
+    diagnostico_pre_operatorio_seccion4: $('#diagnostico_pre_operatorio_seccion4').val(),
+    operacion_planeada_seccion4: $('#operacion_planeada_seccion4').val(),
+    diagnostico_post_operatorio_seccion4: $('#diagnostico_post_operatorio_seccion4').val(),
+    operacion_realizada_seccion4: $('#operacion_realizada_seccion4').val(),
+    descripcion_tecnica_quirurgica_seccion4: $('#descripcion_tecnica_quirurgica_seccion4').val(),
+    hallazgos_transoperatorios_seccion4: $('#hallazgos_transoperatorios_seccion4').val(),
+    reporte_gasas_compresas_seccion4: $('#reporte_gasas_compresas_seccion4').val(),
+    incidentes_accidentes_seccion4: $('#incidentes_accidentes_seccion4').val(),
+    sangrado_seccion4: $('#sangrado_seccion4').val(),
+    estudios_servicios_auxiliares_seccion4: $('#estudios_servicios_auxiliares_seccion4').val(),
+    nombre_anestesiologo_seccion4:$("#nombre_anestesiologo_seccion4").val(),
+    nombre_ayudante1_seccion4: $('#nombre_ayudante1_seccion4').val(),
+    nombre_ayudante2_seccion4: $('#nombre_ayudante2_seccion4').val(),
+    nombre_instrumentista_seccion4: $('#nombre_instrumentista_seccion4').val(),
+    nombre_enfermera_circulante_seccion4: $('#nombre_enfermera_circulante_seccion4').val(),
+    estado_postquirurgico_inmediato_seccion4: $('#estado_postquirurgico_inmediato_seccion4').val(),
+    pronostico_seccion4: $('#pronostico_seccion4').val(),
+    envio_piezas_seccion4: $("#envio_piezas_seccion4").val(),
+    otros_hallazgos_seccion4: $('#otros_hallazgos_seccion4').val(),
+    nombre_cirujano_seccion4: $('#nombre_cirujano_seccion4').val(),
 
-    /*problemaRespirarSeccion3: (($('#problema_respirar_seccion3:checked').val()) !=null ? 1 : 0),
-    sonidosRespirarSeccion3: (($('#sonidos_respirar_seccion3:checked').val()) !=null ? 1 : 0),
-    secrecionesSeccion3: (($('#secreciones_seccion3:checked').val()) !=null ? 1 : 0),
-    colorEsputoSeccion3:$('#color_esputo_seccion3').val(),
-    agitaSeccion3:(($('#agita_seccion3:checked').val()) !=null ? 1 : 0),
-    cansancioSeccion3:(($('#cansancio_seccion3:checked').val()) !=null ? 1 : 0),
-    cianosisSeccion3: (($('#cianosis_seccion3:checked').val()) !=null ? 1 : 0),
-    fatigaSeccion3: (($('#fatiga_seccion3:checked').val()) !=null ? 1 : 0),
-    soplosSeccion3: (($('#soplos_seccion3:checked').val()) !=null ? 1 : 0),
-    diarreaSeccion3: (($('#diarrea_seccion3:checked').val()) !=null ? 1 : 0),
-    mocoSeccion3: (($('#moco_seccion3:checked').val()) !=null ? 1 : 0),
-    sangreSeccion3: (($('#sangre_seccion3:checked').val()) !=null ? 1 : 0),
-    estreSeccion3:(($('#estre_seccion3:checked').val()) !=null ? 1 : 0),
-    excretaSeccion3:(($('#excreta_seccion3:checked').val()) !=null ? 1 : 0),
-    vomitosSeccion3:(($('#vomitos_seccion3:checked').val()) !=null ? 1 : 0),
-    poliuriaSeccion3: (($('#poliuria_seccion3:checked').val()) !=null ? 1 : 0),
-    disuriaSeccion3:(($('#disuria_seccion3:checked').val()) !=null ? 1 : 0),
-    sangreGenitourinarioSeccion3: (($('#sangre_genitourinario_seccion3:checked').val()) !=null ? 1 : 0),
-    olorSeccion3: $("#olor_seccion3").val(),
-    colorSeccion3:$("#color_seccion3").val(),
-    frecuenciaOrinarSeccion3: $("#frecuencia_orinar_seccion3").val(),
-    tenesmoSeccion3: (($('#tenesmo_seccion3:checked').val()) !=null ? 1 : 0),
-    hiperactividadSeccion3:(($('#hiperactividad_seccion3:checked').val()) !=null ? 1 : 0),
-    perdidaFuerzaSeccion3: (($('#perdida_fuerza_seccion3:checked').val()) !=null ? 1 : 0),
-    somnolenciaSeccion3: $('#somnolencia_seccion3').val(),
-    cefaleasSeccion3:(($('#cefaleas_seccion3:checked').val()) !=null ? 1 : 0),
-    irritabilidadSeccion3: (($('#irritabilidad_seccion3:checked').val()) !=null ? 1 : 0),
-    paresiasSeccion3:(($('#paresias_seccion3:checked').val()) !=null ? 1 : 0),
-    faltaMovimientoSeccion3:(($('#falta_movimiento_seccion3:checked').val()) !=null ? 1 : 0),
-    parestiasisSeccion3: (($('#parestiasis_seccion3:checked').val()) !=null ? 1 : 0),
-    movimientosInvoluntariosSeccion3: (($('#movimientos_involuntarios_seccion3:checked').val()) !=null ? 1 : 0),
-    artralgiasSeccion3: (($('#artralgias_seccion3:checked').val()) !=null ? 1 : 0),
-    contraccionesMusculosSeccion3:(($('#contraccion_musculos_seccion3:checked').val()) !=null ? 1 : 0),
-    erupcionesSeccion3:$('#erupciones_seccion3').val(),
-    dematosisSeccion3: $('#dematosis_seccion3').val(),
-    glandulasSeccion3: $('#glandulas_seccion3').val(),
-    peloSeccion3: $('#pelo_seccion3').val(),
-    dientesSeccion3: $('#dientes_seccion3').val(),
-    grSeccion3: $('#gr_seccion3').val(),
-    hbSeccion3: $('#hb_seccion3').val(),
-    hctSeccion3: $('#hct_seccion3').val(),
-    plagSeccion3: $('#plag_seccion3').val(),
-    cmhgSeccion3: $('#cmhg_seccion3').val(),
-    leuSeccion3: $('#leu_seccion3').val(),
-    linSeccion3: $('#lin_seccion3').val(),
-    monoSeccion3: $('#mono_seccion3').val(),
-    eosSeccion3: $('#eos_seccion3').val(),
-    basSeccion3: $('#bas_seccion3').val(),
-    segmentadosSeccion3: $('#segmentados_seccion3').val(),
-    enBandaSeccion3: $('#enbanda_seccion3').val(),
-    qsGlucosaSeccion3: $('#qs_glucosa_seccion3').val(),
-    ureaSeccion3:$('#urea_seccion3').val(),
-    creatininaSeccion3: $('#creatinina_seccion3').val(),
-    colSeccion3: $('#col_seccion3').val(),
-    tagSeccion3: $('#tag_seccion3').val(),
-    respiracionRapidaSeccion3:(($('#respiracion_rapida_seccion3:checked').val()) !=null ? 1 : 0),
-    respiracionLentaSeccion3:(($('#respiracion_lenta_seccion3:checked').val()) !=null ? 1 : 0),
-    qsSeccion3: $('#qs_seccion3').val(),
-    egoSeccion3: $('#ego_seccion3').val(),
-    tpSeccion3: $('#tp_seccion3').val(),
-    tptSeccion3: $('#tpt_seccion3').val(),
-    hivSeccion3: $('#hiv_seccion3').val(),
-    otrosSeccion3: $('#otros_seccion3').val(),
-    sintomasGeneralesSeccion3: $("#sintomas_generales_seccion3").val(),
+    //seccion5
+    indicaciones_id: $("#indicaciones_id").val(),
+    indicaciones_seccion5: $("#indicaciones_seccion5").val(),
 
-    //Seccion 4
-    taSeccion4:$("#ta_seccion4").val(),
-    fcSeccion4:$("#fc_seccion4").val(),
-    frSeccion4:$("#fr_seccion4").val(),
-    tempSeccion4:$("#temp_seccion4").val(),
-    pesoSeccion4:$("#peso_seccion4").val(),
-    estatusSeccion4:$("#estatura_seccion4").val(),
-    cabezaSeccion4:$("#cabeza_seccion4").val(),
-    cuelloSeccion4:$("#cuello_seccion4").val(),
-    toraxSeccion4:$("#torax_seccion4").val(),
-    abdomenSeccion4:$("#abdomen_seccion4").val(),
-    extremidadesSeccion4:$("#extremidades_seccion4").val(),
-    genitalesSeccion4: $("#genitales_seccion4").val(),
-    diagnosticoSeccion4: $("#diagnostico_seccion4").val(),
-    tratamientoSeccion4: $("#tratamiento_seccion4").val()*/
+    //seccion6
+    //nota_medica_id_seccion6: $("#nota_medica_id_seccion6").val(),
+    nota_medica_seccion6: $("#nota_medica_seccion6").val(),
+
+    //seccion7
+    fechaIngreso_seccion7: $("#fechaIngreso_seccion7").val(),
+    fechaEgreso_seccion7: $("#fechaEgreso_seccion7").val(),
+    motivoEgreso_seccion7: $("#motivoEgreso_seccion7").val(),
+    diagnosticoFinal_seccion7: $("#diagnosticoFinal_seccion7").val(),
+    resumenClinico_seccion7: $("#resumenClinico_seccion7").val(),
+    problemasClinicos_seccion7:$("#problemasClinicos_seccion7").val(),
+    plan_seccion7: $("#plan_seccion7").val(),
+    recomendacionesVigilancia_seccion7: $("#recomendacionesVigilancia_seccion7").val(),
+
+    //seccion8
+    resumen_seccion8: $("#resumen_seccion8").val(),
+
 
   },
 
