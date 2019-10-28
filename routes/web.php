@@ -41,7 +41,7 @@ Route::group(['middleware'=>'auth'],function(){
 
     Route::get('cliente','ClienteController@index')->name('cliente');
     Route::get('editarCliente','ClienteController@editarCliente');
-    Route::get('actualizaPaciente','ClienteController@actualizaPaciente');
+    Route::post('actualizaPaciente','ClienteController@actualizaPaciente');
     Route::get('eliminaPaciente','ClienteController@eliminaPaciente');
     Route::get('editarUser', 'ClienteController@editarUser');
     Route::get('buscarCliente', 'ClienteController@muestraCliente');

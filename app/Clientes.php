@@ -150,7 +150,8 @@ class Clientes extends Model
     'antidepresivos_seccion3',
     'dosis_seccion3',
     'gotas_glaucoma_seccion3',
-    'padece_alergia_material_seccion3'
+    'padece_alergia_material_seccion3',
+
     
 
     ];

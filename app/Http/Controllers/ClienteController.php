@@ -5,11 +5,20 @@ namespace App\Http\Controllers;
 use Auth;
 use Yajra\DataTables\Datatables;
 use App\Clientes;
+use App\NotaPostOperatoria;
 use Illuminate\Http\Request;
 use App\User;
 use App\membresia;
 use App\DetalleMembresiaCliente;
 use App\Foto;
+use App\Indicaciones;
+use App\NotaMedica;
+use App\NotaEgreso;
+use App\seguimiento_quirurgico;
+use App\HojaEnfermeriaUnidadQuirurgica;
+use App\HojaEnfermeria;
+use App\HojaEnfermeriaPart2;
+use App\HojaEnfermeriaPart3;
 use PDF;
 use DB;
 use DNS1D;
@@ -32,7 +41,7 @@ class ClienteController extends Controller
         $usuario->toArray();
 
         $foto=DB::table('foto')->select('foto.*')->where('foto.idUsuario','=',$request->id)->get();
-        return response()->json(['responseData'=>$cliente,'responseData1' => $foto]);
+        return response()->json(['responseData'=>$cliente, 'responseData1' => $foto]);
       }
 
       public function editarCliente(Request $request)
@@ -41,7 +50,18 @@ class ClienteController extends Controller
         $cliente['barcode']=DNS1D::getBarcodePNG($cliente['id'],'C39');
         $cliente->toArray();
         $foto=DB::table('foto')->select('foto.*')->where('foto.idUsuario','=',$request->id)->get();
-        return response()->json(['responseData'=>$cliente,'responseData1' => $foto]);
+
+        $postoperatorio = NotaPostOperatoria::where('cliente_id', $request->id)->get();
+        $indicaciones = Indicaciones::where('cliente_id', $request->id)->get();
+        $notaMedica = NotaMedica::where('cliente_id', $request->id)->get();
+        $notaEgreso = NotaEgreso::where('cliente_id', $request->id)->get();
+        $seguimientoQuirurgico = seguimiento_quirurgico::where('cliente_id_seccion8', $request->id)->get();
+        $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::where('cliente_id', $request->id)->get();
+        $hojaEnfermeria = HojaEnfermeria::where('cliente_id', $request->id)->get();
+        $hojaEnfermeria2 = HojaEnfermeriaPart2::where('cliente_id', $request->id)->get();
+        $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $request->id)->get();
+
+        return response()->json(['responseData'=>$cliente,'responseData1' => $foto, 'postOperatorio' => $postoperatorio, 'indicaciones' => $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimientoQuirurgico' => $seguimientoQuirurgico, 'hojaEnfermeriaUnidadQuirurgica' => $hojaEnfermeriaUnidadQuirurgica, 'hojaEnfermeria' => $hojaEnfermeria, 'hojaEnfermeria2' => $hojaEnfermeria2, 'hojaEnfermeria3' => $hojaEnfermeria3]);
       }
 
       public function actualizaPaciente(Request $request){
@@ -62,6 +82,52 @@ class ClienteController extends Controller
         $cliente->fill($request->all());
         $cliente->save();
         $cliente->toArray();
+        
+
+        if($request->notapostoperatoria_id != ''){
+          $notaPostOperatoria = NotaPostOperatoria::find($request->notapostoperatoria_id);
+          $notaPostOperatoria->fill($request->all());
+          $notaPostOperatoria->update();
+        }
+
+        if($request->indicaciones_id != ''){
+          $indicaciones = Indicaciones::find($request->indicaciones_id);
+          $indicaciones->fill($request->all());
+          $indicaciones->update();
+        }
+
+        if($request->nota_medica_id != ''){
+          $notaMedica = NotaMedica::find($request->nota_medica_id);
+          $notaMedica->fill($request->all());
+          $notaMedica->update();
+        }
+
+        if($request->nota_egreso_id != ''){
+          $notaEgreso = NotaEgreso::find($request->nota_egreso_id);
+          $notaEgreso->fill($request->all());
+          $notaEgreso->update();
+        }
+
+        if($request->resumen_id_seccion8 != ''){
+          $seguimientoQuirurgico = seguimiento_quirurgico::find($request->resumen_id_seccion8);
+          $seguimientoQuirurgico->fill($request->all());
+          $seguimientoQuirurgico->update();
+        }
+
+        if($request->id_seccion10 != ''){
+          $hojaEnfermeria = HojaEnfermeria::find($request->id_seccion10);
+          $hojaEnfermeria->fill($request->all());
+          $hojaEnfermeria->update();
+
+          $hojaEnfermeria2 = HojaEnfermeriaPart2::find($request->id_seccion10);
+          $hojaEnfermeria2->fill($request->all());
+          $hojaEnfermeria2->update();
+
+          $hojaEnfermeria3 = HojaEnfermeriaPart3::find($request->id_seccion10);
+          $hojaEnfermeria3->fill($request->all());
+          $hojaEnfermeria3->update();
+        }
+
         return response()->json(['responseData'=>$cliente]);
       }
 
@@ -110,6 +176,34 @@ class ClienteController extends Controller
           $request['idUsuario']=$cliente['id'];
           Foto::create($request->all());
         }
+
+        $notaPostOperatoria = NotaPostOperatoria::create($request->all());
+        $notaPostOperatoria->update(['cliente_id' => $cliente->id]);
+
+        $indicacionesQuirurgicas = Indicaciones::create($request->all());
+        $indicacionesQuirurgicas->update(['cliente_id' => $cliente->id]);
+
+        $notaMedica = NotaMedica::create($request->all());
+        $notaMedica->update(['cliente_id' => $cliente->id]);
+
+        $notaEgreso = NotaEgreso::create($request->all());
+        $notaEgreso->update(['cliente_id' => $cliente->id]);
+
+        $seguimientoQuirurgico = seguimiento_quirurgico::create($request->all());
+        $seguimientoQuirurgico->update(['cliente_id_seccion8' => $cliente->id]);
+
+        $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::create($request->all());
+        $hojaEnfermeriaUnidadQuirurgica->update(['cliente_id' => $cliente->id]);
+
+        $hojaEnfermeria = HojaEnfermeria::create($request->all());
+        $hojaEnfermeria->update(['cliente_id' => $cliente->id]);
+
+        $hojaEnfermeria2 = HojaEnfermeriaPart2::create($request->all());
+        $hojaEnfermeria2->update(['cliente_id' => $cliente->id]);
+
+        $hojaEnfermeria3 = HojaEnfermeriaPart3::create($request->all());
+        $hojaEnfermeria3->update(['cliente_id' => $cliente->id]);
+
         return response()->json(['responseData'=>$cliente]);
       }
 

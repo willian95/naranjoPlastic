@@ -206,15 +206,9 @@
             </tr>
             </tbody>
         </table>
-<<<<<<< HEAD
 
         <div style="page-break-before:always">&nbsp;</div> 
 
-=======
-
-        <div style="page-break-before:always">&nbsp;</div> 
-
->>>>>>> 9aa6b45f3af0d5474e625114d471652c5fe6c9e5
         <table class="table">
             {{--<tbody>
                 
@@ -270,7 +264,6 @@
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
                 </td>
-<<<<<<< HEAD
             </tr>
 
             <tr>
@@ -280,26 +273,11 @@
             </tr>
 
             <tr>
-=======
-            </tr>
-
-            <tr>
-                <td colspan="12">
-                    <h3 class="text-center">Historia Clínica</h3>
-                </td>
-            </tr>
-
-            <tr>
->>>>>>> 9aa6b45f3af0d5474e625114d471652c5fe6c9e5
                 <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Nombre:
                 </td>
                 <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
-<<<<<<< HEAD
                         {{ $clientes->name }} {{ $clientes->segundoNombre }} {{ $clientes->apePat }}
-=======
-                        {{ $clientes->name }}
->>>>>>> 9aa6b45f3af0d5474e625114d471652c5fe6c9e5
                 </td>
             </tr>
 
@@ -487,7 +465,6 @@
 
             <tr>
                 <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
-<<<<<<< HEAD
                     Nombre: {{ $clientes->name }}  {{ $clientes->segundoNombre }} {{ $clientes->apePat }}
                 </td>
                 <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
@@ -495,34 +472,10 @@
                 </td>
                 <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Sexo: {{ $clientes->sexo }}
-=======
-                    Nombre: 
-                </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
-                    Edad: 
-                </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
-                    Sexo: 
->>>>>>> 9aa6b45f3af0d5474e625114d471652c5fe6c9e5
                 </td>
             </tr>
 
             <tr>
-<<<<<<< HEAD
-=======
-                <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
-                    {{ $clientes->name }}
-                </td>
-                <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
-                    {{ $clientes->edad }} 
-                </td>
-                <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
-                    {{ $clientes->sexo }}
-                </td>
-            </tr>
-
-            <tr>
->>>>>>> 9aa6b45f3af0d5474e625114d471652c5fe6c9e5
                 <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Peso: 
                 </td>
