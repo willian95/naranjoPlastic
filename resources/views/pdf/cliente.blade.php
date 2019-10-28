@@ -1584,9 +1584,362 @@
                 </td>
             </tr>
 
+            <div style="page-break-before:always">&nbsp;</div> 
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    <h3 class="text-center">NOTA POSTOPERATORIA</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Habitación: {{ $notaPostOperatoria->habitacion_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Diagnostico pre-operatorio: {{ $notaPostOperatoria->diagnostico_pre_operatorio_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Operacion planeada: {{ $notaPostOperatoria->operacion_planeada_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Diagnostico post-operatorio: {{ $notaPostOperatoria->diagnostico_post_operatorio_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Operacion realizada: {{ $notaPostOperatoria->operacion_realizada_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Descripción de la técnica quirurgica: {{ $notaPostOperatoria->descripcion_tecnica_quirurgica_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Hallazgos trans-operatorios: {{ $notaPostOperatoria->hallazgos_transoperatorios_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Reporte gasas y compresas: {{ $notaPostOperatoria->reporte_gasas_compresas_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Incidentes y accidentes: {{ $notaPostOperatoria->incidentes_accidentes_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Sangrado: {{ $notaPostOperatoria->sangrado_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    ESTUDIOS DE SERVICIOS AUXICILIARES DE DIAGNOSTICO Y TRATAMIENTO TRANSOPERATORIOS: {{ $notaPostOperatoria->estudios_servicios_auxiliares_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre del anestesiologo: {{ $notaPostOperatoria->nombre_anestesiologo_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre del ayudante1: {{ $notaPostOperatoria->nombre_ayudante1_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre del ayudante2: {{ $notaPostOperatoria->nombre_ayudante2_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre del instrumentista: {{ $notaPostOperatoria->nombre_instrumentista_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre de enfermera circulante: {{ $notaPostOperatoria->nombre_enfermera_circulante_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Estado post-quirurgico inmediato: {{ $notaPostOperatoria->estado_postquirurgico_inmediato_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Pronostico: {{ $notaPostOperatoria->pronostico_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    ENVIO DE PIEZAS O BIOPSIAS QUIRURGICAS PARA EXAMEN MACROSCOPICO E HISTOPATOLÓGICO: {{ $notaPostOperatoria->envio_piezas_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Otros hallazgos: {{ $notaPostOperatoria->otros_hallazgos_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Nombre del cirujano: {{ $notaPostOperatoria->nombre_cirujano_seccion4 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Firma:
+                </td>
+            </tr>
+
+            <div style="page-break-before:always">&nbsp;</div>
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    Nombre: {{ $clientes->name }} {{ $clientes->apePat }}
+                </td>
+                <td colspan="6">
+                    Edad: {{ $clientes->edad }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    {{ $indicaciones->indicaciones_seccion5 }}
+                </td>
+            </tr>
+
+            <div style="page-break-before:always">&nbsp;</div>
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    <h3 class="text-center">Nota Médica</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    Nombre: {{$clientes->name}} {{$clientes->apePat}}
+                </td>
+                <td colspan="6">
+                    Edad:{{$clientes->edad}}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Sexo:{{ $clientes->sexo }}
+                </td>
+                <td colspan="2">
+                    Talla:{{ $clientes->talla_seccion3 }}
+                </td>
+                <td colspan="2">
+                    TA:{{ $clientes->ta_seccion3 }}
+                </td>
+                <td colspan="2">
+                    FC:{{ $clientes->fc_seccion3 }}
+                </td>
+                <td colspan="2">
+                    FR:{{ $clientes->fr_seccion3 }}
+                </td>
+                <td colspan="2">
+                    TEMP:{{ $clientes->temp_seccion3 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    {{ $notaMedica->nota_medica_seccion6 }}
+                </td>
+            </tr>
+
+            <div style="page-break-before:always">&nbsp;</div>
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    <h3 class="text-center">Nota de Egreso</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    Nombre: {{$clientes->name}} {{$clientes->apePat}}
+                </td>
+                <td colspan="6">
+                    Edad:{{$clientes->edad}}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Sexo:{{ $clientes->sexo }}
+                </td>
+                <td colspan="2">
+                    Talla:{{ $clientes->talla_seccion3 }}
+                </td>
+                <td colspan="2">
+                    TA:{{ $clientes->ta_seccion3 }}
+                </td>
+                <td colspan="2">
+                    FC:{{ $clientes->fc_seccion3 }}
+                </td>
+                <td colspan="2">
+                    FR:{{ $clientes->fr_seccion3 }}
+                </td>
+                <td colspan="2">
+                    TEMP:{{ $clientes->temp_seccion3 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Fecha Ingreso: {{ $notaEgreso->fechaIngreso_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Fecha Egreso: {{ $notaEgreso->fechaEgreso_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Motivo de Egreso: {{ $notaEgreso->motivoEgreso_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Diagnosticos Finales: {{ $notaEgreso->diagnosticoFinal_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Resumen Clinico: {{ $notaEgreso->resumenClinico_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Problemas clinico pendientes: {{ $notaEgreso->problemasClinicos_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Plan: {{ $notaEgreso->plan_seccion7 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12">
+                    Recomendaciones para vigilancia ambulatoria: {{ $notaEgreso->recomendacionesVigilancia_seccion7 }}
+                </td>
+            </tr>
+
+            <div style="page-break-before:always">&nbsp;</div>
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    Nombre: {{$clientes->name}} {{$clientes->apePat}}
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
+                    Resumen de seguimiento y fecha: {{$seguimiento->resumen_seccion8}}
+                </td>
+            </tr>
+
+
             
         </tbody>
     </table>
+
+    
 
 </body>
 </html>

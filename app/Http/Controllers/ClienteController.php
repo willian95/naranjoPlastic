@@ -230,8 +230,14 @@ class ClienteController extends Controller
       public function pdf($id){
 
         $clientes = Clientes::find($id);
+        $notaPostOperatoria = NotaPostOperatoria::where('cliente_id', $id)->first();
+        $indicaciones = Indicaciones::where('cliente_id', $id)->first();
+        $notaMedica = NotaMedica::where('cliente_id', $id)->first();
+        $notaEgreso = NotaEgreso::where('cliente_id', $id)->first();
+        $seguimiento = seguimiento_quirurgico::where('cliente_id_seccion8', $id)->first();
 
-        $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes]);;
+
+        $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes, 'notaPostOperatoria' => $notaPostOperatoria,'indicaciones'=> $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimiento' => $seguimiento]);
         return $pdf->stream();
 
       }
