@@ -1604,116 +1604,146 @@
 
             <tr>
                 <td colspan="12">
+                    <h3 class="text-center">Hoja de enfermeria</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12" style="text-align: right; font-size: 10px; margin-top: -12px;">
+
+                </td>
+            </tr>
+
+            <div style="page-break-before:always">&nbsp;</div> 
+
+            <tr>
+                <td colspan="4">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="8">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="12">
                     <h3 class="text-center">NOTA POSTOPERATORIA</h3>
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Habitación: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->habitacion_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Diagnostico pre-operatorio: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->diagnostico_pre_operatorio_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Operacion planeada: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->operacion_planeada_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Diagnostico post-operatorio: @if($notaPostOperatoria != null) {{$notaPostOperatoria->diagnostico_post_operatorio_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Operacion realizada: @if($notaPostOperatoria != null) {{$notaPostOperatoria->operacion_realizada_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Descripción de la técnica quirurgica: @if($notaPostOperatoria != null) {{$notaPostOperatoria->descripcion_tecnica_quirurgica_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Hallazgos trans-operatorios: @if($notaPostOperatoria != null) {{$notaPostOperatoria->hallazgos_transoperatorios_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Reporte gasas y compresas: @if($notaPostOperatoria != null) {{$notaPostOperatoria->reporte_gasas_compresas_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Incidentes y accidentes: @if($notaPostOperatoria != null) {{$notaPostOperatoria->incidentes_accidentes_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Sangrado: @if($notaPostOperatoria != null) {{$notaPostOperatoria->sangrado_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     ESTUDIOS DE SERVICIOS AUXICILIARES DE DIAGNOSTICO Y TRATAMIENTO TRANSOPERATORIOS: @if($notaPostOperatoria != null) {{$notaPostOperatoria->estudios_servicios_auxiliares_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre del anestesiologo: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_anestesiologo_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre del ayudante1: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_ayudante1_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre del ayudante2: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_ayudante2_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre del instrumentista: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_instrumentista_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre de enfermera circulante: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_enfermera_circulante_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Estado post-quirurgico inmediato: @if($notaPostOperatoria != null) {{$notaPostOperatoria->estado_postquirurgico_inmediato_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Pronostico: @if($notaPostOperatoria != null) {{$notaPostOperatoria->pronostico_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     ENVIO DE PIEZAS O BIOPSIAS QUIRURGICAS PARA EXAMEN MACROSCOPICO E HISTOPATOLÓGICO: @if($notaPostOperatoria != null) {{$notaPostOperatoria->envio_piezas_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Otros hallazgos: @if($notaPostOperatoria != null) {{$notaPostOperatoria->otros_hallazgos_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre del cirujano: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_cirujano_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Firma:
                 </td>
             </tr>
@@ -1721,10 +1751,10 @@
             <div style="page-break-before:always">&nbsp;</div>
 
             <tr>
-                <td colspan="4">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="8">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1737,20 +1767,20 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
                 </td>
             </tr>
             <tr>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Nombre: {{ $clientes->name }} {{ $clientes->apePat }}
                 </td>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Edad: {{ $clientes->edad }}
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     @if($indicaciones != null){{ $indicaciones->indicaciones_seccion5 }}@endif
                 </td>
             </tr>
@@ -1758,7 +1788,7 @@
             <div style="page-break-before:always">&nbsp;</div>
 
             <tr>
-                <td colspan="4">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
                 <td colspan="8">
@@ -1774,40 +1804,40 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     <h3 class="text-center">Nota Médica</h3>
                 </td>
             </tr>
             <tr>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Edad:{{$clientes->edad}}
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     Sexo:{{ $clientes->sexo }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     Talla:{{ $clientes->talla_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     TA:{{ $clientes->ta_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     FC:{{ $clientes->fc_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     FR:{{ $clientes->fr_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     TEMP:{{ $clientes->temp_seccion3 }}
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     @if($notaMedica != null) {{ $notaMedica->nota_medica_seccion6 }} @endif
                 </td>
             </tr>
@@ -1831,75 +1861,75 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     <h3 class="text-center">Nota de Egreso</h3>
                 </td>
             </tr>
             <tr>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
-                <td colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Edad:{{$clientes->edad}}
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     Sexo:{{ $clientes->sexo }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     Talla:{{ $clientes->talla_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     TA:{{ $clientes->ta_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     FC:{{ $clientes->fc_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     FR:{{ $clientes->fr_seccion3 }}
                 </td>
-                <td colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
                     TEMP:{{ $clientes->temp_seccion3 }}
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Fecha Ingreso: @if($notaEgreso != null) {{ $notaEgreso->fechaIngreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Fecha Egreso: @if($notaEgreso != null) {{ $notaEgreso->fechaEgreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Motivo de Egreso: @if($notaEgreso != null) {{ $notaEgreso->motivoEgreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Diagnosticos Finales: @if($notaEgreso != null) {{ $notaEgreso->diagnosticoFinal_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Resumen Clinico: @if($notaEgreso != null) {{ $notaEgreso->resumenClinico_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Problemas clinico pendientes: @if($notaEgreso != null) {{ $notaEgreso->problemasClinicos_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Plan: @if($notaEgreso != null) {{ $notaEgreso->plan_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Recomendaciones para vigilancia ambulatoria: @if($notaEgreso != null) {{ $notaEgreso->recomendacionesVigilancia_seccion7 }} @endif
                 </td>
             </tr>
@@ -1923,13 +1953,13 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
                     Resumen de seguimiento y fecha: @if($seguimiento != null) {{$seguimiento->resumen_seccion8}} @endif
                 </td>
             </tr>
