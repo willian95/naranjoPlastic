@@ -2442,7 +2442,7 @@ function editaCliente(id){
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
     $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3)
     
-    if(data.responseData.postOperatorio.length > 0){
+    if(data.postOperatorio.length > 0){
       $("#notapostoperatoria_id").val(data.postOperatorio[0].id)
       $('#habitacion_seccion4').val(data.postOperatorio[0].habitacion_seccion4),
       $('#diagnostico_pre_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_pre_operatorio_seccion4),
