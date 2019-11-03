@@ -2442,7 +2442,7 @@ function editaCliente(id){
     data.responseData.gotas_glaucoma_seccion3!=0 ? $('#gotas_glaucoma_seccion3').prop('checked',true) : 0;
     $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3)
     
-    if(data.responseData.postOperatorio){
+    if(data.responseData.postOperatorio.length > 0){
       $("#notapostoperatoria_id").val(data.postOperatorio[0].id)
       $('#habitacion_seccion4').val(data.postOperatorio[0].habitacion_seccion4),
       $('#diagnostico_pre_operatorio_seccion4').val(data.postOperatorio[0].diagnostico_pre_operatorio_seccion4),
@@ -2467,20 +2467,20 @@ function editaCliente(id){
       $('#nombre_cirujano_seccion4').val(data.postOperatorio[0].nombre_cirujano_seccion4)
     }
 
-    if(data.indicaciones){
+    if(data.indicaciones.length > 0){
       //seccion5
       $("#indicaciones_id").val(data.indicaciones[0].id),
       $("#indicaciones_seccion5").val(data.indicaciones[0].indicaciones_seccion5)
     }
     
 
-    if(data.notaMedica){
+    if(data.notaMedica.length > 0){
       //seccion6
       $("#nota_medica_seccion6").val(data.notaMedica[0].nota_medica_seccion6)
       $("#nota_medica_id_seccion6").val(data.notaMedica[0].id)
     }
 
-    if(data.notaEgreso){
+    if(data.notaEgreso.length > 0){
       //seccion7
       $("#fechaIngreso_seccion7").val(data.notaEgreso[0].fechaIngreso_seccion7),
       $("#fechaEgreso_seccion7").val(data.notaEgreso[0].fechaEgreso_seccion7),
@@ -2493,13 +2493,13 @@ function editaCliente(id){
       $("#notaEgreso_id_seccion7").val(data.notaEgreso[0].id)
     }
 
-    if(data.seguimientoQuirurgico){
+    if(data.seguimientoQuirurgico.length > 0){
       //seccion8
       $("#resumen_seccion8").val(data.seguimientoQuirurgico[0].resumen_seccion8)
       $("#resumen_id_seccion8").val(data.seguimientoQuirurgico[0].id)
     }
 
-    if(data.hojaEnfermeria3UnidadQuirurgica){
+    if(data.hojaEnfermeria3UnidadQuirurgica.length > 0){
       //seccion9
 
       $("#id_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].id)
@@ -2663,7 +2663,7 @@ function editaCliente(id){
 
     }
 
-    if(data.hojaEnfermeria){
+    if(data.hojaEnfermeria.length > 0){
       $("#id_seccion10").val(data.hojaEnfermeria[0].id)
       $("#medico_seccion10").val(data.hojaEnfermeria[0].medico_seccion10),
       $("#diagnostico_seccion10").val(data.hojaEnfermeria[0].diagnostico_seccion10),
