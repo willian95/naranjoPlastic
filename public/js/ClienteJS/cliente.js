@@ -510,6 +510,7 @@ function verCliente(id){
     $("#padece_alergia_material_seccion3").val(data.responseData.padece_alergia_material_seccion3)
 
     //seccion4
+    console.log(data.postOperatorio)
     if(data.postOperatorio){
       $("#notapostoperatoria_id").val(data.postOperatorio[0].id)
       $('#habitacion_seccion4').val(data.postOperatorio[0].habitacion_seccion4)
