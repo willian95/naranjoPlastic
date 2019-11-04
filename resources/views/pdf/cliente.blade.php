@@ -2255,8 +2255,9 @@
         </table>
 
       
-
-        <div style="page-break-before:always">&nbsp;</div> 
+        @if($hojaEnfermeria != null)
+            <div style="page-break-before:always">&nbsp;</div> 
+        @endif
 
         <table>
 
