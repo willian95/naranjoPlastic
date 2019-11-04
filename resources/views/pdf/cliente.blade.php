@@ -1586,6 +1586,7 @@
 
             <div style="page-break-before:always">&nbsp;</div> 
 
+            @if($hojaEnfermeria != null)
             <tr>
                 <td colspan="4">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
@@ -1609,18 +1610,664 @@
             </tr>
 
             <tr>
-                <td colspan="12" style="text-align: right; font-size: 10px; margin-top: -12px;">
-
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Nombre: {{ $clientes->name }}  {{ $clientes->segundoNombre }} {{ $clientes->apePat }}
+                </td>
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Edad: {{ $clientes->edad }}
+                </td>
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Sexo: {{ $clientes->sexo }}
                 </td>
             </tr>
 
-            <div style="page-break-before:always">&nbsp;</div> 
+            <tr>
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Medico tratante: {{ $hojaEnfermeria->medico_seccion10 }}
+                </td>
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Diagnostico: {{ $hojaEnfermeria->medico_seccion10 }}
+                </td>
+            </tr>
 
             <tr>
-                <td colspan="4">
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Días de hospitalización: {{ $hojaEnfermeria->diagnostico_seccion10 }}
+                </td>
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    fecha: {{ $hojaEnfermeria->fecha_seccion10 }}
+                </td>
+                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Cama: {{ $hojaEnfermeria->cama_seccion10 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Peso: {{ $hojaEnfermeria->peso_seccion10 }}
+                </td>
+                <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Talla: {{ $hojaEnfermeria->talla_seccion10 }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="12" style="font-size:12px; border: 1px solid; padding: 0px;">
+                    Alergias: {{ $hojaEnfermeria->alergia_seccion10 }}
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <table width="550">
+            <thead>
+                <tr>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">FC</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">TC</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">7</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">8</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">9</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">10</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">11</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">12</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">13</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">14</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">15</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">16</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">17</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">18</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">19</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">20</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">21</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">22</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">23</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">24</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">1</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">2</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">3</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">4</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">5</th>
+                    <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">170</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">41 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_1_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_1_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">160</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_2_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_2_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">150</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">40 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_3_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">140</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_4_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_4_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">130</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">39 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_5_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_5_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">120</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_6_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_6_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">110</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">38 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_7_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_7_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">100</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_8_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_8_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">90</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">37 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_9_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_9_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">80</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_10_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_10_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">70</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">36 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_11_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_11_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">60</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;"></td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">50</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">35 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">50</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">35 °C</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_7_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_8_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_9_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_10_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_11_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_12_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_13_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_14_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_15_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_16_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_17_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_18_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_19_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria->tabla_20_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_21_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_22_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_23_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_24_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_1_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_2_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_3_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_4_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_5_12_seccion10 }}</td>
+                    <td style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->tabla_6_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">F. resp</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->t_arterial_12_seccion10 }}</td>
+         
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">T. Arterial</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->f_resp_12_seccion10 }}</td>
+         
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Perimetro</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->perimetro_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Formula</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->formula_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Dieta</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->dieta_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->dieta_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->dieta_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Lib orales</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lib_orales_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Total</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Liquidos Parentales</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->liquidos_parentales_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->liquidos_parentales_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->liquidos_parentales_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Electrolitos y/o Hemoderivados</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->electrolitos_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->electrolitos_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->electrolitos_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Total</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_electrolitos_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_electrolitos_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->total_electrolitos_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Uresis</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->uresis_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->uresis_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->uresis_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Evacuaciones</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->evacuaciones_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->evacuaciones_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->evacuaciones_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Vómitos, succión y drenajes</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->vomito_1_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->vomito_2_seccion10 }}</td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->vomito_3_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Laboratorio y productos biológicos</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">Reactivos</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_1_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_2_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_3_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_4_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_5_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_6_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_7_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_8_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_9_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_10_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_11_seccion10 }}</td>
+                    <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_12_seccion10 }}</td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        <h3 class="text-center">Cateter Corto Periferico</h3>
+                    </td>
+                    <td colspan="10" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        <h3 class="text-center">No. Punciones</h3>
+                    </td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        <h3 class="text-center">Cateter Central y/o Implantable (porthcat)</h3>
+                    </td>
+                </tr>
+
+                @endif
+                
+            </tbody>
+        </table>
+
+      
+
+        <div style="page-break-before:always">&nbsp;</div> 
+
+        <table>
+
+            <tbody>
+
+            
+            <tr>
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1633,117 +2280,117 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <h3 class="text-center">NOTA POSTOPERATORIA</h3>
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Habitación: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->habitacion_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Diagnostico pre-operatorio: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->diagnostico_pre_operatorio_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Operacion planeada: @if($notaPostOperatoria != null) {{ $notaPostOperatoria->operacion_planeada_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Diagnostico post-operatorio: @if($notaPostOperatoria != null) {{$notaPostOperatoria->diagnostico_post_operatorio_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
                     Operacion realizada: @if($notaPostOperatoria != null) {{$notaPostOperatoria->operacion_realizada_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Descripción de la técnica quirurgica: @if($notaPostOperatoria != null) {{$notaPostOperatoria->descripcion_tecnica_quirurgica_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Hallazgos trans-operatorios: @if($notaPostOperatoria != null) {{$notaPostOperatoria->hallazgos_transoperatorios_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Reporte gasas y compresas: @if($notaPostOperatoria != null) {{$notaPostOperatoria->reporte_gasas_compresas_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Incidentes y accidentes: @if($notaPostOperatoria != null) {{$notaPostOperatoria->incidentes_accidentes_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Sangrado: @if($notaPostOperatoria != null) {{$notaPostOperatoria->sangrado_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     ESTUDIOS DE SERVICIOS AUXICILIARES DE DIAGNOSTICO Y TRATAMIENTO TRANSOPERATORIOS: @if($notaPostOperatoria != null) {{$notaPostOperatoria->estudios_servicios_auxiliares_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre del anestesiologo: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_anestesiologo_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre del ayudante1: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_ayudante1_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre del ayudante2: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_ayudante2_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre del instrumentista: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_instrumentista_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre de enfermera circulante: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_enfermera_circulante_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Estado post-quirurgico inmediato: @if($notaPostOperatoria != null) {{$notaPostOperatoria->estado_postquirurgico_inmediato_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Pronostico: @if($notaPostOperatoria != null) {{$notaPostOperatoria->pronostico_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     ENVIO DE PIEZAS O BIOPSIAS QUIRURGICAS PARA EXAMEN MACROSCOPICO E HISTOPATOLÓGICO: @if($notaPostOperatoria != null) {{$notaPostOperatoria->envio_piezas_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Otros hallazgos: @if($notaPostOperatoria != null) {{$notaPostOperatoria->otros_hallazgos_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre del cirujano: @if($notaPostOperatoria != null) {{$notaPostOperatoria->nombre_cirujano_seccion4 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Firma:
                 </td>
             </tr>
@@ -1751,10 +2398,10 @@
             <div style="page-break-before:always">&nbsp;</div>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1767,20 +2414,20 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre: {{ $clientes->name }} {{ $clientes->apePat }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Edad: {{ $clientes->edad }}
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     @if($indicaciones != null){{ $indicaciones->indicaciones_seccion5 }}@endif
                 </td>
             </tr>
@@ -1788,10 +2435,10 @@
             <div style="page-break-before:always">&nbsp;</div>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1804,40 +2451,40 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     <h3 class="text-center">Nota Médica</h3>
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Edad:{{$clientes->edad}}
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Sexo:{{ $clientes->sexo }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Talla:{{ $clientes->talla_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     TA:{{ $clientes->ta_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     FC:{{ $clientes->fc_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     FR:{{ $clientes->fr_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     TEMP:{{ $clientes->temp_seccion3 }}
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     @if($notaMedica != null) {{ $notaMedica->nota_medica_seccion6 }} @endif
                 </td>
             </tr>
@@ -1845,10 +2492,10 @@
             <div style="page-break-before:always">&nbsp;</div>
 
             <tr>
-                <td colspan="4">
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1861,75 +2508,75 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     <h3 class="text-center">Nota de Egreso</h3>
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="13">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="13">
                     Edad:{{$clientes->edad}}
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Sexo:{{ $clientes->sexo }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Talla:{{ $clientes->talla_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     TA:{{ $clientes->ta_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     FC:{{ $clientes->fc_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     FR:{{ $clientes->fr_seccion3 }}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="2">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     TEMP:{{ $clientes->temp_seccion3 }}
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Fecha Ingreso: @if($notaEgreso != null) {{ $notaEgreso->fechaIngreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Fecha Egreso: @if($notaEgreso != null) {{ $notaEgreso->fechaEgreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Motivo de Egreso: @if($notaEgreso != null) {{ $notaEgreso->motivoEgreso_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Diagnosticos Finales: @if($notaEgreso != null) {{ $notaEgreso->diagnosticoFinal_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Resumen Clinico: @if($notaEgreso != null) {{ $notaEgreso->resumenClinico_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Problemas clinico pendientes: @if($notaEgreso != null) {{ $notaEgreso->problemasClinicos_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Plan: @if($notaEgreso != null) {{ $notaEgreso->plan_seccion7 }} @endif
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Recomendaciones para vigilancia ambulatoria: @if($notaEgreso != null) {{ $notaEgreso->recomendacionesVigilancia_seccion7 }} @endif
                 </td>
             </tr>

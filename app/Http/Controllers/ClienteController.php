@@ -235,9 +235,11 @@ class ClienteController extends Controller
         $notaMedica = NotaMedica::where('cliente_id', $id)->first();
         $notaEgreso = NotaEgreso::where('cliente_id', $id)->first();
         $seguimiento = seguimiento_quirurgico::where('cliente_id_seccion8', $id)->first();
+        $hojaEnfermeria = HojaEnfermeria::where('cliente_id', $id)->first();
+        $hojaEnfermeria2 = HojaEnfermeriaPart2::where('cliente_id', $id)->first();
+        $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $id)->first();
 
-
-        $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes, 'notaPostOperatoria' => $notaPostOperatoria,'indicaciones'=> $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimiento' => $seguimiento]);
+        $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes, 'notaPostOperatoria' => $notaPostOperatoria,'indicaciones'=> $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimiento' => $seguimiento, 'hojaEnfermeria' => $hojaEnfermeria, 'hojaEnfermeria2' => $hojaEnfermeria2, 'hojaEnfermeria3' => $hojaEnfermeria3]);
         return $pdf->stream();
 
       }

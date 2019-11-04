@@ -2499,7 +2499,7 @@ function editaCliente(id){
       $("#resumen_id_seccion8").val(data.seguimientoQuirurgico[0].id)
     }
 
-    if(data.hojaEnfermeria3UnidadQuirurgica.length > 0){
+    if(data.hojaEnfermeriaUnidadQuirurgica.length > 0){
       //seccion9
 
       $("#id_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].id)
