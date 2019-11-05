@@ -1324,43 +1324,43 @@
 
         <div style="page-break-before:always">&nbsp;</div>
 
-        <table class="table">
+        <table>
             <tbody>
-                    <tr>
-                            <td colspan="4">
-                                <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
-                            </td>
-                            <td colspan="8">
-                                <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
-                                    
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
-                                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
-                            </td>
-                        </tr>
+            <tr>
+                <td colspan="20">
+                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                </td>
+                <td colspan="6">
+                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                        
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                </td>
+            </tr>
 
             <tr>
-                <td colspan="12" style="border: 1px solid; padding: 0px;">
+                <td colspan="26" style="border: 1px solid; padding: 0px;">
                     <h4 class="text-center">Medicamentos que emplea usted actualmente</h4>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Aspirina
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->aspirina_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Oxigeno</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Oxigeno</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->oxigeno_seccion3)
                         Sí
                     @else
@@ -1370,18 +1370,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Digitales (para la palpitación)
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->digitales_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">LSD</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">LSD</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->lsd_seccion3)
                         Sí
                     @else
@@ -1391,18 +1391,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Quinidinas
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->quinidinas_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Gotas para glaucoma</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Gotas para glaucoma</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->gotas_glaucoma_seccion3)
                         Sí
                     @else
@@ -1412,18 +1412,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Nitroglicerina
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->nitroglicerina_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Pastillas para dormir</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Pastillas para dormir</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->pastillas_dormir_seccion3)
                         Sí
                     @else
@@ -1433,18 +1433,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Medicamentos para presión
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->medicamentos_presion_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Narcoticos</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Narcoticos</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->narcoticos_seccion3)
                         Sí
                     @else
@@ -1454,18 +1454,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Diureticos
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->diureticos_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Lasix</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Lasix</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->lasix_seccion3)
                         Sí
                     @else
@@ -1475,18 +1475,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Anticoagulantes
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->anticoagulantes_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Heparina</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Heparina</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->heparina_seccion3)
                         Sí
                     @else
@@ -1496,18 +1496,18 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Medicamentos para diabetes
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->medicamentos_diabetes_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Algún otro medicamento</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Algún otro medicamento</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->otro_medicamento_seccion3)
                         Sí
                     @else
@@ -1517,65 +1517,65 @@
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Tranquilizantes
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->tranquilizantes_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">¿Cual?</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">¿Cual?</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     {{ $clientes->cual_otro_medicamento_seccion3 }}
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         Anti depresivos
                 </td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     @if($clientes->antidepresivos_seccion3)
                         Sí
                     @else
                         No
                     @endif
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">Dosis?</td>
-                <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">Dosis?</td>
+                <td colspan="5" style="font-size:10px; border: 1px solid; padding: 0px;">
                     {{ $clientes->dosis_seccion3 }}
                 </td>
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <p style="font-size: 12px;">Su anestesiólogo platicara con usted y le aconsejara el tipo de anestesia que medicamente se considere la más apropiada para su caso. Por lo general, la anestesia empleada hoy en día es de bajo riesgo.</p>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <p style="font-size: 12px;">No obstante, usted debe comprender que al igual que cualquier otro procedimiento médico y la administración de anestesia presenta ciertos riesgos; los cuales pueden varias con los hábitos, la edad, enfermedades agregadas de cada paciente; por lo que es importante que usted lea y conteste detenidamente esta forma.</p>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <p>______________________________________________</p>
                     <p style="font-size: 12px;">Firme la parte inferior cuando esté de acuerdo con lo leído y contestado adecuadamente.</p>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <u style="width: 100%"></u>
                 </td>
             </tr>
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                         <p>______________________________________________</p>
                     <p style="font-size: 12px;">
                             
@@ -1588,10 +1588,10 @@
 
             @if($hojaEnfermeria != null)
             <tr>
-                <td colspan="4">
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -1604,53 +1604,53 @@
             </tr>
 
             <tr>
-                <td colspan="12">
+                <td colspan="26">
                     <h3 class="text-center">Hoja de enfermeria</h3>
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="10" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Nombre: {{ $clientes->name }}  {{ $clientes->segundoNombre }} {{ $clientes->apePat }}
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Edad: {{ $clientes->edad }}
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Sexo: {{ $clientes->sexo }}
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="14" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Medico tratante: {{ $hojaEnfermeria->medico_seccion10 }}
                 </td>
-                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="12" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Diagnostico: {{ $hojaEnfermeria->medico_seccion10 }}
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Días de hospitalización: {{ $hojaEnfermeria->diagnostico_seccion10 }}
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                     fecha: {{ $hojaEnfermeria->fecha_seccion10 }}
                 </td>
-                <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="10" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Cama: {{ $hojaEnfermeria->cama_seccion10 }}
                 </td>
             </tr>
             <tr>
-                <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="13" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Peso: {{ $hojaEnfermeria->peso_seccion10 }}
                 </td>
-                <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="13" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Talla: {{ $hojaEnfermeria->talla_seccion10 }}
                 </td>
             </tr>
             <tr>
-                <td colspan="12" style="font-size:12px; border: 1px solid; padding: 0px;">
+                <td colspan="26" style="font-size:12px; border: 1px solid; padding: 0px;">
                     Alergias: {{ $hojaEnfermeria->alergia_seccion10 }}
                 </td>
             </tr>
@@ -2248,6 +2248,281 @@
                         <h3 class="text-center">Cateter Central y/o Implantable (porthcat)</h3>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Dolor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_corto_dolor_seccion10 }}
+                    </td>
+                    <td colspan="10">
+                        {{ $hojaEnfermeria->cateter_corto_numero_punciones_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Dolor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_central_dolor_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Calor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_corto_calor_seccion10 }}
+                    </td>
+                    <td colspan="10">
+
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Calor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_central_calor_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Rubor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_corto_rubor_seccion10 }}
+                    </td>
+                    <td colspan="10">
+
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Rubor
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_central_rubor_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Recanaliza
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_corto_recanaliza_seccion10 }}
+                    </td>
+                    <td colspan="10">
+
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Recanaliza
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_central_recanaliza_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Cateter No.
+                    </td>
+                    <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeria->cateter_corto_numero_seccion10 }}
+                    </td>
+                    <td colspan="10">
+
+                    </td>
+                    <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Aguja Gripper y/o Huber Calibre
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:12px; border: 1px solid; padding: 0px;">
+                        Dieta: {{ $hojaEnfermeria->dieta_seccion10 }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        Fecha
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        Medicamentos
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        Dosis
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        Via
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        Horarios
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span>{{ $hojaEnfermeria->fecha_1_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span>{{ $hojaEnfermeria->medicamentos_1_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span>{{ $hojaEnfermeria->dosis_1_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span>{{ $hojaEnfermeria->via_1_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        {{ $hojaEnfermeria->horarios_1_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_2_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_2_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_2_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_2_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_2_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_3_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_3_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_3_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_3_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_3_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_4_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_4_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_4_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_4_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_4_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_5_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_5_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_5_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_5_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_5_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_6_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_6_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_6_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_6_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_6_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_7_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_7_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_7_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_7_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_7_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_8_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_8_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_8_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_8_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_8_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_9_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_9_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_9_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_9_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_9_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->fecha_10_seccion10 }}
+                    </td>
+                    <td colspan="6" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->medicamentos_10_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->dosis_10_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->via_10_seccion10 }}
+                    </td>
+                    <td colspan="5" style="font-size:12px; border: 1px solid; padding: 0px;" >
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeria->horarios_10_seccion10 }}
+                    </td>
+                </tr>
 
                 @endif
                 
@@ -2260,6 +2535,837 @@
         @endif
 
         <table>
+            <tbody>
+                <tr>
+                    <td colspan="20">
+                        <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                    </td>
+                    <td colspan="6">
+                        <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                            
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26">
+                        <h3 class="text-center">HOJA DE REGISTRO DE ENFERMERIA EN UNIDAD QUIRURGICA</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="20" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Paciente: {{ $clientes->name }} {{ $clientes->apePat }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        FDN: {{ $hojaEnfermeriaUnidadQuirurgica->fdn_seccion9 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Edad: {{ $clientes->edad }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Sexo: {{ $clientes->sexo }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Habitación: {{ $hojaEnfermeriaUnidadQuirurgica->habitacion_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Médico Tratatnte: {{ $hojaEnfermeriaUnidadQuirurgica->medico_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Signos vitales: {{ $hojaEnfermeriaUnidadQuirurgica->signos_vitales_seccion9 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        T.A: {{ $hojaEnfermeriaUnidadQuirurgica->ta_seccion9 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        F.C: {{ $hojaEnfermeriaUnidadQuirurgica->fc_seccion9 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        F.R: {{ $hojaEnfermeriaUnidadQuirurgica->fr_seccion9 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        T.C: {{ $hojaEnfermeriaUnidadQuirurgica->tc_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Peso: {{ $hojaEnfermeriaUnidadQuirurgica->peso_seccion9 }}
+                    </td>
+                    <td colspan="2" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Talla: {{ $hojaEnfermeriaUnidadQuirurgica->talla_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Diagnostico Preoperatorio: {{ $hojaEnfermeriaUnidadQuirurgica->diagnostico_pre_operatorio_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cirugía proyectada: {{ $hojaEnfermeriaUnidadQuirurgica->cirugia_proyectada_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="13" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Tipo de cirugia: {{ $hojaEnfermeriaUnidadQuirurgica->tipo_cirugia_seccion9 }}
+                    </td>
+                    <td colspan="13" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Tipo de cirugia: {{ $hojaEnfermeriaUnidadQuirurgica->estado_actual_paciente_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Vendaje de MPI:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->vendaje_mpi_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Alergias:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->alergia_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Tricotomía:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tricotomia_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Patología relevantes:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->patologías_relevantes_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Protesis:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->protesis_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Estudios preoperatorios:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->estudios_preoperatorios_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Maquillaje o esmalte:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->protesis_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Valoración preoperatoria:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->valoracion_preoperatoria_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Marcado quirurgico:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->marcado_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Sangre reserva:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sangre_reserva_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Ayuno:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->marcado_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Grupo y RH Sanguíneo:
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sangre_reserva_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Observaciones: {{ $hojaEnfermeriaUnidadQuirurgica->observaciones_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="13">
+                        Enfermera: {{ $hojaEnfermeriaUnidadQuirurgica->enfermera_seccion9 }}
+                    </td>
+                    <td colspan="13">
+                        Turno: {{ $hojaEnfermeriaUnidadQuirurgica->turno_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Sala quirurgica: {{ $hojaEnfermeriaUnidadQuirurgica->sala_quirurgica_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Se llevó a cabo "Time-out": {{ $hojaEnfermeriaUnidadQuirurgica->time_out_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Razón: {{ $hojaEnfermeriaUnidadQuirurgica->razon_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cirugia realizada: {{ $hojaEnfermeriaUnidadQuirurgica->cirugia_realizada_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cirujano: {{ $hojaEnfermeriaUnidadQuirurgica->cirujano_seccion9 }}
+                    </td>
+                    <td colspan="10" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Anestesiologo: {{ $hojaEnfermeriaUnidadQuirurgica->anestesiologo_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Instrumentista: {{ $hojaEnfermeriaUnidadQuirurgica->instrumentista_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        1er ayudante: {{ $hojaEnfermeriaUnidadQuirurgica->primer_ayudante_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        2do ayudante: {{ $hojaEnfermeriaUnidadQuirurgica->segundo_ayudante_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Circulante: {{ $hojaEnfermeriaUnidadQuirurgica->circular_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cirujano: {{ $hojaEnfermeriaUnidadQuirurgica->cirujano_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Anestesiologo: {{ $hojaEnfermeriaUnidadQuirurgica->anestesiologo_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Instrumentista: {{ $hojaEnfermeriaUnidadQuirurgica->instrumentista_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Inicio Anestesia: {{ $hojaEnfermeriaUnidadQuirurgica->inicio_anestesia_seccion9 }}
+                    </td>
+                    <td colspan="18" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Tipo Anestesia: {{ $hojaEnfermeriaUnidadQuirurgica->tipo_anestesia_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Inicio Anestesia: {{ $hojaEnfermeriaUnidadQuirurgica->inicio_anestesia_seccion9 }}
+                    </td>
+                    <td colspan="18" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Tipo Anestesia: {{ $hojaEnfermeriaUnidadQuirurgica->tipo_anestesia_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Inicio CX: {{ $hojaEnfermeriaUnidadQuirurgica->inicio_cx_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Termino CX: {{ $hojaEnfermeriaUnidadQuirurgica->termino_cx_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Termino de anestesia: {{ $hojaEnfermeriaUnidadQuirurgica->termino_anestesia_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Egreso sala: {{ $hojaEnfermeriaUnidadQuirurgica->egreso_sala_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Medicamentos
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Dosis
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Vía
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                       Hora
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Líquidos
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Vol
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Vía
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Hora
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_1_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_1_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_1_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_2_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_2_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_2_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_3_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_3_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_3_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_4_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_4_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_4_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_5_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_5_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_5_seccion10 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->medicamentos_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->dosis_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->via_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->hora_6_seccion10 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_volumen_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_via_6_seccion10 }}
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span> {{ $hojaEnfermeriaUnidadQuirurgica->liquidos_hora_6_seccion10 }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="20" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cuenta Textil
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Egresos
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Antes
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Después
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Uresis: {{ $hojaEnfermeriaUnidadQuirurgica->uresis_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Gasas
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->gasas_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->gasas_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Sangrado: {{ $hojaEnfermeriaUnidadQuirurgica->sangrado_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Compresas
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->compresas_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->compresas_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cotonoides
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->cotonoides_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->cotonoides_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Isopos
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->isopos_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->isopos_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Torundas
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->torundas_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->torundas_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Otros:
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->otros_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->otros_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Otros:
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->otros_2_antes_seccion9 }}
+                    </td>
+                    <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->otros_2_despues_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="20" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Cuenta Completa: {{ $hojaEnfermeriaUnidadQuirurgica->cuenta_completa_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="20" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        hora: {{ $hojaEnfermeriaUnidadQuirurgica->hora_seccion9 }}
+                    </td>
+                    <td colspan="6" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Nota quirurgica: {{ $hojaEnfermeriaUnidadQuirurgica->nota_quirurgica_seccion9 }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                       Fecha y hora de ingresos a cuidados a post - operatorios: {{ $hojaEnfermeriaUnidadQuirurgica->fecha_hora_cuidados_post_operatorios_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        DESTINO POST – QUIRURGICO: “SALA DE RECUPERACIÓN”, “HABITACIÓN – SALA GENERAL” O “U. DE CUIDADOS INTENSIVOS / INTERMEDIOS”
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26">
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        <h3 class="text-center">Monitorización del paciente</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Ingreso
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        15 minutos
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        30 minutos
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        45 minutos
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        60 minutos
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        > 60 minutos
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        TA (mmhg)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->ta_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        FC (Ipm)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fc_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        FR (rpm)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->fr_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        TC °C
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->tc_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        SaO2 (%)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        EVA (0-10)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->eva_60minmass_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Aldrete (0-10)
+                    </td>
+                    <td colspan="3" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_ingreso_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_15min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_30min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_45min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_60min_seccion9 }}
+                    </td>
+                    <td colspan="4" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        {{ $hojaEnfermeriaUnidadQuirurgica->sa02_60minmass_seccion9 }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
+                        Nota de recuperacion: {{ $hojaEnfermeriaUnidadQuirurgica->nota_recuperacion_seccion9 }}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="26" style="font-size:10px; border-top: 1px solid; padding: 0px;">
+                        <span style="visibility:hidden">h</span>
+                    </td>
+                </tr>
+                {{--<tr>
+                    <td colspan="7">
+                        Fecha y hora cuidados Operatorios: {{ $hojaEnfermeriaUnidadQuirurgica->fecha_hora_cuidados_post_operatorios_seccion9 }}
+                    </td>
+                    <td colspan="7">
+                        Enfermera (O) TM: {{ $hojaEnfermeriaUnidadQuirurgica->enfermera_seccion9 }}
+                    </td>
+                    <td colspan="6">
+                        T.V: 
+                    </td>
+                    <td colspan="6">
+
+                    </td>
+                </tr>--}}
+
+                
+            </tbody>
+        </table>
+
+        <div style="page-break-before:always">&nbsp;</div> 
+
+        <table style="width: 100%;">
 
             <tbody>
 
@@ -2396,45 +3502,54 @@
                 </td>
             </tr>
 
+            </tbody>
+        
+        </table>
             <div style="page-break-before:always">&nbsp;</div>
 
-            <tr>
-                <td colspan="20">
-                    <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
-                </td>
-                <td colspan="6">
-                    <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
-                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
-                        
-                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
-                <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
-                </td>
-            </tr>
-
-            <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
-                </td>
-            </tr>
-            <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    Nombre: {{ $clientes->name }} {{ $clientes->apePat }}
-                </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    Edad: {{ $clientes->edad }}
-                </td>
-            </tr>
-            <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    @if($indicaciones != null){{ $indicaciones->indicaciones_seccion5 }}@endif
-                </td>
-            </tr>
+        <table style="width: 100%;">
+            <tbody>
+                    <tr>
+                    <td colspan="20">
+                        <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                    </td>
+                    <td colspan="6">
+                        <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                            
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                        </td>
+                    </tr>
+    
+                <tr>
+                    <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
+                        <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="20">
+                        Nombre: {{ $clientes->name }} {{ $clientes->apePat }}
+                    </td>
+                    <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
+                        Edad: {{ $clientes->edad }}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
+                        <span style="visibility: hidden">h</span>@if($indicaciones != null){{ $indicaciones->indicaciones_seccion5 }}@endif
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
             <div style="page-break-before:always">&nbsp;</div>
 
+        <table style="width: 100%">
+            <tbody>
             <tr>
                 <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
@@ -2457,10 +3572,10 @@
                 </td>
             </tr>
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="20">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="6">
                     Edad:{{$clientes->edad}}
                 </td>
             </tr>
@@ -2486,12 +3601,16 @@
             </tr>
             <tr>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    @if($notaMedica != null) {{ $notaMedica->nota_medica_seccion6 }} @endif
+                    <span style="visibility:hidden">h</span>@if($notaMedica != null) {{ $notaMedica->nota_medica_seccion6 }} @endif
                 </td>
             </tr>
+            </tbody>
+        </table>
 
-            <div style="page-break-before:always">&nbsp;</div>
-
+        <div style="page-break-before:always">&nbsp;</div>
+        
+        <table style="width: 100%">
+            <tbody>
             <tr>
                 <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
@@ -2581,14 +3700,18 @@
                     Recomendaciones para vigilancia ambulatoria: @if($notaEgreso != null) {{ $notaEgreso->recomendacionesVigilancia_seccion7 }} @endif
                 </td>
             </tr>
+            </tbody>
+        </table>
 
             <div style="page-break-before:always">&nbsp;</div>
-
+        
+        <table style="width: 100%;">
+            <tbody>
             <tr>
-                <td colspan="4">
+                <td colspan="20">
                     <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
                 </td>
-                <td colspan="8">
+                <td colspan="6">
                     <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
                     <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
@@ -2601,13 +3724,13 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
                 </td>
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="12">
+                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Resumen de seguimiento y fecha: @if($seguimiento != null) {{$seguimiento->resumen_seccion8}} @endif
                 </td>
             </tr>
