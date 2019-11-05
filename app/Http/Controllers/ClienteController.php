@@ -240,6 +240,8 @@ class ClienteController extends Controller
         $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $id)->first();
         $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::where('cliente_id', $id)->first();
 
+        dd($hojaEnfermeriaUnidadQuirurgica);
+
         $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes, 'notaPostOperatoria' => $notaPostOperatoria,'indicaciones'=> $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimiento' => $seguimiento, 'hojaEnfermeria' => $hojaEnfermeria, 'hojaEnfermeria2' => $hojaEnfermeria2, 'hojaEnfermeria3' => $hojaEnfermeria3, 'hojaEnfermeriaUnidadQuirurgica' => $hojaEnfermeriaUnidadQuirurgica]);
         return $pdf->stream();
 
