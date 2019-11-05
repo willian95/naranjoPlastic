@@ -228,6 +228,8 @@ class ClienteController extends Controller
 
       public function pdf($id){
 
+        set_time_limit(600);
+
         $clientes = Clientes::find($id);
         $notaPostOperatoria = NotaPostOperatoria::where('cliente_id', $id)->first();
         $indicaciones = Indicaciones::where('cliente_id', $id)->first();
@@ -239,7 +241,7 @@ class ClienteController extends Controller
         $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $id)->first();
         $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $id)->first();
         $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::where('cliente_id', $id)->first();
-        
+
         $pdf = PDF::loadView('pdf.cliente', ['clientes' => $clientes, 'notaPostOperatoria' => $notaPostOperatoria,'indicaciones'=> $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimiento' => $seguimiento, 'hojaEnfermeria' => $hojaEnfermeria, 'hojaEnfermeria2' => $hojaEnfermeria2, 'hojaEnfermeria3' => $hojaEnfermeria3, 'hojaEnfermeriaUnidadQuirurgica' => $hojaEnfermeriaUnidadQuirurgica]);
         return $pdf->stream();
 
