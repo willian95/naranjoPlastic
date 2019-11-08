@@ -59,6 +59,7 @@ class ClienteController extends Controller
         $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::where('cliente_id', $request->id)->get();
         $hojaEnfermeria = HojaEnfermeria::where('cliente_id', $request->id)->get();
         $hojaEnfermeria2 = HojaEnfermeriaPart2::where('cliente_id', $request->id)->get();
+        $hojaEnfermeria3 = HojaEnfermeriaPart3::where('cliente_id', $request->id)->get();
 
         return response()->json(['responseData'=>$cliente,'responseData1' => $foto, 'postOperatorio' => $postoperatorio, 'indicaciones' => $indicaciones, 'notaMedica' => $notaMedica, 'notaEgreso' => $notaEgreso, 'seguimientoQuirurgico' => $seguimientoQuirurgico, 'hojaEnfermeriaUnidadQuirurgica' => $hojaEnfermeriaUnidadQuirurgica, 'hojaEnfermeria' => $hojaEnfermeria, 'hojaEnfermeria2' => $hojaEnfermeria2, 'hojaEnfermeria3' => $hojaEnfermeria3]);
       }
