@@ -263,7 +263,8 @@
                 </div>
 
       </div class="modal-footer">
-        <button class="btn btn-GrisOscuro float-right" id="generalContinuar">Continuar</button>
+      <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
       </div>
           <div class="tab-pane fade" id="seccion2" role="tabpanel">
             <div class="form-row">
@@ -340,7 +341,8 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-GrisOscuro float-right" id="seccion2Continuar">Continuar</button>
+            <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
               {{--<button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>--}}
           </div>
@@ -1003,7 +1005,8 @@
 
                     {{--<button style="margin-top: 10px;" class="btn btn-GrisOscuro float-right" id="seccion3Continuar">Continuar</button>--}}
                     {{--<button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>--}}
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
                   </div>
                 </div>
@@ -1130,7 +1133,8 @@
                     <input class="form-control viewClient" type="text" class="form-control" id="nombre_cirujano_seccion4">
                   </div>
 
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
                 </div>
               </div>
@@ -1152,13 +1156,16 @@
                   <div class="col-md-12">
                     
                     <label for="example-text-input">Indicaciones</label>
-                    <textarea id="indicaciones_seccion5" class="form-control viewClient" rows="8"></textarea>
+                    <textarea id="indicaciones_seccion5" class="form-control viewClient" rows="8">
+                      
+
+                    </textarea>
                     <input type="text" style="display:none;" id="indicaciones_id">
                     
                   </div>
 
 
-                  <!--<button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>-->
+                  <button class="btn btn-GrisOscuro adicionalContinuar" onclick="guardarCliente();">Guardar</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
               </div>
@@ -1183,6 +1190,9 @@
                   <input type="text" style="display:none;" id="nota_medica_id_seccion6">
                   
                 </div>
+
+                <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
             </div>
           </div>
@@ -1242,6 +1252,9 @@
 
                 <input type="text" style="display:none;" id="notaEgreso_id_seccion7">
 
+                <button class="btn btn-GrisOscuro adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+
             </div>
           </div>
         </div>
@@ -1266,7 +1279,7 @@
                   
                 </div>
 
-                <button class="btn btn-GrisOscuro" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button class="btn btn-GrisOscuro adicionalContinuar" onclick="guardarCliente();">Guardar</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
             </div>
@@ -2090,10 +2103,286 @@
                 </table>
               </div>
 
+              <div class="col-md-8">
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th style="width: 100px;">Medicamentos</th>
+                            <tH style="width: 100px;">Dosis</th>
+                            <tH style="width: 100px;">Vía</th>
+                            <tH style="width: 100px;">Hora</th>
+                            <tH style="width: 100px;">Líquidos</th>
+                            <tH style="width: 100px;">Vol</th>
+                            <tH style="width: 100px;">Vía</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="medicamento_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="dosis_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="via_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="hora_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="liquido_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="vol_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                            <td style="width: 100px;">
+                              <input type="text" name="" id="via_2_1_seccion9" class="form-control" style="width: 100px;">
+                            </td>
+                          </tr>
+                          <tr>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="medicamento_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="dosis_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="via_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="hora_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="liquido_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="vol_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                              <td style="width: 100px;">
+                                <input type="text" name="" id="via_2_2_seccion9" class="form-control" style="width: 100px;">
+                              </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_3_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_4_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_5_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_6_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_7_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_8_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="medicamento_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="dosis_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="hora_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="liquido_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="vol_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                                <td style="width: 100px;">
+                                  <input type="text" name="" id="via_2_9_seccion9" class="form-control" style="width: 100px;">
+                                </td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Egresos</th>
+                        <th>Egresos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label for="">Uresis</label>
+                          <input type="text" class="form-control">                          
+                        </td>
+                        <td>
+                            <label for="">Total</label>
+                            <input type="text" class="form-control">  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label for="">Sangrado</label>
+                          <input type="text" class="form-control">                          
+                        </td>
+                        <td>
+                            <label for="">Total</label>
+                            <input type="text" class="form-control">  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label for="">Drenales</label>
+                          <input type="text" class="form-control">                          
+                        </td>
+                        <td>
+                            <label for="">Total</label>
+                            <input type="text" class="form-control">  
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
               <div class="col-md-12">
                 <label for="">Nota de recuperación</label>
                 <textarea class="form-control" rows="5" id="nota_recuperacion_seccion9"></textarea>
               </div>
+
+              <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
           </div>
         </div>
@@ -2716,35 +3005,35 @@
                   <div class="col-md-6">
                     <p class="text-center"><b>Cateter corto periférico</b></p>
                     <div class="col-md-12">
-                      <label for="example-text-input">Dolor</label>
+                      <label for="">Dolor</label>
                       <select class="form-control viewClient" id="cateter_corto_dolor_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Calor</label>
+                      <label for="">Calor</label>
                       <select class="form-control viewClient" id="cateter_corto_calor_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Rubor</label>
+                      <label for="">Rubor</label>
                       <select class="form-control viewClient" id="cateter_corto_rubor_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Recanaliza</label>
+                      <label for="">Recanaliza</label>
                       <select class="form-control viewClient" id="cateter_corto_recanaliza_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Cateter No.</label>
+                      <label for="">Cateter No.</label>
                       <select class="form-control viewClient" id="cateter_corto_numero_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -2754,28 +3043,28 @@
                   <div class="col-md-6">
                     <p class="text-center"><b>CATETER CENTRAL Y/O IMPLANTABLE (PORTHCAT)</b></p>
                     <div class="col-md-12">
-                      <label for="example-text-input">Dolor</label>
+                      <label for="">Dolor</label>
                       <select class="form-control viewClient" id="cateter_central_dolor_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Calor</label>
+                      <label for="">Calor</label>
                       <select class="form-control viewClient" id="cateter_central_central_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Rubor</label>
+                      <label for="">Rubor</label>
                       <select class="form-control viewClient" id="cateter_central_rubor_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                       </select>
                     </div>
                     <div class="col-md-12">
-                      <label for="example-text-input">Recanaliza</label>
+                      <label for="">Recanaliza</label>
                       <select class="form-control viewClient" id="cateter_central_recanaliza_seccion10">
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -2783,6 +3072,7 @@
                     </div>
                   </div>
                   <div class="col-md-12">
+                    <label for="">Dieta</label>
                     <textarea rows="5" class="form-control viewClient" id="dieta_seccion10"></textarea>
                   </div>
                   <div class="col-md-12">
@@ -2870,6 +3160,88 @@
                       </tbody>
                     </table>
                   </div>
+                  <div class="col-md-12">
+                    <h3 class="text-center">Nota de enfermería</h3>
+                  </div>
+                  <div class="col-md-12">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label>Hora: </label>
+                            <input type="text" class="form-control viewClient" id="hora_nota_1_seccion10"></td>
+                          <td>
+                              <label>Hora: </label>
+                            <input type="text" class="form-control viewClient" id="hora_nota_2_seccion10">
+                          </td>
+                          <td>
+                              <label>Hora: </label>
+                            <input type="text" class="form-control viewClient" id="hora_nota_3_seccion10">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_1_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_2_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_3_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_4_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_5_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_6_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_7_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_8_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_9_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_10_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_11_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_12_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_13_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_14_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_15_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_16_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_17_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_18_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_19_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_20_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_21_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_22_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_23_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_24_seccion10"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_25_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_26_seccion10"></td>
+                          <td><input type="text" class="form-control viewClient" id="nota_enfermeria_27_seccion10"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                              <label for="">Enfer:</label>
+                              <input type="text" class="form-control viewClient" id="enfermera_nota_seccion10">
+                            </td>
+                            <td>
+                              <label for="">Firma:</label>
+                              <input type="text" class="form-control viewClient" id="firma_nota_seccion10">
+                            </td>
+                            <td></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                <button class="btn btn-GrisOscuro adicionalContinuar" id="adicionalContinuar" onclick="guardarCliente();">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             </div>
         </div>
       </div>

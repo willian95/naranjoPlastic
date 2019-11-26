@@ -16,6 +16,7 @@ use App\NotaMedica;
 use App\NotaEgreso;
 use App\seguimiento_quirurgico;
 use App\HojaEnfermeriaUnidadQuirurgica;
+use App\HojaEnfermeriaUnidadQuirurgicaPart2;
 use App\HojaEnfermeria;
 use App\HojaEnfermeriaPart2;
 use App\HojaEnfermeriaPart3;
@@ -194,6 +195,9 @@ class ClienteController extends Controller
 
         $hojaEnfermeriaUnidadQuirurgica = HojaEnfermeriaUnidadQuirurgica::create($request->all());
         $hojaEnfermeriaUnidadQuirurgica->update(['cliente_id' => $cliente->id]);
+
+        $hojaEnfermeriaUnidadQuirurgicaPart2 = HojaEnfermeriaUnidadQuirurgicaPart2::create($request->all());
+        $hojaEnfermeriaUnidadQuirurgicaPart2->update(['cliente_id' => $cliente->id]);
 
         $hojaEnfermeria = HojaEnfermeria::create($request->all());
         $hojaEnfermeria->update(['cliente_id' => $cliente->id]);

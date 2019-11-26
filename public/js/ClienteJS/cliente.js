@@ -196,6 +196,23 @@ $('#addCliente').click(function() {
     $(".viewClient").attr('readonly', false)
     $(".viewClient").attr('disabled', false)
 
+    $("#indicaciones_seccion5").val("1- Ayuno, 6 hrs posteriores iniciar dieta blanda, normal por la mañana \n"+
+    "2- Sol, hartmann 1000 ml P/8 horas alernar con mixta 1000 ml P/8 hrs \n"+
+    "3- Medicamentos: \n"+
+
+    "g) En quirófano administrar hemodilución <br>"+
+    "h) Transfundir paquete globular, pasar para 2 horas (bajo monitorización constante) \n"+
+    "i) Administrar infusión de hierro 8am (solución salina 0.9% de 1000cc más 600mg de hierro dextran) bajo monitorización constante administrar para 3 horas, monitorear vitales cada 30 minutos \n"+
+    "4- O2 nasal a 3 litros por minuto durante 1 hora post-Qx, valorar retiro. \n"+
+    "5- Cuidados de enfermería \n"+
+
+    "a) Vigilancia y cuantificación de sangrado post-Qx \n"+
+    "b) Control de líquidos \n"+
+    "c) Signos vitales C/2 horas \n"+
+    "d) Glucometría capilar 1 por turno y valorar en caso de ser menor de 60 mg aplicar glucosa al 50% 50 ml en bolo IV \n"+
+    "e) Biometría hematica de control 8 am \n"+
+    "6- Gracias!")
+
     $('#modalCliente').modal({
       backdrop: 'static'
     });
@@ -205,7 +222,7 @@ $('#addCliente').click(function() {
     $('#adicionalContinuar').show();
     $('#tituloModal').html('Agregar Paciente');
     $('#adicionalContinuar').removeAttr('onClick');
-    $('#adicionalContinuar').attr('onClick','guardarCliente();').html('Guardar').show();
+    $('.adicionalContinuar').attr('onClick','guardarCliente();').html('Guardar').show();
 
 });
 
@@ -1229,7 +1246,40 @@ function verCliente(id){
       $("#horarios_7_seccion10").val(data.hojaEnfermeria3[0].horarios_7_seccion10),
       $("#horarios_8_seccion10").val(data.hojaEnfermeria3[0].horarios_8_seccion10),
       $("#horarios_9_seccion10").val(data.hojaEnfermeria3[0].horarios_9_seccion10),
-      $("#horarios_10_seccion10").val(data.hojaEnfermeria3[0].horarios_10_seccion10)
+      $("#horarios_10_seccion10").val(data.hojaEnfermeria3[0].horarios_10_seccion10),
+      $("#horarios_10_seccion10").val(data.hojaEnfermeria3[0].horarios_10_seccion10),
+      $("#hora_nota_1_seccion10").val(data.hojaEnfermeria3[0].hora_nota_1_seccion10),
+      $("#hora_nota_2_seccion10").val(data.hojaEnfermeria3[0].hora_nota_2_seccion10),
+      $("#hora_nota_3_seccion10").val(data.hojaEnfermeria3[0].hora_nota_3_seccion10),
+      $("#nota_enfermeria_1_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_1_seccion10),
+      $("#nota_enfermeria_2_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_2_seccion10),
+      $("#nota_enfermeria_3_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_3_seccion10),
+      $("#nota_enfermeria_4_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_4_seccion10),
+      $("#nota_enfermeria_5_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_5_seccion10),
+      $("#nota_enfermeria_6_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_6_seccion10),
+      $("#nota_enfermeria_7_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_7_seccion10),
+      $("#nota_enfermeria_8_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_8_seccion10),
+      $("#nota_enfermeria_9_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_9_seccion10),
+      $("#nota_enfermeria_10_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_10_seccion10),
+      $("#nota_enfermeria_11_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_11_seccion10),
+      $("#nota_enfermeria_12_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_12_seccion10),
+      $("#nota_enfermeria_13_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_13_seccion10),
+      $("#nota_enfermeria_14_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_14_seccion10),
+      $("#nota_enfermeria_15_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_15_seccion10),
+      $("#nota_enfermeria_16_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_16_seccion10),
+      $("#nota_enfermeria_17_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_17_seccion10),
+      $("#nota_enfermeria_18_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_18_seccion10),
+      $("#nota_enfermeria_19_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_19_seccion10),
+      $("#nota_enfermeria_20_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_20_seccion10),
+      $("#nota_enfermeria_21_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_21_seccion10),
+      $("#nota_enfermeria_22_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_22_seccion10),
+      $("#nota_enfermeria_23_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_23_seccion10),
+      $("#nota_enfermeria_24_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_24_seccion10),
+      $("#nota_enfermeria_25_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_25_seccion10),
+      $("#nota_enfermeria_26_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_26_seccion10),
+      $("#nota_enfermeria_27_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_27_seccion10),
+      $("#enfermera_nota_seccion10").val(data.hojaEnfermeria3[0].enfermera_nota_seccion10),
+      $("#firma_nota_seccion10").val(data.hojaEnfermeria3[0].firma_nota_seccion10)
     }
 
 
@@ -2163,6 +2213,38 @@ function actualizaPaciente(id){
      horarios_8_seccion10:$("#horarios_8_seccion10").val(),
      horarios_9_seccion10:$("#horarios_9_seccion10").val(),
      horarios_10_seccion10:$("#horarios_10_seccion10").val(),
+     hora_nota_1_seccion10:$("#hora_nota_1_seccion10").val(),
+    hora_nota_2_seccion10:$("#hora_nota_2_seccion10").val(),
+    hora_nota_3_seccion10:$("#hora_nota_3_seccion10").val(),
+    nota_enfermeria_1_seccion10:$("#nota_enfermeria_1_seccion10").val(),
+    nota_enfermeria_2_seccion10:$("#nota_enfermeria_2_seccion10").val(),
+    nota_enfermeria_3_seccion10:$("#nota_enfermeria_3_seccion10").val(),
+    nota_enfermeria_4_seccion10:$("#nota_enfermeria_4_seccion10").val(),
+    nota_enfermeria_5_seccion10:$("#nota_enfermeria_5_seccion10").val(),
+    nota_enfermeria_6_seccion10:$("#nota_enfermeria_6_seccion10").val(),
+    nota_enfermeria_7_seccion10:$("#nota_enfermeria_7_seccion10").val(),
+    nota_enfermeria_8_seccion10:$("#nota_enfermeria_8_seccion10").val(),
+    nota_enfermeria_9_seccion10:$("#nota_enfermeria_9_seccion10").val(),
+    nota_enfermeria_10_seccion10:$("#nota_enfermeria_10_seccion10").val(),
+    nota_enfermeria_11_seccion10:$("#nota_enfermeria_11_seccion10").val(),
+    nota_enfermeria_12_seccion10:$("#nota_enfermeria_12_seccion10").val(),
+    nota_enfermeria_13_seccion10:$("#nota_enfermeria_13_seccion10").val(),
+    nota_enfermeria_14_seccion10:$("#nota_enfermeria_14_seccion10").val(),
+    nota_enfermeria_15_seccion10:$("#nota_enfermeria_15_seccion10").val(),
+    nota_enfermeria_16_seccion10:$("#nota_enfermeria_16_seccion10").val(),
+    nota_enfermeria_17_seccion10:$("#nota_enfermeria_17_seccion10").val(),
+    nota_enfermeria_18_seccion10:$("#nota_enfermeria_18_seccion10").val(),
+    nota_enfermeria_19_seccion10:$("#nota_enfermeria_19_seccion10").val(),
+    nota_enfermeria_20_seccion10:$("#nota_enfermeria_20_seccion10").val(),
+    nota_enfermeria_21_seccion10:$("#nota_enfermeria_21_seccion10").val(),
+    nota_enfermeria_22_seccion10:$("#nota_enfermeria_22_seccion10").val(),
+    nota_enfermeria_23_seccion10:$("#nota_enfermeria_23_seccion10").val(),
+    nota_enfermeria_24_seccion10:$("#nota_enfermeria_24_seccion10").val(),
+    nota_enfermeria_25_seccion10:$("#nota_enfermeria_25_seccion10").val(),
+    nota_enfermeria_26_seccion10:$("#nota_enfermeria_26_seccion10").val(),
+    nota_enfermeria_27_seccion10:$("#nota_enfermeria_27_seccion10").val(),
+    enfermera_nota_seccion10:$("#enfermera_nota_seccion10").val(),
+    firma_nota_seccion10:$("#firma_nota_seccion10").val(),
 
   },
           success: function(data,textStatus,jqXHR) {
@@ -3162,7 +3244,42 @@ function editaCliente(id){
       $("#horarios_7_seccion10").val(data.hojaEnfermeria3[0].horarios_7_seccion10),
       $("#horarios_8_seccion10").val(data.hojaEnfermeria3[0].horarios_8_seccion10),
       $("#horarios_9_seccion10").val(data.hojaEnfermeria3[0].horarios_9_seccion10),
-      $("#horarios_10_seccion10").val(data.hojaEnfermeria3[0].horarios_10_seccion10)
+      $("#horarios_10_seccion10").val(data.hojaEnfermeria3[0].horarios_10_seccion10),
+      $("#hora_nota_1_seccion10").val(data.hojaEnfermeria3[0].hora_nota_1_seccion10),
+      $("#hora_nota_2_seccion10").val(data.hojaEnfermeria3[0].hora_nota_2_seccion10),
+      $("#hora_nota_3_seccion10").val(data.hojaEnfermeria3[0].hora_nota_3_seccion10),
+      $("#nota_enfermeria_1_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_1_seccion10),
+      $("#nota_enfermeria_2_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_2_seccion10),
+      $("#nota_enfermeria_3_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_3_seccion10),
+      $("#nota_enfermeria_4_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_4_seccion10),
+      $("#nota_enfermeria_5_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_5_seccion10),
+      $("#nota_enfermeria_6_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_6_seccion10),
+      $("#nota_enfermeria_7_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_7_seccion10),
+      $("#nota_enfermeria_8_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_8_seccion10),
+      $("#nota_enfermeria_9_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_9_seccion10),
+      $("#nota_enfermeria_10_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_10_seccion10),
+      $("#nota_enfermeria_11_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_11_seccion10),
+      $("#nota_enfermeria_12_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_12_seccion10),
+      $("#nota_enfermeria_13_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_13_seccion10),
+      $("#nota_enfermeria_14_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_14_seccion10),
+      $("#nota_enfermeria_15_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_15_seccion10),
+      $("#nota_enfermeria_16_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_16_seccion10),
+      $("#nota_enfermeria_17_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_17_seccion10),
+      $("#nota_enfermeria_18_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_18_seccion10),
+      $("#nota_enfermeria_19_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_19_seccion10),
+      $("#nota_enfermeria_20_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_20_seccion10),
+      $("#nota_enfermeria_21_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_21_seccion10),
+      $("#nota_enfermeria_22_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_22_seccion10),
+      $("#nota_enfermeria_23_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_23_seccion10),
+      $("#nota_enfermeria_24_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_24_seccion10),
+      $("#nota_enfermeria_25_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_25_seccion10),
+      $("#nota_enfermeria_26_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_26_seccion10),
+      $("#nota_enfermeria_27_seccion10").val(data.hojaEnfermeria3[0].nota_enfermeria_27_seccion10),
+      $("#enfermera_nota_seccion10").val(data.hojaEnfermeria3[0].enfermera_nota_seccion10),
+      $("#firma_nota_seccion10").val(data.hojaEnfermeria3[0].firma_nota_seccion10)
+      
+
+
     }
 
         $('#modalCliente').modal('show');
@@ -3557,6 +3674,34 @@ function guardarCliente(){
     nota_quirurgica_seccion9:$("#nota_quirurgica_seccion9").val(),
     fecha_hora_cuidados_post_operatorios_seccion9:$("#fecha_hora_cuidados_post_operatorios_seccion9").val(),
     nota_recuperacion_seccion9:$("#nota_recuperacion_seccion9").val(),
+    medicamento_2_1_seccion9: $("#medicamento_2_1_seccion9").val(),
+    medicamento_2_2_seccion9: $("#medicamento_2_2_seccion9").val(),
+    medicamento_2_3_seccion9: $("#medicamento_2_3_seccion9").val(),
+    medicamento_2_4_seccion9: $("#medicamento_2_4_seccion9").val(),
+    medicamento_2_5_seccion9: $("#medicamento_2_5_seccion9").val(),
+    medicamento_2_6_seccion9: $("#medicamento_2_6_seccion9").val(),
+    medicamento_2_7_seccion9: $("#medicamento_2_7_seccion9").val(),
+    medicamento_2_8_seccion9: $("#medicamento_2_8_seccion9").val(),
+    medicamento_2_9_seccion9: $("#medicamento_2_9_seccion9").val(),
+    dosis_2_1_seccion9: $("#dosis_2_1_seccion9").val(),
+    dosis_2_2_seccion9: $("#dosis_2_2_seccion9").val(),
+    dosis_2_3_seccion9: $("#dosis_2_3_seccion9").val(),
+    dosis_2_4_seccion9: $("#dosis_2_4_seccion9").val(),
+    dosis_2_5_seccion9: $("#dosis_2_5_seccion9").val(),
+    dosis_2_6_seccion9: $("#dosis_2_6_seccion9").val(),
+    dosis_2_7_seccion9: $("#dosis_2_7_seccion9").val(),
+    dosis_2_8_seccion9: $("#dosis_2_8_seccion9").val(),
+    dosis_2_9_seccion9: $("#dosis_2_9_seccion9").val(),
+    via_2_1_seccion9: $("#via_2_1_seccion9").val(),
+    via_2_2_seccion9: $("#via_2_2_seccion9").val(),
+    via_2_3_seccion9: $("#via_2_3_seccion9").val(),
+    via_2_4_seccion9: $("#via_2_4_seccion9").val(),
+    via_2_5_seccion9: $("#via_2_5_seccion9").val(),
+    via_2_6_seccion9: $("#via_2_6_seccion9").val(),
+    via_2_8_seccion9: $("#via_2_8_seccion9").val(),
+    via_2_9_seccion9: $("#via_2_9_seccion9").val(),
+    hora_2_1_seccion9: $("#hora_2_1_seccion9").val(),
+    hora_2_2_seccion9: $("#hora_2_2_seccion9").val(),
 
     //seccion10
     medico_seccion10: $("#medico_seccion10").val(),
@@ -4057,6 +4202,40 @@ function guardarCliente(){
     horarios_8_seccion10:$("#horarios_8_seccion10").val(),
     horarios_9_seccion10:$("#horarios_9_seccion10").val(),
     horarios_10_seccion10:$("#horarios_10_seccion10").val(),
+    hora_nota_1_seccion10:$("#hora_nota_1_seccion10").val(),
+    hora_nota_2_seccion10:$("#hora_nota_2_seccion10").val(),
+    hora_nota_3_seccion10:$("#hora_nota_3_seccion10").val(),
+    nota_enfermeria_1_seccion10:$("#nota_enfermeria_1_seccion10").val(),
+    nota_enfermeria_2_seccion10:$("#nota_enfermeria_2_seccion10").val(),
+    nota_enfermeria_3_seccion10:$("#nota_enfermeria_3_seccion10").val(),
+    nota_enfermeria_4_seccion10:$("#nota_enfermeria_4_seccion10").val(),
+    nota_enfermeria_5_seccion10:$("#nota_enfermeria_5_seccion10").val(),
+    nota_enfermeria_6_seccion10:$("#nota_enfermeria_6_seccion10").val(),
+    nota_enfermeria_7_seccion10:$("#nota_enfermeria_7_seccion10").val(),
+    nota_enfermeria_8_seccion10:$("#nota_enfermeria_8_seccion10").val(),
+    nota_enfermeria_9_seccion10:$("#nota_enfermeria_9_seccion10").val(),
+    nota_enfermeria_10_seccion10:$("#nota_enfermeria_10_seccion10").val(),
+    nota_enfermeria_11_seccion10:$("#nota_enfermeria_11_seccion10").val(),
+    nota_enfermeria_12_seccion10:$("#nota_enfermeria_12_seccion10").val(),
+    nota_enfermeria_13_seccion10:$("#nota_enfermeria_13_seccion10").val(),
+    nota_enfermeria_14_seccion10:$("#nota_enfermeria_14_seccion10").val(),
+    nota_enfermeria_15_seccion10:$("#nota_enfermeria_15_seccion10").val(),
+    nota_enfermeria_16_seccion10:$("#nota_enfermeria_16_seccion10").val(),
+    nota_enfermeria_17_seccion10:$("#nota_enfermeria_17_seccion10").val(),
+    nota_enfermeria_18_seccion10:$("#nota_enfermeria_18_seccion10").val(),
+    nota_enfermeria_19_seccion10:$("#nota_enfermeria_19_seccion10").val(),
+    nota_enfermeria_20_seccion10:$("#nota_enfermeria_20_seccion10").val(),
+    nota_enfermeria_21_seccion10:$("#nota_enfermeria_21_seccion10").val(),
+    nota_enfermeria_22_seccion10:$("#nota_enfermeria_22_seccion10").val(),
+    nota_enfermeria_23_seccion10:$("#nota_enfermeria_23_seccion10").val(),
+    nota_enfermeria_24_seccion10:$("#nota_enfermeria_24_seccion10").val(),
+    nota_enfermeria_25_seccion10:$("#nota_enfermeria_25_seccion10").val(),
+    nota_enfermeria_26_seccion10:$("#nota_enfermeria_26_seccion10").val(),
+    nota_enfermeria_27_seccion10:$("#nota_enfermeria_27_seccion10").val(),
+    enfermera_nota_seccion10:$("#enfermera_nota_seccion10").val(),
+    firma_nota_seccion10:$("#firma_nota_seccion10").val(),
+
+
 
   },
 
