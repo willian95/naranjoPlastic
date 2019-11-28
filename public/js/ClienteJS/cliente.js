@@ -366,6 +366,8 @@ function verCliente(id){
           }
         });
 
+        console.log(data)
+
         $("#estados").val(data.responseData.estado)
         $("#calle").val(data.responseData.calle)
         $('#ciudad').val(data.responseData.ciudad)
