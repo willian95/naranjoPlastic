@@ -744,6 +744,9 @@ function verCliente(id){
       $("#fecha_hora_cuidados_post_operatorios_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].fecha_hora_cuidados_post_operatorios_seccion9)
       $("#nota_recuperacion_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].nota_recuperacion_seccion9)
 
+    }
+    
+    if(data.hojaEnfermeriaUnidadQuirurgica2.length > 0){
       $("liquidos_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_1_seccion9)
       $("liquidos_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_2_seccion9)
       $("liquidos_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_3_seccion9)
@@ -771,7 +774,6 @@ function verCliente(id){
       $("via_liquidos_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_7_seccion9)
       $("via_liquidos_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_8_seccion9)
       $("via_liquidos_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_9_seccion9)
-
     }
 
     //seccion10
