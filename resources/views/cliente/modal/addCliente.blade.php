@@ -2136,10 +2136,10 @@
                               <input type="text" name="" id="liquido_2_1_seccion9" class="form-control" style="width: 100px;">
                             </td>
                             <td style="width: 100px;">
-                              <input type="text" name="" id="vol_2_1_seccion9" class="form-control" style="width: 100px;">
+                              <input type="text" name="" id="vol_liquidos_2_1_seccion9" class="form-control" style="width: 100px;">
                             </td>
                             <td style="width: 100px;">
-                              <input type="text" name="" id="via_2_1_seccion9" class="form-control" style="width: 100px;">
+                              <input type="text" name="" id="via_liquidos_2_1_seccion9" class="form-control" style="width: 100px;">
                             </td>
                           </tr>
                           <tr>
@@ -2159,10 +2159,10 @@
                                 <input type="text" name="" id="liquido_2_2_seccion9" class="form-control" style="width: 100px;">
                               </td>
                               <td style="width: 100px;">
-                                <input type="text" name="" id="vol_2_2_seccion9" class="form-control" style="width: 100px;">
+                                <input type="text" name="" id="vol_liquidos_2_2_seccion9" class="form-control" style="width: 100px;">
                               </td>
                               <td style="width: 100px;">
-                                <input type="text" name="" id="via_2_2_seccion9" class="form-control" style="width: 100px;">
+                                <input type="text" name="" id="via_liquidos_2_2_seccion9" class="form-control" style="width: 100px;">
                               </td>
                             </tr>
                             <tr>
@@ -2182,10 +2182,10 @@
                                   <input type="text" name="" id="liquido_2_3_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_3_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_3_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_3_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_3_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2205,10 +2205,10 @@
                                   <input type="text" name="" id="liquido_2_4_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_4_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_4_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_4_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_4_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2228,10 +2228,10 @@
                                   <input type="text" name="" id="liquido_2_5_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_5_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_5_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_5_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_5_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2251,10 +2251,10 @@
                                   <input type="text" name="" id="liquido_2_6_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_6_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_6_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_6_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_6_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2274,10 +2274,10 @@
                                   <input type="text" name="" id="liquido_2_7_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_7_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_7_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_7_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_7_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2297,10 +2297,10 @@
                                   <input type="text" name="" id="liquido_2_8_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_8_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_8_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_8_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_8_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                               <tr>
@@ -2320,10 +2320,10 @@
                                   <input type="text" name="" id="liquido_2_9_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="vol_2_9_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="vol_liquidos_2_9_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                                 <td style="width: 100px;">
-                                  <input type="text" name="" id="via_2_9_seccion9" class="form-control" style="width: 100px;">
+                                  <input type="text" name="" id="via_liquidos_2_9_seccion9" class="form-control" style="width: 100px;">
                                 </td>
                               </tr>
                         </tbody>
@@ -2344,31 +2344,31 @@
                       <tr>
                         <td>
                           <label for="">Uresis</label>
-                          <input type="text" class="form-control">                          
+                          <input type="text" class="form-control" id="uresis_2_seccion9">                          
                         </td>
                         <td>
                             <label for="">Total</label>
-                            <input type="text" class="form-control">  
+                            <input type="text" class="form-control" id="total_uresis_2_seccion9">  
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <label for="">Sangrado</label>
-                          <input type="text" class="form-control">                          
+                          <input type="text" class="form-control" id="sangrado_2_seccion9">                          
                         </td>
                         <td>
                             <label for="">Total</label>
-                            <input type="text" class="form-control">  
+                            <input type="text" class="form-control" id="total_sangrado_2_seccion9">  
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <label for="">Drenales</label>
-                          <input type="text" class="form-control">                          
+                          <input type="text" class="form-control" id="drenales_2_seccion9">                          
                         </td>
                         <td>
                             <label for="">Total</label>
-                            <input type="text" class="form-control">  
+                            <input type="text" class="form-control" id="total_drenales_2_seccion9">  
                         </td>
                       </tr>
                     </tbody>

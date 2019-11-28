@@ -37,6 +37,13 @@ class HojaEnfermeriaUnidadQuirurgicaPart2 extends Model
         "via_liquidos_2_7_seccion9",
         "via_liquidos_2_8_seccion9",
         "via_liquidos_2_9_seccion9",
+        "uresis_2_seccion9",
+        "total_uresis_2_seccion9",
+        "sangrado_2_seccion9",
+        "total_sangrado_2_seccion9",
+        "drenales_2_seccion9",
+        "total_drenales_2_seccion9",
+        "hoja_enfermeria_unidad_quirurgica_id",
         "cliente_id"
     ];
 }

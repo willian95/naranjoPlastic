@@ -116,6 +116,18 @@ class ClienteController extends Controller
           $seguimientoQuirurgico->update();
         }
 
+        if($request->id_seccion9 != ''){
+          $hojaEnfermeriaUnidadQuirurgica = hojaEnfermeriaUnidadQuirurgica::find($request->id_seccion9);
+          $hojaEnfermeriaUnidadQuirurgica->fill($request->all());
+          $hojaEnfermeriaUnidadQuirurgica->update();
+
+          $hojaEnfermeriaUnidadQuirurgica2 = hojaEnfermeriaUnidadQuirurgicaPart2::where('hoja_enfermeria_unidad_quirurgica_id', $request->id_seccion9)->first();
+          $hojaEnfermeriaUnidadQuirurgica2->fill($request->all());
+          $hojaEnfermeriaUnidadQuirurgica2->update();
+
+        }
+
+
         if($request->id_seccion10 != ''){
           $hojaEnfermeria = HojaEnfermeria::find($request->id_seccion10);
           $hojaEnfermeria->fill($request->all());
@@ -169,8 +181,6 @@ class ClienteController extends Controller
       public function agregaCliente(Request $request)
       {
 
-
-
         $cliente=Clientes::create($request->all());
         $cliente->toArray();
         if ($request->imagen) {
@@ -198,7 +208,7 @@ class ClienteController extends Controller
         $hojaEnfermeriaUnidadQuirurgica->update(['cliente_id' => $cliente->id]);
 
         $hojaEnfermeriaUnidadQuirurgicaPart2 = HojaEnfermeriaUnidadQuirurgicaPart2::create($request->all());
-        $hojaEnfermeriaUnidadQuirurgicaPart2->update(['cliente_id' => $cliente->id]);
+        $hojaEnfermeriaUnidadQuirurgicaPart2->update(['cliente_id' => $cliente->id, 'hoja_enfermeria_unidad_quirurgica_id' => $hojaEnfermeriaUnidadQuirurgica->id]);
 
         $hojaEnfermeria = HojaEnfermeria::create($request->all());
         $hojaEnfermeria->update(['cliente_id' => $cliente->id]);

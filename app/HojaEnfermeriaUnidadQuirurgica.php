@@ -191,6 +191,7 @@ class HojaEnfermeriaUnidadQuirurgica extends Model
         "via_2_4_seccion9",
         "via_2_5_seccion9",
         "via_2_6_seccion9",
+        "via_2_7_seccion9",
         "via_2_8_seccion9",
         "via_2_9_seccion9",
         "hora_2_1_seccion9",

@@ -746,18 +746,54 @@ function verCliente(id){
       $("#fecha_hora_cuidados_post_operatorios_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].fecha_hora_cuidados_post_operatorios_seccion9)
       $("#nota_recuperacion_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].nota_recuperacion_seccion9)
 
+      $("#medicamento_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_1_seccion9)
+      $("#medicamento_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_2_seccion9)
+      $("#medicamento_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_3_seccion9)
+      $("#medicamento_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_4_seccion9)
+      $("#medicamento_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_5_seccion9)
+      $("#medicamento_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_6_seccion9)
+      $("#medicamento_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_7_seccion9)
+      $("#medicamento_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_8_seccion9)
+      $("#medicamento_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_9_seccion9)
+      $("#dosis_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_1_seccion9)
+      $("#dosis_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_2_seccion9)
+      $("#dosis_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_3_seccion9)
+      $("#dosis_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_4_seccion9)
+      $("#dosis_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_5_seccion9)
+      $("#dosis_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_6_seccion9)
+      $("#dosis_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_7_seccion9)
+      $("#dosis_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_8_seccion9)
+      $("#dosis_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_9_seccion9)
+      $("#via_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_1_seccion9)
+      $("#via_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_2_seccion9)
+      $("#via_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_3_seccion9)
+      $("#via_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_4_seccion9)
+      $("#via_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_5_seccion9)
+      $("#via_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_6_seccion9)
+      $("#via_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_7_seccion9)
+      $("#via_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_8_seccion9)
+      $("#via_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_9_seccion9)
+      $("#hora_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_1_seccion9)
+      $("#hora_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_2_seccion9)
+      $("#hora_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_3_seccion9)
+      $("#hora_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_4_seccion9)
+      $("#hora_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_5_seccion9)
+      $("#hora_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_6_seccion9)
+      $("#hora_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_7_seccion9)
+      $("#hora_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_8_seccion9)
+      $("#hora_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_9_seccion9)
     }
     
     if(data.hojaEnfermeriaUnidadQuirurgica2.length > 0){
-      $("#liquidos_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_1_seccion9)
-      $("#liquidos_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_2_seccion9)
-      $("#liquidos_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_3_seccion9)
-      $("#liquidos_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_4_seccion9)
-      $("#liquidos_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_5_seccion9)
-      $("#liquidos_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_6_seccion9)
-      $("#liquidos_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_7_seccion9)
-      $("#liquidos_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_8_seccion9)
-      $("#liquidos_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_9_seccion9)
+      $("#liquido_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_1_seccion9)
+      $("#liquido_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_2_seccion9)
+      $("#liquido_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_3_seccion9)
+      $("#liquido_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_4_seccion9)
+      $("#liquido_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_5_seccion9)
+      $("#liquido_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_6_seccion9)
+      $("#liquido_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_7_seccion9)
+      $("#liquido_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_8_seccion9)
+      $("#liquido_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_9_seccion9)
       $("#vol_liquidos_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_1_seccion9)
       $("#vol_liquidos_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_2_seccion9)
       $("#vol_liquidos_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_3_seccion9)
@@ -776,6 +812,12 @@ function verCliente(id){
       $("#via_liquidos_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_7_seccion9)
       $("#via_liquidos_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_8_seccion9)
       $("#via_liquidos_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_9_seccion9)
+      $("#uresis_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].uresis_2_seccion9)
+      $("#total_uresis_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_uresis_2_seccion9)
+      $("#sangrado_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].sangrado_2_seccion9)
+      $("#total_sangrado_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_sangrado_2_seccion9)
+      $("#drenales_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].drenales_2_seccion9)
+      $("#total_drenales_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_drenales_2_seccion9)
     }
 
     //seccion10
@@ -1588,8 +1630,11 @@ function actualizaPaciente(id){
     resumen_seccion8: $("#resumen_seccion8").val(),
 
     //seccion9
+    //seccion9
+    id_seccion9: $("#id_seccion9").val(),
     fdn_seccion9: $("#fdn_seccion9").val(),
     habitacion_seccion9: $("#habitacion_seccion9").val(),
+    edad_seccion9: $("#edad_seccion9").val(),
     medico_seccion9: $("#medico_seccion9").val(),
     signos_vitales_seccion9: $("#signos_vitales_seccion9").val(),
     ta_seccion9: $("#ta_seccion9").val(),
@@ -1744,6 +1789,75 @@ function actualizaPaciente(id){
     nota_quirurgica_seccion9:$("#nota_quirurgica_seccion9").val(),
     fecha_hora_cuidados_post_operatorios_seccion9:$("#fecha_hora_cuidados_post_operatorios_seccion9").val(),
     nota_recuperacion_seccion9:$("#nota_recuperacion_seccion9").val(),
+    medicamento_2_1_seccion9: $("#medicamento_2_1_seccion9").val(),
+    medicamento_2_2_seccion9: $("#medicamento_2_2_seccion9").val(),
+    medicamento_2_3_seccion9: $("#medicamento_2_3_seccion9").val(),
+    medicamento_2_4_seccion9: $("#medicamento_2_4_seccion9").val(),
+    medicamento_2_5_seccion9: $("#medicamento_2_5_seccion9").val(),
+    medicamento_2_6_seccion9: $("#medicamento_2_6_seccion9").val(),
+    medicamento_2_7_seccion9: $("#medicamento_2_7_seccion9").val(),
+    medicamento_2_8_seccion9: $("#medicamento_2_8_seccion9").val(),
+    medicamento_2_9_seccion9: $("#medicamento_2_9_seccion9").val(),
+    dosis_2_1_seccion9: $("#dosis_2_1_seccion9").val(),
+    dosis_2_2_seccion9: $("#dosis_2_2_seccion9").val(),
+    dosis_2_3_seccion9: $("#dosis_2_3_seccion9").val(),
+    dosis_2_4_seccion9: $("#dosis_2_4_seccion9").val(),
+    dosis_2_5_seccion9: $("#dosis_2_5_seccion9").val(),
+    dosis_2_6_seccion9: $("#dosis_2_6_seccion9").val(),
+    dosis_2_7_seccion9: $("#dosis_2_7_seccion9").val(),
+    dosis_2_8_seccion9: $("#dosis_2_8_seccion9").val(),
+    dosis_2_9_seccion9: $("#dosis_2_9_seccion9").val(),
+    via_2_1_seccion9: $("#via_2_1_seccion9").val(),
+    via_2_2_seccion9: $("#via_2_2_seccion9").val(),
+    via_2_3_seccion9: $("#via_2_3_seccion9").val(),
+    via_2_4_seccion9: $("#via_2_4_seccion9").val(),
+    via_2_5_seccion9: $("#via_2_5_seccion9").val(),
+    via_2_6_seccion9: $("#via_2_6_seccion9").val(),
+    via_2_7_seccion9: $("#via_2_7_seccion9").val(),
+    via_2_8_seccion9: $("#via_2_8_seccion9").val(),
+    via_2_9_seccion9: $("#via_2_9_seccion9").val(),
+    hora_2_1_seccion9: $("#hora_2_1_seccion9").val(),
+    hora_2_2_seccion9: $("#hora_2_2_seccion9").val(),
+    hora_2_3_seccion9: $("#hora_2_3_seccion9").val(),
+    hora_2_4_seccion9: $("#hora_2_4_seccion9").val(),
+    hora_2_5_seccion9: $("#hora_2_5_seccion9").val(),
+    hora_2_6_seccion9: $("#hora_2_6_seccion9").val(),
+    hora_2_7_seccion9: $("#hora_2_7_seccion9").val(),
+    hora_2_8_seccion9: $("#hora_2_8_seccion9").val(),
+    hora_2_9_seccion9: $("#hora_2_9_seccion9").val(),
+    liquidos_2_1_seccion9: $("#liquido_2_1_seccion9").val(),
+    liquidos_2_2_seccion9: $("#liquido_2_2_seccion9").val(),
+    liquidos_2_3_seccion9: $("#liquido_2_3_seccion9").val(),
+    liquidos_2_4_seccion9: $("#liquido_2_4_seccion9").val(),
+    liquidos_2_5_seccion9: $("#liquido_2_5_seccion9").val(),
+    liquidos_2_6_seccion9: $("#liquido_2_6_seccion9").val(),
+    liquidos_2_7_seccion9: $("#liquido_2_7_seccion9").val(),
+    liquidos_2_8_seccion9: $("#liquido_2_8_seccion9").val(),
+    liquidos_2_9_seccion9: $("#liquido_2_9_seccion9").val(),
+    vol_liquidos_2_1_seccion9: $("#vol_liquidos_2_1_seccion9").val(),
+    vol_liquidos_2_2_seccion9: $("#vol_liquidos_2_2_seccion9").val(),
+    vol_liquidos_2_3_seccion9: $("#vol_liquidos_2_3_seccion9").val(),
+    vol_liquidos_2_4_seccion9: $("#vol_liquidos_2_4_seccion9").val(),
+    vol_liquidos_2_5_seccion9: $("#vol_liquidos_2_5_seccion9").val(),
+    vol_liquidos_2_6_seccion9: $("#vol_liquidos_2_6_seccion9").val(),
+    vol_liquidos_2_7_seccion9: $("#vol_liquidos_2_7_seccion9").val(),
+    vol_liquidos_2_8_seccion9: $("#vol_liquidos_2_8_seccion9").val(),
+    vol_liquidos_2_9_seccion9: $("#vol_liquidos_2_9_seccion9").val(),
+    via_liquidos_2_1_seccion9: $("#via_liquidos_2_1_seccion9").val(),
+    via_liquidos_2_2_seccion9: $("#via_liquidos_2_2_seccion9").val(),
+    via_liquidos_2_3_seccion9: $("#via_liquidos_2_3_seccion9").val(),
+    via_liquidos_2_4_seccion9: $("#via_liquidos_2_4_seccion9").val(),
+    via_liquidos_2_5_seccion9: $("#via_liquidos_2_5_seccion9").val(),
+    via_liquidos_2_6_seccion9: $("#via_liquidos_2_6_seccion9").val(),
+    via_liquidos_2_7_seccion9: $("#via_liquidos_2_7_seccion9").val(),
+    via_liquidos_2_8_seccion9: $("#via_liquidos_2_8_seccion9").val(),
+    via_liquidos_2_9_seccion9: $("#via_liquidos_2_9_seccion9").val(),
+    uresis_2_seccion9: $("#uresis_2_seccion9").val(),
+    total_uresis_2_seccion9: $("#total_uresis_2_seccion9").val(),
+    sangrado_2_seccion9: $("#sangrado_2_seccion9").val(),
+    total_sangrado_2_seccion9: $("#total_sangrado_2_seccion9").val(),
+    drenales_2_seccion9: $("#drenales_2_seccion9").val(),
+    total_drenales_2_seccion9: $("#total_drenales_2_seccion9").val(),
 
      //seccion10
      id_seccion10: $("#id_seccion10").val(),
@@ -2358,8 +2472,8 @@ function editaCliente(id){
   $(".viewClient").attr('disabled', false)
   //$('.disableBtn').removeAttr('disabled');
   $('#tituloModal').html('Editar Paciente');
-  $('#adicionalContinuar').removeAttr('onClick');
-  $('#adicionalContinuar').attr('onClick','actualizaPaciente('+id+');').html('Actualizar').show();
+  $('.adicionalContinuar').removeAttr('onClick');
+  $('.adicionalContinuar').attr('onClick','actualizaPaciente('+id+');').html('Actualizar').show();
 
   $.ajax({
     url: 'editarCliente',
@@ -2775,6 +2889,78 @@ function editaCliente(id){
       $("#fecha_hora_cuidados_post_operatorios_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].fecha_hora_cuidados_post_operatorios_seccion9)
       $("#nota_recuperacion_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].nota_recuperacion_seccion9)
 
+      $("#medicamento_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_1_seccion9)
+      $("#medicamento_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_2_seccion9)
+      $("#medicamento_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_3_seccion9)
+      $("#medicamento_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_4_seccion9)
+      $("#medicamento_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_5_seccion9)
+      $("#medicamento_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_6_seccion9)
+      $("#medicamento_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_7_seccion9)
+      $("#medicamento_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_8_seccion9)
+      $("#medicamento_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].medicamento_2_9_seccion9)
+      $("#dosis_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_1_seccion9)
+      $("#dosis_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_2_seccion9)
+      $("#dosis_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_3_seccion9)
+      $("#dosis_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_4_seccion9)
+      $("#dosis_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_5_seccion9)
+      $("#dosis_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_6_seccion9)
+      $("#dosis_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_7_seccion9)
+      $("#dosis_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_8_seccion9)
+      $("#dosis_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].dosis_2_9_seccion9)
+      $("#via_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_1_seccion9)
+      $("#via_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_2_seccion9)
+      $("#via_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_3_seccion9)
+      $("#via_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_4_seccion9)
+      $("#via_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_5_seccion9)
+      $("#via_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_6_seccion9)
+      $("#via_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_7_seccion9)
+      $("#via_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_8_seccion9)
+      $("#via_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].via_2_9_seccion9)
+      $("#hora_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_1_seccion9)
+      $("#hora_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_2_seccion9)
+      $("#hora_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_3_seccion9)
+      $("#hora_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_4_seccion9)
+      $("#hora_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_5_seccion9)
+      $("#hora_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_6_seccion9)
+      $("#hora_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_7_seccion9)
+      $("#hora_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_8_seccion9)
+      $("#hora_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica[0].hora_2_9_seccion9)
+    }
+    
+    if(data.hojaEnfermeriaUnidadQuirurgica2.length > 0){
+      $("#liquido_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_1_seccion9)
+      $("#liquido_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_2_seccion9)
+      $("#liquido_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_3_seccion9)
+      $("#liquido_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_4_seccion9)
+      $("#liquido_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_5_seccion9)
+      $("#liquido_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_6_seccion9)
+      $("#liquido_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_7_seccion9)
+      $("#liquido_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_8_seccion9)
+      $("#liquido_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].liquidos_2_9_seccion9)
+      $("#vol_liquidos_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_1_seccion9)
+      $("#vol_liquidos_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_2_seccion9)
+      $("#vol_liquidos_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_3_seccion9)
+      $("#vol_liquidos_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_4_seccion9)
+      $("#vol_liquidos_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_5_seccion9)
+      $("#vol_liquidos_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_6_seccion9)
+      $("#vol_liquidos_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_7_seccion9)
+      $("#vol_liquidos_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_8_seccion9)
+      $("#vol_liquidos_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].vol_liquidos_2_9_seccion9)
+      $("#via_liquidos_2_1_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_1_seccion9)
+      $("#via_liquidos_2_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_2_seccion9)
+      $("#via_liquidos_2_3_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_3_seccion9)
+      $("#via_liquidos_2_4_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_4_seccion9)
+      $("#via_liquidos_2_5_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_5_seccion9)
+      $("#via_liquidos_2_6_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_6_seccion9)
+      $("#via_liquidos_2_7_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_7_seccion9)
+      $("#via_liquidos_2_8_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_8_seccion9)
+      $("#via_liquidos_2_9_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].via_liquidos_2_9_seccion9)
+      $("#uresis_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].uresis_2_seccion9)
+      $("#total_uresis_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_uresis_2_seccion9)
+      $("#sangrado_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].sangrado_2_seccion9)
+      $("#total_sangrado_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_sangrado_2_seccion9)
+      $("#drenales_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].drenales_2_seccion9)
+      $("#total_drenales_2_seccion9").val(data.hojaEnfermeriaUnidadQuirurgica2[0].total_drenales_2_seccion9)
     }
 
     if(data.hojaEnfermeria.length > 0){
@@ -3730,10 +3916,51 @@ function guardarCliente(){
     via_2_4_seccion9: $("#via_2_4_seccion9").val(),
     via_2_5_seccion9: $("#via_2_5_seccion9").val(),
     via_2_6_seccion9: $("#via_2_6_seccion9").val(),
+    via_2_7_seccion9: $("#via_2_7_seccion9").val(),
     via_2_8_seccion9: $("#via_2_8_seccion9").val(),
     via_2_9_seccion9: $("#via_2_9_seccion9").val(),
     hora_2_1_seccion9: $("#hora_2_1_seccion9").val(),
     hora_2_2_seccion9: $("#hora_2_2_seccion9").val(),
+    hora_2_3_seccion9: $("#hora_2_3_seccion9").val(),
+    hora_2_4_seccion9: $("#hora_2_4_seccion9").val(),
+    hora_2_5_seccion9: $("#hora_2_5_seccion9").val(),
+    hora_2_6_seccion9: $("#hora_2_6_seccion9").val(),
+    hora_2_7_seccion9: $("#hora_2_7_seccion9").val(),
+    hora_2_8_seccion9: $("#hora_2_8_seccion9").val(),
+    hora_2_9_seccion9: $("#hora_2_9_seccion9").val(),
+    liquidos_2_1_seccion9: $("#liquido_2_1_seccion9").val(),
+    liquidos_2_2_seccion9: $("#liquido_2_2_seccion9").val(),
+    liquidos_2_3_seccion9: $("#liquido_2_3_seccion9").val(),
+    liquidos_2_4_seccion9: $("#liquido_2_4_seccion9").val(),
+    liquidos_2_5_seccion9: $("#liquido_2_5_seccion9").val(),
+    liquidos_2_6_seccion9: $("#liquido_2_6_seccion9").val(),
+    liquidos_2_7_seccion9: $("#liquido_2_7_seccion9").val(),
+    liquidos_2_8_seccion9: $("#liquido_2_8_seccion9").val(),
+    liquidos_2_9_seccion9: $("#liquido_2_9_seccion9").val(),
+    vol_liquidos_2_1_seccion9: $("#vol_liquidos_2_1_seccion9").val(),
+    vol_liquidos_2_2_seccion9: $("#vol_liquidos_2_2_seccion9").val(),
+    vol_liquidos_2_3_seccion9: $("#vol_liquidos_2_3_seccion9").val(),
+    vol_liquidos_2_4_seccion9: $("#vol_liquidos_2_4_seccion9").val(),
+    vol_liquidos_2_5_seccion9: $("#vol_liquidos_2_5_seccion9").val(),
+    vol_liquidos_2_6_seccion9: $("#vol_liquidos_2_6_seccion9").val(),
+    vol_liquidos_2_7_seccion9: $("#vol_liquidos_2_7_seccion9").val(),
+    vol_liquidos_2_8_seccion9: $("#vol_liquidos_2_8_seccion9").val(),
+    vol_liquidos_2_9_seccion9: $("#vol_liquidos_2_9_seccion9").val(),
+    via_liquidos_2_1_seccion9: $("#via_liquidos_2_1_seccion9").val(),
+    via_liquidos_2_2_seccion9: $("#via_liquidos_2_2_seccion9").val(),
+    via_liquidos_2_3_seccion9: $("#via_liquidos_2_3_seccion9").val(),
+    via_liquidos_2_4_seccion9: $("#via_liquidos_2_4_seccion9").val(),
+    via_liquidos_2_5_seccion9: $("#via_liquidos_2_5_seccion9").val(),
+    via_liquidos_2_6_seccion9: $("#via_liquidos_2_6_seccion9").val(),
+    via_liquidos_2_7_seccion9: $("#via_liquidos_2_7_seccion9").val(),
+    via_liquidos_2_8_seccion9: $("#via_liquidos_2_8_seccion9").val(),
+    via_liquidos_2_9_seccion9: $("#via_liquidos_2_9_seccion9").val(),
+    uresis_2_seccion9: $("#uresis_2_seccion9").val(),
+    total_uresis_2_seccion9: $("#total_uresis_2_seccion9").val(),
+    sangrado_2_seccion9: $("#sangrado_2_seccion9").val(),
+    total_sangrado_2_seccion9: $("#total_sangrado_2_seccion9").val(),
+    drenales_2_seccion9: $("#drenales_2_seccion9").val(),
+    total_drenales_2_seccion9: $("#total_drenales_2_seccion9").val(),
 
     //seccion10
     medico_seccion10: $("#medico_seccion10").val(),
