@@ -471,7 +471,7 @@
                     Edad: {{ $clientes->edad }}
                 </td>
                 <td colspan="4" style="font-size:12px; border: 1px solid; padding: 0px;">
-                    Sexo: {{ $clientes->sexo }}
+                    Sexo: @if($clientes->sexo == 1) Masculino @else Femenino @endif
                 </td>
             </tr>
 
@@ -1579,7 +1579,16 @@
                         <p>______________________________________________</p>
                     <p style="font-size: 12px;">
                             
-                            Firma de paciente o persona responsable y parentesco                                                             Anestesiólogo
+                            Firma de paciente o persona responsable y parentesco
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="26">
+                        <p>______________________________________________</p>
+                    <p style="font-size: 12px;">    
+                        Anestesiólogo
                     </p>
                 </td>
             </tr>
@@ -1617,7 +1626,7 @@
                     Edad: {{ $clientes->edad }}
                 </td>
                 <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
-                    Sexo: {{ $clientes->sexo }}
+                    Sexo: @if($clientes->sexo == 1) Masculino @else Femenino @endif
                 </td>
             </tr>
 
@@ -2569,7 +2578,7 @@
                 </tr>
                 <tr>
                     <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
-                        Sexo: {{ $clientes->sexo }}
+                        Sexo: @if($clientes->sexo == 1) Masculino @else Femenino @endif
                     </td>
                     <td colspan="8" style="font-size:10px; border: 1px solid; padding: 0px;">
                         Habitación: {{ $hojaEnfermeriaUnidadQuirurgica->habitacion_seccion9 }}
@@ -3526,8 +3535,8 @@
                     </tr>
     
                 <tr>
-                    <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                        <h3 class="text-center">Indicaciones Post Quirurgicas</h3>
+                    <td style="font-size:10px; border: none; padding: 0px;" colspan="26">
+                        <h1 class="text-center">Indicaciones Post Quirurgicas</h1>
                     </td>
                 </tr>
                 <tr>
@@ -3567,8 +3576,8 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    <h3 class="text-center">Nota Médica</h3>
+                <td style="font-size:10px; border: none; padding: 0px;" colspan="26">
+                    <h1 class="text-center">Nota Médica</h1>
                 </td>
             </tr>
             <tr>
@@ -3581,7 +3590,7 @@
             </tr>
             <tr>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
-                    Sexo:{{ $clientes->sexo }}
+                    Sexo:@if($clientes->sexo == 1) Masculino @else Femenino @endif
                 </td>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Talla:{{ $clientes->talla_seccion3 }}
@@ -3628,8 +3637,8 @@
             </tr>
 
             <tr>
-                <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
-                    <h3 class="text-center">Nota de Egreso</h3>
+                <td style="font-size:10px; border: none; padding: 0px;" colspan="26">
+                    <h1 class="text-center">Nota de Egreso</h1>
                 </td>
             </tr>
             <tr>
@@ -3642,7 +3651,7 @@
             </tr>
             <tr>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
-                    Sexo:{{ $clientes->sexo }}
+                    Sexo: @if($clientes->sexo == 1) Masculino @else Femenino @endif
                 </td>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="4">
                     Talla:{{ $clientes->talla_seccion3 }}
@@ -3723,6 +3732,11 @@
                 </td>
             </tr>
 
+            <tr>
+                <td style="font-size:10px; border: none; padding: 0px;" colspan="26">
+                    <h1 class="text-center">Nota de Seguimiento Post-Quirurgico</h1>
+                </td>
+            </tr>
             <tr>
                 <td style="font-size:10px; border: 1px solid; padding: 0px;" colspan="26">
                     Nombre: {{$clientes->name}} {{$clientes->apePat}}
