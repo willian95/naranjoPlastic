@@ -1668,7 +1668,7 @@
         </table>
 
         <table width="550">
-            <thead>
+            
                 <tr>
                     <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">FC</th>
                     <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">TC</th>
@@ -1697,7 +1697,7 @@
                     <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">5</th>
                     <th style="font-size:12px; border: 1px solid; padding: 0px;" scope="col">6</th>
                 </tr>
-            </thead>
+            
             <tbody>
                 <tr>
                     <td style="font-size:12px; border: 1px solid; padding: 0px;">170</td>
@@ -2246,6 +2246,28 @@
                     <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_11_seccion10 }}</td>
                     <td colspan="2" style="font-size:12px; border: 1px solid; padding: 0px;">{{ $hojaEnfermeria2->lab_12_seccion10 }}</td>
                 </tr>
+
+                <tr>
+                    <td colspan="20">
+                        <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                    </td>
+                    <td colspan="6">
+                        <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                            
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
+                    </td>
+                </tr>    
+                <tr>
+                    <td colspan="26">
+                        <h3 class="text-center">Hoja de enfermeria</h3>
+                    </td>
+                </tr>
+
                 <tr>
                     <td colspan="8" style="font-size:12px; border: 1px solid; padding: 0px;">
                         <h3 class="text-center">Cateter Corto Periferico</h3>
@@ -3142,10 +3164,26 @@
                 </tr>
 
                 <tr>
-                    <td colspan="26">
-                        
+                    <td colspan="20">
+                        <img src="{{ public_path('/dist/img/logo_jeune.png') }}" alt="">
+                    </td>
+                    <td colspan="6">
+                        <p style="text-align: right; font-size: 10px;">Licencia Sanitaria: 15-AM-02-004-0003</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Edificio Plaza Medical</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">José Clemente Orozco #2468-306</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Zona Rio Tijuana, B.C. 22320</p>
+                        <p style="text-align: right; font-size: 10px; margin-top: -12px;">Tel. (664) 391 13 24 USA (619) 354 37 01</p>
+                            
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Número de Registro: {{ $clientes->id }}</p>
+                    <p style="text-align: right; font-size: 10px; margin-top: -12px;">Fecha de Registro: {{ $clientes->created_at->format('d/m/Y') }}</p>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="26">
+                        <h3 class="text-center">HOJA DE REGISTRO DE ENFERMERIA EN UNIDAD QUIRURGICA</h3>
+                    </td>
+                </tr>
+                
 
                 <tr>
                     <td colspan="26" style="font-size:10px; border: 1px solid; padding: 0px;">
